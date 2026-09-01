@@ -1,7 +1,0 @@
-{
-  "name": "Marroquinería",
-  "description": "El $(item)Cuero$() es un material fuerte, flexible y durable conseguido $(thing)curtiendo$() cueros para prevenir su deterioro.",
-  "icon": "pyrotech:pelt_cow",
-  "parent": "innovate",
-  "sortnum": 3
-}

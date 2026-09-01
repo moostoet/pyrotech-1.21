@@ -1,7 +1,0 @@
-{
-  "name": "Máquinas a combustión",
-  "description": "Las $(thing)Máquinas a combustión$() consumen $(thing)Combustible$() para realizar su trabajo.",
-  "icon": "pyrotech:stone_sawmill",
-  "parent": "innovate_stone",
-  "sortnum": 1
-}

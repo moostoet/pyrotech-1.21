@@ -1,7 +1,0 @@
-{
-  "name": "Брожение",
-  "description": "Правильная обработка жидкостей непременно сойдёт вам на руку. Только не перестарайтесь.",
-  "icon": "pyrotech:barrel",
-  "parent": "innovate_stone",
-  "sortnum": 4
-}

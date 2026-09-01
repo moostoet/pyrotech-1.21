@@ -1,8 +1,0 @@
-{
-  "parent": "block/half_slab",
-  "textures": {
-    "bottom": "pyrotech:blocks/masonry_brick",
-    "top": "pyrotech:blocks/masonry_brick",
-    "side": "pyrotech:blocks/masonry_brick"
-  }
-}

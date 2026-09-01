@@ -1,24 +1,42 @@
-## Feature Request Guidelines
+# Pyrotech
 
-Feature requests, ideas, and suggestions are welcome.
+A port of [Pyrotech](https://github.com/codetaylor/pyrotech-1.12) by
+[codetaylor](https://github.com/codetaylor) from Minecraft 1.12.2 to
+Minecraft 1.21.1 on [NeoForge](https://neoforged.net/).
 
-Please follow these guidelines when submitting:
+Pyrotech is a primitive technology mod. It slows down the early game with
+fire, stone, and hand tools before granting access to modern machines.
 
-* Use an issue title that clearly and concisely describes your idea. *Do not* prefix your issue title with `[Suggestion]`, `[Idea]`, or `[Request]`. Tags for issues will be selected and applied by project members.
-* Restrict to *one* request, idea, or suggestion per issue; if you have multiple ideas, create multiple issues. When ideas are separated into individual issues, it is much easier to organize, tag, discuss, and close those individual issues than it is a list of ideas in one issue. Additionally, it is easier for others to check if their idea has already been suggested before posting.
-* Read through existing suggestions before posting. If your idea is similar to an existing idea, comment on the existing idea instead of making a new issue.
-* *Do not* inquire about porting the mod to newer versions of Minecraft or backporting to older versions of Minecraft.
+## Status
 
-If your request, idea, or suggestion does not follow these guidelines, it will be tagged as such and may be immediately closed.
+The port is in progress. The mod boots, but holds no gameplay content yet.
+The gameplay modules are ported one at a time.
 
-Project members reserve the right to decide what is and is not implemented.
+The goal is faithful gameplay with modern code. Every mechanic behaves as it
+does in 1.12.2. The code is rewritten against vanilla and NeoForge idioms.
 
-## Backporting
+The original 1.12.2 source is preserved unchanged on the
+[`1.12` branch](https://github.com/moostoet/pyrotech-1.21/tree/1.12).
+The domain glossary lives in [CONTEXT.md](CONTEXT.md).
 
-No.
+## Toolchain
 
-## Future Versions of Minecraft
+- Minecraft 1.21.1 on NeoForge 21.1.249
+- ModDevGradle 2.0.144
+- Java 21, Gradle 9.2.1 (wrapper)
 
-Will the mod be developed for future versions of minecraft? *Probably*.
+Common commands:
 
-When? *Yes*.
+- `./gradlew runClient` starts a development client.
+- `./gradlew runServer` starts a development server.
+- `./gradlew runData` runs datagen into `src/generated/resources`.
+- `./gradlew build` builds the jar into `build/libs`.
+
+## Credits and license
+
+Pyrotech was created by [codetaylor](https://github.com/codetaylor).
+This repository is a fork of
+[codetaylor/pyrotech-1.12](https://github.com/codetaylor/pyrotech-1.12)
+and reuses its assets and gameplay design.
+
+Licensed under the Apache License 2.0. See [LICENSE](LICENSE).

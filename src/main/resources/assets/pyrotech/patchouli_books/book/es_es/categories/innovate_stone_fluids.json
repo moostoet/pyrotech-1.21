@@ -1,7 +1,0 @@
-{
-  "name": "Fluidos, Almacenaje",
-  "description": "La manipulación exitosa y almacenaje de fluidos son vitales para la supervivencia.",
-  "icon": "pyrotech:stone_tank",
-  "parent": "innovate_stone",
-  "sortnum": 3
-}

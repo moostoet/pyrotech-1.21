@@ -1,7 +1,0 @@
-{
-  "name": "生存工具",
-  "description": "工具的制作对生存发展具有不可磨灭的作用。",
-  "icon": "pyrotech:crude_pickaxe",
-  "sortnum": 1,
-  "parent": "survive"
-}

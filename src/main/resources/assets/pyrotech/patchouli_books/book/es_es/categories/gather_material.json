@@ -1,7 +1,0 @@
-{
-  "name": "Materiales",
-  "description": "",
-  "icon": "pyrotech:material:11",
-  "parent": "gather",
-  "sortnum": 1
-}

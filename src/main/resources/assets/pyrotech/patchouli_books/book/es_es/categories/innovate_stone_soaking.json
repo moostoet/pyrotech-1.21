@@ -1,7 +1,0 @@
-{
-  "name": "Remojado",
-  "description": "La manipulación exitosa de fluidos, y los objetos remojados en aquellos fluidos, son vitales para la supervivencia.",
-  "icon": "pyrotech:soaking_pot",
-  "parent": "innovate_stone",
-  "sortnum": 2
-}
