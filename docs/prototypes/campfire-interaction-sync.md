@@ -91,6 +91,19 @@ glow brighter with more logs, with `LightEngine.checkBlock` called on fuel
 changes (server side in the handler observer, client side in
 `onSyncedDataUpdate`).
 
+## Finding: converted models need a render_type field
+
+The first in-game test showed opaque white faces on the campfire. Cause: 1.12
+set the render layer in code (`getBlockLayer()` returned `CUTOUT_MIPPED`), and
+the converted textures keep white pixels under their transparent areas. In 1.21
+the render layer lives in the model JSON as `"render_type"`, and without it the
+solid default paints those transparent pixels white. The campfire's twelve base
+models now declare `"render_type": "minecraft:cutout_mipped"`.
+
+This affects every converted block whose 1.12 class overrode `getBlockLayer()`.
+The asset pipeline (or the hoisting checklist) needs a pass that maps each 1.12
+block's render layer into its converted models.
+
 ## Deliberate prototype shortcuts
 
 These are stand-ins, not proposals:

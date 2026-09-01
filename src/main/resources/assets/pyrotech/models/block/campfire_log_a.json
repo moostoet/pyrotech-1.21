@@ -82,5 +82,6 @@
         }
       }
     }
-  ]
+  ],
+  "render_type": "minecraft:cutout_mipped"
 }
