@@ -37,6 +37,16 @@ base {
 // Mojang ships Java 21 to end users in 1.21.1, so mods should target Java 21.
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+// Windows reaches this repo through the \\wsl.localhost share, which lacks
+// file locking and is unreliable for build output; the workarounds below key
+// off this and keep all build state on the Windows disk. Do not switch the
+// Minecraft recompile to the Eclipse compiler instead: javac cannot read
+// some of the class files ECJ produces, which breaks compileJava.
+def onWindows = System.getProperty('os.name').startsWith('Windows')
+if (onWindows) {
+    layout.buildDirectory = file("${System.getProperty('user.home')}/pyrotech-1.21/build")
+}
+
 neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
@@ -83,6 +93,16 @@ neoForge {
 
         // applies to all the run configs above
         configureEach {
+            // The \\wsl.localhost share does not support the file locks Minecraft
+            // takes on world saves (session.lock -> "Incorrect function", shown
+            // in-game as "Failed to copy packs"), so on Windows keep the game
+            // directory on the local disk. The profile root is used instead of
+            // %LOCALAPPDATA% because Windows redirects AppData writes of
+            // processes started from a packaged app into that app's sandbox.
+            if (onWindows) {
+                gameDirectory = file("${System.getProperty('user.home')}/pyrotech-1.21/run")
+            }
+
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.

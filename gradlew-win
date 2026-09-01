@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Runs the Gradle wrapper on the Windows side (via WSL interop) so that
+# graphical run configs like `runClient` open on the Windows desktop
+# instead of under WSLg. The repo stays on the WSL filesystem; Windows
+# reaches it through a mapped drive letter pointing at \\wsl.localhost.
+#
+# Usage:
+#   ./gradlew-win            # defaults to runClient
+#   ./gradlew-win <any gradle args...>
+set -euo pipefail
+
+DRIVE="W:"
+SHARE="\\\\wsl.localhost\\${WSL_DISTRO_NAME:-Ubuntu-24.04}"
+
+# The mapped drive is persistent, but re-map it if it dropped (e.g. after
+# a reboot where WSL wasn't running yet when Windows tried to reconnect).
+powershell.exe -NoProfile -Command \
+    "if (-not (Test-Path '${DRIVE}\\')) { net use ${DRIVE} '${SHARE}' /persistent:yes | Out-Null }" >/dev/null
+
+# Repo path as seen from Windows: /home/... -> W:\home\...
+REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_WIN="${DRIVE}$(printf '%s' "$REPO_DIR" | tr '/' '\\')"
+
+ARGS="${*:-runClient}"
+
+# Gradle's per-project cache uses file locks, which the \\wsl.localhost
+# share does not support ("java.io.IOException: Incorrect function"), so
+# keep it on the Windows disk. File watching is equally unsupported there.
+# It lives in the profile root rather than %LOCALAPPDATA% because Windows
+# redirects AppData writes of processes started from a packaged app (e.g.
+# the Claude desktop app's terminal) into that app's LocalCache folder.
+exec powershell.exe -NoProfile -Command "
+    Set-Location '${REPO_WIN}'
+    & .\\gradlew.bat --project-cache-dir \"\$env:USERPROFILE\\pyrotech-1.21\\gradle-project-cache\" --no-watch-fs ${ARGS}
+    exit \$LASTEXITCODE"

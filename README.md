@@ -32,6 +32,42 @@ Common commands:
 - `./gradlew runData` runs datagen into `src/generated/resources`.
 - `./gradlew build` builds the jar into `build/libs`.
 
+## Running the client on Windows from WSL
+
+WSLg has issues running the Minecraft client, so graphical runs go through
+Windows-side Java while the repo stays on the WSL filesystem:
+
+- `./gradlew-win` (run from WSL) starts the client on the Windows desktop.
+  It accepts any Gradle arguments (`./gradlew-win build`) and defaults to
+  `runClient`.
+- It works by invoking `gradlew.bat` through PowerShell interop inside
+  `W:\home\...`, where `W:` is a persistent network drive mapped to
+  `\\wsl.localhost\Ubuntu-24.04` (the script re-maps it if it dropped).
+- The Windows-side Gradle keeps its per-project cache under
+  `%USERPROFILE%\pyrotech-1.21\gradle-project-cache` because the
+  `\\wsl.localhost` share does not support the file locking and watching
+  Gradle needs.
+- For the same reason the game directory of Windows runs (worlds, options,
+  logs) is `%USERPROFILE%\pyrotech-1.21\run` instead of `run/`: creating a
+  world locks `session.lock`, which fails on the share and shows up in-game
+  as "Failed to copy packs". From WSL that directory is reachable under
+  `/mnt/c/Users/<you>/pyrotech-1.21/run`.
+- All of these live in the profile root rather than `%LOCALAPPDATA%` on purpose:
+  when the launching terminal belongs to a packaged (Store) app such as the
+  Claude desktop app, Windows silently redirects AppData writes into that
+  app's `Packages\...\LocalCache` folder, which would split caches and
+  worlds between terminals.
+- The Windows build also writes its `build/` directory to
+  `%USERPROFILE%\pyrotech-1.21\build`, so the Minecraft recompile and all
+  outputs stay on NTFS. Do not switch that recompile to the Eclipse compiler
+  (`neoFormRuntime.useEclipseCompiler`) as a workaround for share problems:
+  javac cannot read some class files ECJ produces (for example
+  `ItemDisplayContext`), which breaks `compileJava` with "bad class file"
+  errors.
+
+Linux and Windows builds use separate caches, daemons and build directories,
+so they do not interfere with each other.
+
 ## Credits and license
 
 Pyrotech was created by [codetaylor](https://github.com/codetaylor).
