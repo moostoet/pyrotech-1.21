@@ -6,6 +6,9 @@
   they are out of scope for the port.
 - **Hoisting**: moving one module's behavior from the 1.12 code to the 1.21 code by
   rewriting it against modern idioms. Hoisting is a rewrite, not a copy.
+- **Hoisting unit**: one ticket-sized chunk of the port. Each gameplay module is one
+  hoisting unit, except tech, which splits into four: basic, machine, bloomery, and
+  refractory. Eleven units in total.
 - **Faithful gameplay**: a ported mechanic behaves the same as in 1.12. Same recipes,
   same progression, same balance, even where the code differs completely.
 - **Upstream**: codetaylor/pyrotech-1.12, the original mod. It is preserved unchanged
