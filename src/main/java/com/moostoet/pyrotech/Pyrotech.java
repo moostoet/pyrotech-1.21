@@ -13,5 +13,8 @@ public final class Pyrotech {
 
     public Pyrotech(IEventBus modEventBus) {
         // Module init hooks are wired here as modules are ported.
+
+        // Throwaway prototype for wayfinder ticket 8. Delete with the prototype package.
+        com.moostoet.pyrotech.prototype.campfire.PrototypeCampfire.register(modEventBus);
     }
 }
