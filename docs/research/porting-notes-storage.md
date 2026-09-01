@@ -91,7 +91,7 @@ line 14) with `BlockBehaviour.Properties` (NF-SRC `net/minecraft/world/level/blo
 |---|---|---|
 | `stash`, `shelf`, `crate` | `WOOD`, 2.0, 5.0, `WOOD` | `mapColor(WOOD).strength(2.0f, 5.0f).sound(WOOD).noOcclusion()` |
 | `stash_stone`, `shelf_stone`, `crate_stone` | still `Material.WOOD` and `SoundType.WOOD`, 1.5, 10.0 | `strength(1.5f, 10.0f)`. 1.12 kept the wood sound on the stone variants. Keep it, or switch to `SoundType.STONE` as a cosmetic fix. |
-| `wood_rack` | `WOOD`, 0.75, axe level 0 | `strength(0.75f)`, block tag `minecraft:mineable/axe` (NF-SRC `net/minecraft/tags/BlockTags.java`, line 139). Level 0 means no `requiresCorrectToolForDrops`. |
+| `wood_rack` | `WOOD`, 0.75, axe level 0, no sound type set | `strength(0.75f)`, block tag `minecraft:mineable/axe` (NF-SRC `net/minecraft/tags/BlockTags.java`, line 139). Level 0 means no `requiresCorrectToolForDrops`. The missing sound type is a 1.12 accident: `BlockWoodRack` calls `super(Material.WOOD)` and never `setSoundType`, unlike every other storage block, `BlockPartialBase` on athenaeum's GitHub master does not set one either, and vanilla 1.12's `Block` constructor defaults to `SoundType.STONE`, so the rack plays stone sounds. `sound(SoundType.WOOD)` (NF-SRC `net/minecraft/world/level/block/SoundType.java`, line 10) is the honest choice, noted here so it is a choice and not a slip. |
 | `stone_tank`, `brick_tank` | `ROCK`, 2.0, pickaxe level 0 | `mapColor(STONE).strength(2.0f)`, tag `minecraft:mineable/pickaxe` (line 141). Occluding full cube. |
 | `faucet_stone`, `faucet_brick` | `ROCK`, 1.5, 2.5, `STONE`, pickaxe 0 | `strength(1.5f, 2.5f).sound(STONE).noOcclusion()`, pickaxe tag. |
 | `bag_simple`, `bag_durable` | `CLOTH`, 0.2, `CLOTH` | `mapColor(WOOL).strength(0.2f).sound(SoundType.WOOL).noOcclusion()` (NF-SRC `net/minecraft/world/level/block/SoundType.java`, line 37; `net/minecraft/world/level/material/MapColor.java`, line 10). |
@@ -187,7 +187,7 @@ payload ever carries these stacks. The wood rack and the plain shelf and crate c
 | `Tank.fill` override: accept, then if hot and `!canHoldHotFluids` set air, play `ENTITY_ITEM_BREAK`, `FluidUtil.tryPlaceFluid`, send `SCPacketParticleCombust`. The check ignores `doFill`, so a simulated fill also breaks the tank | A `fill` override on the tank; decision 6 settles the simulate case. Temperature is `FluidType#getTemperature(FluidStack)` (NF-SRC `FluidType.java`, line 677), threshold 450, matching BUCKET. Sound `SoundEvents.ITEM_BREAK` (NF-SRC `net/minecraft/sounds/SoundEvents.java`, line 766). Spill with `FluidUtil.tryPlaceFluid(player, level, hand, pos, IFluidHandler, FluidStack)` (NF-SRC `net/neoforged/neoforge/fluids/FluidUtil.java`, line 462). Particles through `ServerLevel#sendParticles` (NF-SRC `net/minecraft/server/level/ServerLevel.java`, line 1258); CORE dropped the packet. |
 | The "Empty" NBT tag workaround in `Tank.writeToNBT`/`readFromNBT` | Dropped. `FluidTank#writeToNBT(HolderLookup.Provider, CompoundTag)` and `readFromNBT` (lines 67 and 62) handle the empty case through `FluidStack.OPTIONAL_CODEC` (line 89). |
 | `InteractionBucket extends InteractionBucketBase` (bucket fill and drain on any face) | `FluidUtil.interactWithFluidHandler(player, hand, level, pos, side)` (line 56) in `useItemOn`. It works for vanilla buckets and for the bucket module's items through `Capabilities.FluidHandler.ITEM` (line 31). |
-| Two `TileDataBoolean`s (up, down), `tryConnectUp`/`tryConnectDown`, `updateConnectionsForPlacement(side)`, `updateConnectionsForNeighborChanged` | The `connection` blockstate property. Placement logic keeps its shape: it needs the clicked face and the neighbours' fluids, so run it from `setPlacedBy` (NF-SRC `Block.java`, line 414) with the face captured in `getStateForPlacement`, or from a `BlockItem#place` override (NF-SRC `net/minecraft/world/item/BlockItem.java`, line 57). |
+| Two `TileDataBoolean`s (up, down), `tryConnectUp`/`tryConnectDown`, `updateConnectionsForPlacement(side)`, `updateConnectionsForNeighborChanged` | The `connection` blockstate property. Placement logic keeps its shape: it needs the clicked face and the neighbours' fluids, so run it from `setPlacedBy` (NF-SRC `Block.java`, line 414) with the face captured in `getStateForPlacement`, or from a `BlockItem#place` override (NF-SRC `net/minecraft/world/item/BlockItem.java`, line 57). Item forms explains why the `place` override is the faithful shape. |
 | `tankGroup` list rebuilt by `updateTankGroups` (walk down to the lowest connected tank, then up), `settleFluids` (drain upper tanks into lower ones), `getActualFluidAmount`/`getActualFluidCapacity` | Same algorithm on the block entity, driven by `neighborChanged` and a first-tick check. Group membership uses `state.is(sameBlock)` and the `connection` property instead of tile booleans. |
 | `ITickable.update` for the first-tick relight and regroup | `EntityBlock#getTicker` (NF-SRC `EntityBlock.java`, line 18), server side only, as the prototype wires it. |
 | `TileFaucetBase.update`: each tick while active, drain `TRANSFER_AMOUNT_PER_TICK` (10 stone, 20 brick) from the fluid handler behind (`facing` side), fill the handler below (`UP` side), stop when the source is empty, the target is full, or `filled` reaches `TRANSFER_LIMIT` (1000 stone, none for brick) | Same tick in a server `BlockEntityTicker`. Look the two handlers up with `BlockCapabilityCache.create(Capabilities.FluidHandler.BLOCK, serverLevel, pos, side)` (NF-SRC `net/neoforged/neoforge/capabilities/BlockCapabilityCache.java`, line 31; NF-DOCS capabilities page). `FluidUtil.tryFluidTransfer(dest, source, maxAmount, doTransfer)` (line 305) replaces the manual simulate, drain, fill pair. |
@@ -238,7 +238,7 @@ as `insertFood`/`extractFoodTo`/`addLogFrom`/`removeLogTo` do in the prototype.
 | Wood rack | Nine slots on any face, 3 wide by 3 high inside x 3/16 to 13/16 and y 4/16 to 14/16; `isEnabled` always true; validation: logs only, and an empty slot rejects while the slot below is empty or still has room; `onInsert` plays `BLOCK_WOOD_PLACE` at 0.75 with a Gaussian pitch | Project the hit onto the rack's front plane after the facing rotation, slot = row * 3 + column. Keep the gravity rule in `isItemValid`. Sound `SoundEvents.WOOD_PLACE` (NF-SRC `SoundEvents.java`, line 1577). |
 | Bag | `InteractionInput` on `UP` (enabled only when open, whitelist, `BLOCK_CLOTH_PLACE` at 0.5), then `InteractionToggleOpen` on any face | `useItemOn`: open, face `UP`, item allowed, `insert`; else `toggleOpen()`. `useWithoutItem`: open, face `UP`, not empty, `extractTo(player)`; else `toggleOpen()`. Sound `SoundEvents.WOOL_PLACE` (line 1582). Toggling writes the `type` property. |
 | Tank | `InteractionBucket` on any face, whole block | `useItemOn`: `FluidUtil.interactWithFluidHandler(player, hand, level, pos, hit.getDirection())`. |
-| Faucet | One `IInteraction` toggling `active` on any face | Both hooks call `faucet.toggleActive()` when `!level.isClientSide`. |
+| Faucet | One `IInteraction` toggling `active` on any face | Both hooks call `faucet.toggleActive()` when `!level.isClientSide`. A bucket clicked on a faucet toggles it instead of filling from it. That is the 1.12 behaviour; keep it. |
 
 Two caveats. First, athenaeum's `InteractionItemStack` decides how many items a click, a
 sneak-click, and an empty-hand click move. That code is not in this repo, so the port must
@@ -314,6 +314,7 @@ https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/lootfunctions
 | `ItemBlockTank`: fluid in the stack's root tag (`FluidName`, `Amount`, `Empty`), `initCapabilities` returning a `FluidHandlerItemStack` subclass | A `DataComponentType<SimpleFluidContent>` registered through `DeferredRegister.createDataComponents` and `registerComponentType` (NF-SRC `net/neoforged/neoforge/registries/DeferredRegister.java`, lines 649 and 667; NF-DOCS https://docs.neoforged.net/docs/1.21.1/items/datacomponents). `SimpleFluidContent` is the stock component (NF-SRC `net/neoforged/neoforge/fluids/SimpleFluidContent.java`, lines 21 to 29). The capability is `new FluidHandlerItemStack(componentType, stack, capacity)` (NF-SRC `FluidHandlerItemStack.java`, line 34) registered with `RegisterCapabilitiesEvent#registerItem(Capabilities.FluidHandler.ITEM, provider, items)` (line 136). Same shape as BUCKET. |
 | `hasContainerItem` true, `getContainerItem` returning a copy drained by 1000 mB | `IItemExtension#hasCraftingRemainingItem(ItemStack)` and `getCraftingRemainingItem(ItemStack)` (NF-SRC `net/neoforged/neoforge/common/extensions/IItemExtension.java`, lines 207 and 193) draining 1000 with `FluidAction.EXECUTE`. |
 | `placeBlockAt` calling `readFromItem`, `getDrops` calling `writeToItem`, `HOLDS_CONTENTS_WHEN_BROKEN` (true for both tanks) | `applyImplicitComponents` reads the fluid component into the tank; `collectImplicitComponents` writes it back. The loot table copies the component. The `Empty`-tag merge bug disappears because stacks with different components never merge. |
+| `ItemBlockTank.placeBlockAt`: place the block, `readFromItem`, then `updateConnectionsForPlacement(side)` with the clicked face | The order inside `BlockItem#place` matters. It runs `placeBlock` (NF-SRC `BlockItem.java`, line 70), then `updateBlockEntityComponents`, which calls `applyComponentsFromItemStack` on the new block entity (lines 81 and 123), then `setPlacedBy` (line 82). So the fluid is in the tank before `setPlacedBy` runs, but `setPlacedBy` receives no clicked face (NF-SRC `Block.java`, line 414), and `getStateForPlacement` runs before the block entity exists. Keep a `TankBlockItem` and override `place(BlockPlaceContext)`: call `super.place`, and on success run `updateConnectionsForPlacement(context.getClickedFace())` on the placed block entity. That is what `placeBlockAt` did, and it lets the connection logic see both the face and the placed fluid. |
 | Tank tooltip: fluid name, amount, capacity, hot-fluid and retain lines | `appendHoverText` reading the component, `FluidStack#getHoverName()` (NF-SRC `FluidStack.java`, line 423). |
 | `ItemBlockBag`: `contents` compound holding a serialized `TileBagBase.StackHandler`, `count` int, metadata 0 closed and 1 open, `setMaxStackSize(1)` | Two components: `open` (`DataComponentType<Boolean>`) and `BagContents`, a custom record with a codec. `ItemContainerContents` cannot be used because its slot codec is `ItemStack.CODEC` (NF-SRC `net/minecraft/world/item/component/ItemContainerContents.java`, line 182), capped at 99 per slot, and a bag holds up to 2560 items in 10 slots. `Item.Properties.stacksTo(1)` (NF-SRC `Item.java`, line 452). Give both components defaults with `Item.Properties.component` (line 490). |
 | `getDurabilityForDisplay`, `showDurabilityBar`, `getRGBDurabilityForDisplay` (brown, red when full) | `isBarVisible`, `getBarWidth`, `getBarColor` (NF-SRC `Item.java`, lines 188 to 196). |
@@ -328,6 +329,7 @@ https://docs.neoforged.net/docs/1.21.1/resources/server/loottables/lootfunctions
 | 1.12 handler | 1.21 replacement |
 |---|---|
 | `EntityItemPickupEventHandler` on `EntityItemPickupEvent`: locate open bags in main hand, off hand, hotbar, and main inventory (four config flags); if any bag accepts part of the stack, first top up existing inventory stacks through `PlayerMainInvWrapper`, then insert into the bags, playing `ENTITY_ITEM_PICKUP` at 0.4, and shrink the entity's stack | `ItemEntityPickupEvent.Pre` (NF-SRC `net/neoforged/neoforge/event/entity/player/ItemEntityPickupEvent.java`, line 56), server only (lines 48 to 55). Run the same steps on `event.getItemEntity().getItem()` (NF-SRC `net/minecraft/world/entity/item/ItemEntity.java`, line 431). If the bags take everything, `setCanPickup(TriState.FALSE)` (line 70; `net/neoforged/neoforge/common/util/TriState.java`) and discard the entity. Otherwise leave `DEFAULT` and let vanilla pick up the rest. `PlayerMainInvWrapper` still exists (NF-SRC `net/neoforged/neoforge/items/wrapper/PlayerMainInvWrapper.java`, line 19). Hands are `getMainHandItem`/`getOffhandItem` (NF-SRC `net/minecraft/world/entity/LivingEntity.java`, lines 2022 and 2026); the hotbar is `Inventory.items` indices 0 to 8 (NF-SRC `net/minecraft/world/entity/player/Inventory.java`, lines 32 and 48). The 1.12 inventory scan started at index 10 and skipped slot 9; the port scans 9 to 35. Sound `SoundEvents.ITEM_PICKUP` (line 767). |
+| `EntityItemPickupEvent` fired from Forge's `EntityItem.onCollideWithPlayer` after the `delayBeforeCanPickup` check | `Pre` fires before the delay check: `fireItemPickupPre` runs at `ItemEntity.playerTouch` line 383, and the `pickupDelay == 0` test only runs at line 391 (NF-SRC `ItemEntity.java`). A handler that leaves `canPickup` at `DEFAULT` and moves items into bags itself must test `hasPickUpDelay()` (line 488) first, or open bags vacuum up items the player just dropped. |
 | `ConfigChangedEventHandler` re-parsing the faucet cutoff map | Deleted with the map (decision 4). If the map survives, `ModConfigEvent.Reloading` per CORE. |
 
 CORE's own `ItemEntityPickupEvent.Post` listener (the root advancement) is unaffected: `Post` only
@@ -385,10 +387,10 @@ tank. `TileSoakingPot` and `TileTarTankBase` extend athenaeum's `TileEntityDataB
 `ModuleStorage` only for `ModuleStorage.PACKET_SERVICE.sendToAllAround(new SCPacketParticleCombust(...))`
 (`TileSoakingPot.java` line 609, `TileTarTankBase.java` line 196). `TileMechanicalMulchSpreader`
 names `TileStash` only as a type argument (line 257). DEPS and the ticket text overstate these
-edges. What the four tiles really share with storage is behaviour copied by hand: the hot-fluid
-fill check (`TileLampOil` line 306, the two tech tiles, both storage tanks), the "Empty" tank
-serialization hack, and athenaeum's large stack handlers (`MulchStackHandler extends
-LargeObservableStackHandler`).
+edges. What the four tiles really share with storage is behaviour copied by hand: a `Tank.fill`
+override with a validation step (a temperature check in the two tech tiles and both storage
+tanks, a config fuel filter in `TileLampOil`, line 306), the "Empty" tank serialization hack, and
+athenaeum's large stack handlers (`MulchStackHandler extends LargeObservableStackHandler`).
 
 What storage should therefore expose, in a shared package rather than under the storage
 namespace, since storage is hoisted before tech:
@@ -398,8 +400,9 @@ namespace, since storage is hoisted before tech:
    Tech's machines will need it in many.
 2. `HotFluidTank extends FluidTank`: a temperature threshold, a "tolerates hot fluids" flag, and
    an `onHotFluid(FluidStack)` callback that the owner uses to break the block, spill, play
-   `ITEM_BREAK`, and send particles. Storage tanks and faucets, tech's soaking pot and tar tanks,
-   and ignition's oil lamp all run this rule.
+   `ITEM_BREAK`, and send particles. Storage tanks and faucets and tech's soaking pot and tar
+   tanks run this rule. Ignition's oil lamp needs only the validation hook, which
+   `FluidTank#setValidator` (NF-SRC `FluidTank.java`, line 39) already provides.
 3. `TankBlockEntity extends SyncedBlockEntity`: the 1.12 `TileTankBase` shape. One `HotFluidTank`,
    the vertical group logic, the item round trip through `SimpleFluidContent`, and the
    `getLightEmission` hook. Only storage's two tanks need the grouping, so keep the group code
@@ -430,7 +433,13 @@ owns.
 - Bags: `MAX_ITEM_CAPACITY` 640 and 2560; four auto-pickup flags (main hand, off hand, hotbar
   true; inventory false); `ITEM_WHITELIST` and `ITEM_BLACKLIST` strings; `ROCK_FILL_TEXTURE_LOCATION`
   `minecraft:blocks/gravel`. Capacities and texture bake. Whitelist is decision 2. Flags are
-  decision 3.
+  decision 3. Two details feed decision 2. `ITEM_BLACKLIST` is dead by default:
+  `BlockBagBase.isItemValidForInsertion` consults it only when the whitelist is empty
+  (`BlockBagBase.java`, lines 97 to 115), and both whitelists ship non-empty. And
+  `DURABLE_ROCK_BAG.ITEM_WHITELIST` is built from the simple list at class-init time with
+  `ArrayHelper.combine` (`ModuleStorageConfig.java`, line 192), so once the config file exists,
+  editing the simple list no longer changes the durable one. Neither behaviour is worth carrying
+  into the tags.
 - Tanks: `CAPACITY` 4000 and 8000; `HOT_TEMPERATURE` 450; `HOLDS_HOT_FLUIDS` stone false, brick
   true; `HOLDS_CONTENTS_WHEN_BROKEN` true for both. Bake.
 - Faucets: `HOT_TEMPERATURE` 450; `TRANSFERS_HOT_FLUIDS` stone false, brick true; `TRANSFER_LIMIT`
@@ -496,3 +505,25 @@ NF-SRC `net/neoforged/neoforge/common/ModConfigSpec.java`, line 300).
    (faithful to the letter; any probe or pipe that tests a tank destroys it), or break only on
    `EXECUTE`. Recommendation: break only on `EXECUTE`. No 1.12 mechanic depends on the simulate
    case, and the shared `HotFluidTank` helper stays honest for tech and ignition.
+7. **Faucet `active`: blockstate property or synced boolean.** PROTOTYPE's rule is blockstate
+   first, and the tile sync section already leans the other way for the faucet. Options: a
+   `BooleanProperty` `active` on both faucet blocks (follows the rule and the game syncs it, but
+   every start and stop rebuilds the chunk section for a model that does not change, and the
+   converted `faucet_stone.json` and `faucet_brick.json` must be hand-edited to carry `active=`
+   variants), or a boolean in the `SyncedBlockEntity` snapshot beside the displayed fluid (one
+   snapshot per change, no rebuild, no blockstate edits; the renderer reads it the same way it
+   reads the fluid). Recommendation: the synced boolean, as the exception the PROTOTYPE rule
+   allows for state that selects no model. The tile sync table above assumes it.
+8. **Shared fluid package now or later.** PROTOTYPE said to extract `library/` packages only
+   from real duplication. For fluids the duplication is already on the 1.12 branch. The
+   `Tank.fill` override with a temperature check is copied in six tiles (both storage tanks and
+   faucets, tech/basic's barrel and soaking pot, tech/machine's combustion worker fluid-out base,
+   tech/refractory's tar tanks), the bucket interaction in six (`TileTankBase`, `TileLampOil`,
+   `TileBarrel`, `TileCompostBin`, `TileSoakingPot`, `TileCrucibleBase`), and seven renderers
+   draw a fluid box (storage's two, ignition's lamp, tech's barrel, soaking pot, crucible, and
+   tar collector). Options: create `library/fluid` during the storage hoist with `HotFluidTank`,
+   the `FluidUtil` bucket helper, and the box renderer from the reusable bases section, or keep
+   those classes under the storage package and let tickets 17 and 18 pull them out when
+   refractory and ignition need them. Recommendation: create it now. Both later notes are
+   blocked on this document and should be able to name the classes, and moving code out of
+   storage later means touching a hoisted module twice.
