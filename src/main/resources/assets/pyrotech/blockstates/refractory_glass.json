@@ -93,50 +93,50 @@
       "x": -90
     },
     "connected_down=true,connected_east=false,connected_north=false,connected_south=false,connected_up=true,connected_west=true": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T1"
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t1"
     },
     "connected_down=true,connected_east=false,connected_north=false,connected_south=true,connected_up=true,connected_west=false": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T1",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t1",
       "y": -90
     },
     "connected_down=true,connected_east=true,connected_north=false,connected_south=false,connected_up=true,connected_west=false": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T1",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t1",
       "y": -180
     },
     "connected_down=true,connected_east=false,connected_north=true,connected_south=false,connected_up=true,connected_west=false": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T1",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t1",
       "y": 90
     },
     "connected_down=false,connected_east=false,connected_north=true,connected_south=true,connected_up=false,connected_west=true": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T1",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t1",
       "x": -90
     },
     "connected_down=false,connected_east=true,connected_north=true,connected_south=true,connected_up=false,connected_west=false": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T1",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t1",
       "x": -90,
       "y": 180
     },
     "connected_down=false,connected_east=true,connected_north=false,connected_south=false,connected_up=true,connected_west=true": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T2"
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t2"
     },
     "connected_down=false,connected_east=true,connected_north=false,connected_south=true,connected_up=false,connected_west=true": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T2",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t2",
       "x": -90
     },
     "connected_down=true,connected_east=true,connected_north=false,connected_south=false,connected_up=false,connected_west=true": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T2",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t2",
       "x": 180
     },
     "connected_down=false,connected_east=true,connected_north=true,connected_south=false,connected_up=false,connected_west=true": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T2",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t2",
       "x": 90
     },
     "connected_down=false,connected_east=false,connected_north=true,connected_south=true,connected_up=true,connected_west=false": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T2",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t2",
       "y": 90
     },
     "connected_down=true,connected_east=false,connected_north=true,connected_south=true,connected_up=false,connected_west=false": {
-      "model": "pyrotech:block/gen/refractory_glass/connected_3_T2",
+      "model": "pyrotech:block/gen/refractory_glass/connected_3_t2",
       "x": 180,
       "y": 90
     },
