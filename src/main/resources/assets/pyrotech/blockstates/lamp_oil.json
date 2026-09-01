@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "pyrotech:block/lamp_oil"
+    },
+    "lit=true": {
+      "model": "pyrotech:block/lamp_oil_lit"
+    }
+  }
+}

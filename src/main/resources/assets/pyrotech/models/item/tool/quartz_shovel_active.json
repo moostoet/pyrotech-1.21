@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pyrotech:item/quartz_shovel_active"
+  }
+}

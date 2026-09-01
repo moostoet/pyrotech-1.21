@@ -1,0 +1,8 @@
+{
+  "parent": "pyrotech:block/wither_forge_unlit",
+  "textures": {
+    "fire0": "minecraft:block/fire_0",
+    "fire1": "minecraft:block/fire_1",
+    "particle": "pyrotech:block/wither_forge_side"
+  }
+}

@@ -1,0 +1,1678 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "0",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_top",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "1",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_top_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "2",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_top_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "3",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_top_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "4",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_top_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "3"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "4"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_core_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_bark_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_side_4",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "damage": "5",
+        "sawdust": "5"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/chopping_block/chopping_block_sawdust_top_4",
+        "uvlock": true
+      }
+    }
+  ]
+}

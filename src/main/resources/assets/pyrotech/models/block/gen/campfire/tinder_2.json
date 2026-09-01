@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/tinder",
+  "textures": {
+    "particle": "pyrotech:block/tinder",
+    "tinder": "pyrotech:block/tinder"
+  }
+}

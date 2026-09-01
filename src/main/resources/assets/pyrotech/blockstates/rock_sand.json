@@ -1,0 +1,66 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_a"
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_a",
+        "y": 90
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_a",
+        "y": 180
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_a",
+        "y": 270
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_b"
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_b",
+        "y": 90
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_b",
+        "y": 180
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_b",
+        "y": 270
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_c"
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_c",
+        "y": 90
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_c",
+        "y": 180
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_c",
+        "y": 270
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_d"
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_d",
+        "y": 90
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_d",
+        "y": 180
+      },
+      {
+        "model": "pyrotech:block/gen/rock_sand/rock_small_d",
+        "y": 270
+      }
+    ]
+  }
+}

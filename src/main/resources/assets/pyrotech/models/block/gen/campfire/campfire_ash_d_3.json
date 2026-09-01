@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/campfire_ash_d",
+  "textures": {
+    "particle": "pyrotech:block/tinder",
+    "tinder": "pyrotech:block/tinder"
+  }
+}

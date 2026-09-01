@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/rock_small_a",
+  "textures": {
+    "all": "minecraft:block/diorite",
+    "particle": "minecraft:block/diorite"
+  }
+}

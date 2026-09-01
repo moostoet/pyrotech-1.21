@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/mechanical_mulch_spreader",
+  "textures": {
+    "particle": "pyrotech:block/mechanical_compacting_bin_side"
+  }
+}

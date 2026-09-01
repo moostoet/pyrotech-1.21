@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pyrotech:block/gen/masonry_brick_block/cube_all"
+    }
+  }
+}

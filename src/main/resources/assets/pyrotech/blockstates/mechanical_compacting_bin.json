@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,type=bin": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/mechanical_compacting_bin",
+      "y": 90
+    },
+    "facing=east,type=machine": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/_empty",
+      "y": 90
+    },
+    "facing=north,type=bin": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/mechanical_compacting_bin"
+    },
+    "facing=north,type=machine": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/_empty"
+    },
+    "facing=south,type=bin": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/mechanical_compacting_bin",
+      "y": 180
+    },
+    "facing=south,type=machine": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/_empty",
+      "y": 180
+    },
+    "facing=west,type=bin": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/mechanical_compacting_bin",
+      "y": 270
+    },
+    "facing=west,type=machine": {
+      "model": "pyrotech:block/gen/mechanical_compacting_bin/_empty",
+      "y": 270
+    }
+  }
+}

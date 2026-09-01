@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pyrotech:item/slag",
+    "layer1": "pyrotech:item/slag_overlay"
+  }
+}

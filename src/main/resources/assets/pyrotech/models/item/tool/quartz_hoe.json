@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pyrotech:item/quartz_hoe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pyrotech:active": 1
+      },
+      "model": "pyrotech:item/tool/quartz_hoe_active"
+    }
+  ]
+}

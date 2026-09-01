@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pyrotech:block/trip_hammer",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pyrotech:block/trip_hammer"
+    },
+    "facing=south": {
+      "model": "pyrotech:block/trip_hammer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pyrotech:block/trip_hammer",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pyrotech:block/active_pile"
+    }
+  }
+}

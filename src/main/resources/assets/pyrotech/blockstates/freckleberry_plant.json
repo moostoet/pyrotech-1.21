@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross"
+    },
+    "age=1": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_2"
+    },
+    "age=2": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_3"
+    },
+    "age=3": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_3"
+    },
+    "age=4": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_3"
+    },
+    "age=5": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_3"
+    },
+    "age=6": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_3"
+    },
+    "age=7": {
+      "model": "pyrotech:block/gen/freckleberry_plant/cross_4"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/base_pile_block_12",
+  "textures": {
+    "all": "pyrotech:block/ash_block",
+    "particle": "pyrotech:block/ash_block"
+  }
+}

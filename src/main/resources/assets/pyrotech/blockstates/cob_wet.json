@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "dry=0": {
+      "model": "pyrotech:block/gen/cob_wet/cube_all"
+    },
+    "dry=1": {
+      "model": "pyrotech:block/gen/cob_wet/cube_all"
+    },
+    "dry=2": {
+      "model": "pyrotech:block/gen/cob_wet/cube_all"
+    },
+    "dry=3": {
+      "model": "pyrotech:block/gen/cob_wet/cube_all"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "connection=both": {
+      "model": "pyrotech:block/gen/brick_tank/tank_both"
+    },
+    "connection=down": {
+      "model": "pyrotech:block/gen/brick_tank/tank_down"
+    },
+    "connection=none": {
+      "model": "pyrotech:block/gen/brick_tank/tank"
+    },
+    "connection=up": {
+      "model": "pyrotech:block/gen/brick_tank/tank_up"
+    }
+  }
+}

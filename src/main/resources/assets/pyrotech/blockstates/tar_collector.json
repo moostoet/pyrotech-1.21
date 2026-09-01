@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "variant=brick": {
+      "model": "pyrotech:block/gen/tar_collector/tar_collector",
+      "uvlock": true
+    },
+    "variant=stone": {
+      "model": "pyrotech:block/gen/tar_collector/tar_collector_2",
+      "uvlock": true
+    }
+  }
+}

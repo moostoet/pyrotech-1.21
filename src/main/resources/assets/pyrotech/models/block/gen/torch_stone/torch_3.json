@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/torch",
+  "textures": {
+    "torch": "pyrotech:block/torch_stone_off",
+    "particle": "pyrotech:block/torch_stone_off"
+  }
+}

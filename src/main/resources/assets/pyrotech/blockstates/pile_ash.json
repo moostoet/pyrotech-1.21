@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "level=0": {
+      "model": "pyrotech:block/gen/pile_ash/cube_all"
+    },
+    "level=1": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_14"
+    },
+    "level=2": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_12"
+    },
+    "level=3": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_10"
+    },
+    "level=4": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_8"
+    },
+    "level=5": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_6"
+    },
+    "level=6": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_4"
+    },
+    "level=7": {
+      "model": "pyrotech:block/gen/pile_ash/base_pile_block_2"
+    }
+  }
+}

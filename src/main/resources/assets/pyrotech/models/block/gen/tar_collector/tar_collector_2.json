@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/tar_collector",
+  "textures": {
+    "all": "pyrotech:block/masonry_brick"
+  }
+}

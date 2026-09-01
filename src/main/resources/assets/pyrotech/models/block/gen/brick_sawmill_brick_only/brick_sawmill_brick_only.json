@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/brick_sawmill_brick_only",
+  "textures": {
+    "particle": "pyrotech:block/brick_machine_side_brick_only"
+  }
+}

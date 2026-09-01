@@ -1,0 +1,199 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_dormant",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_dormant"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_dormant",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_dormant"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_dormant",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_sawmill",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/stone_sawmill/stone_machine_lit",
+        "y": 270
+      }
+    }
+  ]
+}

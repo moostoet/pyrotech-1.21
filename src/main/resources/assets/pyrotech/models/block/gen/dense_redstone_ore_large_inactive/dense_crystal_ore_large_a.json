@@ -1,0 +1,8 @@
+{
+  "parent": "pyrotech:block/dense_crystal_ore_large_a",
+  "textures": {
+    "0": "pyrotech:block/dense_redstone_ore_inactive",
+    "1": "pyrotech:block/dense_redstone_ore_2_inactive",
+    "particle": "pyrotech:block/dense_redstone_ore_inactive"
+  }
+}

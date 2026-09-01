@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pyrotech:block/crafting_table_template"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/rock_small_b",
+  "textures": {
+    "all": "minecraft:block/stone",
+    "particle": "minecraft:block/stone"
+  }
+}

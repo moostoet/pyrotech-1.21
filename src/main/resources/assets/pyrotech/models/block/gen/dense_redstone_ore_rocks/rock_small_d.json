@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/rock_small_d",
+  "textures": {
+    "all": "pyrotech:block/dense_redstone_ore",
+    "particle": "pyrotech:block/dense_redstone_ore"
+  }
+}

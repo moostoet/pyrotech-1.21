@@ -1,0 +1,10 @@
+{
+  "parent": "pyrotech:block/anvil",
+  "textures": {
+    "top": "pyrotech:block/anvil_obsidian_damaged_c",
+    "top_side": "minecraft:block/obsidian",
+    "bottom_side": "minecraft:block/iron_block",
+    "bottom": "minecraft:block/iron_block",
+    "particle": "minecraft:block/obsidian"
+  }
+}

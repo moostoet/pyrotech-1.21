@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,type=back": {
+      "model": "pyrotech:block/shelf_stone",
+      "y": 90
+    },
+    "facing=east,type=forward": {
+      "model": "pyrotech:block/shelf_stone_forward",
+      "y": 90
+    },
+    "facing=north,type=back": {
+      "model": "pyrotech:block/shelf_stone"
+    },
+    "facing=north,type=forward": {
+      "model": "pyrotech:block/shelf_stone_forward"
+    },
+    "facing=south,type=back": {
+      "model": "pyrotech:block/shelf_stone",
+      "y": 180
+    },
+    "facing=south,type=forward": {
+      "model": "pyrotech:block/shelf_stone_forward",
+      "y": 180
+    },
+    "facing=west,type=back": {
+      "model": "pyrotech:block/shelf_stone",
+      "y": 270
+    },
+    "facing=west,type=forward": {
+      "model": "pyrotech:block/shelf_stone_forward",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/mechanical_bellows_base",
+  "textures": {
+    "particle": "pyrotech:block/mechanical_bellows_side"
+  }
+}

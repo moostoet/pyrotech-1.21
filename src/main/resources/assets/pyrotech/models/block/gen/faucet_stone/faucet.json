@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/faucet",
+  "textures": {
+    "texture": "pyrotech:block/faucet_stone",
+    "particle": "pyrotech:block/faucet_stone"
+  }
+}

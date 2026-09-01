@@ -1,0 +1,1638 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "ash": "0",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "0",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "1",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_b_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_b_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "2",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_b_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_c",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_c_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_c_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "3",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_c_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_d",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_d_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_d_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "4",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_d_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_e",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_e_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_e_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "5",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_e_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_f",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_f_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_f_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "6",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_f_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_g",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_g_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_g_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "7",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_g_3",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "ash"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_h",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_h_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_a",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "item"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_log_b",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_h_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_fire",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/tinder_2",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "ash": "8",
+        "variant": "normal"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/campfire/campfire_ash_h_3",
+        "uvlock": true
+      }
+    }
+  ]
+}
