@@ -194,3 +194,10 @@ These steps produce a booting empty mod with mod id `pyrotech` and package `com.
 - [ModDevGradle 2 stable release post, NeoForged blog](https://neoforged.net/news/moddevgradle2/)
 - [NeoForge for 26.1 snapshots post, NeoForged blog](https://neoforged.net/news/26.1snapshots/)
 - [GatherDataEvent source, NeoForge branch 1.21.1](https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/data/event/GatherDataEvent.java)
+
+## Re-check notes
+
+Two facts from a second research pass, kept here for later re-checks:
+
+- The [maven latest-version API](https://maven.neoforged.net/api/maven/latest/version/releases/net/neoforged/neoforge?filter=21.1.) uses a prefix match on `filter`. Query with a trailing dot (`filter=21.1.`), or it also matches the 21.11.x line for a different Minecraft version.
+- `runClient` needs a display. Under WSL2 that means WSLg or an X server. `runServer` is the headless check.
