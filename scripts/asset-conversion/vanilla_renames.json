@@ -1,0 +1,28 @@
+{
+  "textures": {
+    "block/stone_granite_smooth": "block/polished_granite",
+    "block/stone_andesite_smooth": "block/polished_andesite",
+    "block/stone_slab_side": "block/smooth_stone_slab_side",
+    "block/stone_slab_top": "block/smooth_stone",
+    "block/fire_layer_0": "block/fire_0",
+    "block/fire_layer_1": "block/fire_1",
+    "block/log_oak": "block/oak_log",
+    "block/log_oak_top": "block/oak_log_top",
+    "block/planks_oak": "block/oak_planks",
+    "block/stone_andesite": "block/andesite",
+    "block/stone_diorite": "block/diorite",
+    "block/stone_granite": "block/granite",
+    "block/grass_top": "block/grass_block_top",
+    "block/dirt_podzol_top": "block/podzol_top"
+  },
+  "models": {
+    "block/half_slab": "block/slab",
+    "block/upper_slab": "block/slab_top",
+    "block/wall_post": "block/template_wall_post",
+    "block/wall_side": "block/template_wall_side",
+    "block/door_bottom": "block/door_bottom_left",
+    "block/door_bottom_rh": "block/door_bottom_right",
+    "block/door_top": "block/door_top_left",
+    "block/door_top_rh": "block/door_top_right"
+  }
+}
