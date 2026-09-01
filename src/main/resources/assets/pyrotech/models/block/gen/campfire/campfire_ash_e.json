@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/campfire_ash_e",
+  "textures": {
+    "particle": "pyrotech:block/ash_block"
+  }
+}

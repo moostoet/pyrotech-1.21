@@ -1,0 +1,16 @@
+{
+  "parent": "pyrotech:block/connected/connected_4_cross",
+  "textures": {
+    "normal": "pyrotech:block/refractory_glass_normal",
+    "u": "pyrotech:block/refractory_glass_u",
+    "r": "pyrotech:block/refractory_glass_r",
+    "ud": "pyrotech:block/refractory_glass_ud",
+    "ul": "pyrotech:block/refractory_glass_ul",
+    "ur": "pyrotech:block/refractory_glass_ur",
+    "lr": "pyrotech:block/refractory_glass_lr",
+    "udr": "pyrotech:block/refractory_glass_udr",
+    "udl": "pyrotech:block/refractory_glass_udl",
+    "ulr": "pyrotech:block/refractory_glass_ulr",
+    "udlr": "pyrotech:block/refractory_glass_udlr"
+  }
+}

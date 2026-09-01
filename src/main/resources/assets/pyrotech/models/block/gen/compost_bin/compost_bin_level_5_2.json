@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/compost_bin_level_5",
+  "textures": {
+    "compost": "pyrotech:block/compost_bin_ready"
+  }
+}

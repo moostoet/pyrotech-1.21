@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "pyrotech:block/log_pile_top",
+    "side": "minecraft:block/oak_log"
+  }
+}

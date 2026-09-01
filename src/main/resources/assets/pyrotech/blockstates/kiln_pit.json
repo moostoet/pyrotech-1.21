@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "variant=active": {
+      "model": "pyrotech:block/kiln_pit_active"
+    },
+    "variant=complete": {
+      "model": "pyrotech:block/ash_block"
+    },
+    "variant=empty": {
+      "model": "pyrotech:block/kiln_pit_empty"
+    },
+    "variant=thatch": {
+      "model": "pyrotech:block/kiln_pit_thatch"
+    },
+    "variant=wood": {
+      "model": "pyrotech:block/kiln_pit_thatch"
+    }
+  }
+}

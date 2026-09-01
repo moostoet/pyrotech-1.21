@@ -1,0 +1,10 @@
+{
+  "parent": "pyrotech:block/bloomery_lit",
+  "textures": {
+    "fire0": "minecraft:block/fire_0",
+    "fire1": "minecraft:block/fire_1",
+    "particle": "pyrotech:block/bloomery_side",
+    "front": "pyrotech:block/bloomery_front_lit",
+    "inside_top": "pyrotech:block/bloomery_inside_top_lit"
+  }
+}

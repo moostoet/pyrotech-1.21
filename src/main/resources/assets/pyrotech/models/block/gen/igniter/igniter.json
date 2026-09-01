@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/igniter",
+  "textures": {
+    "all": "pyrotech:block/refractory_brick"
+  }
+}

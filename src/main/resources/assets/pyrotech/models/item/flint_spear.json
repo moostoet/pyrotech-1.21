@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pyrotech:item/flint_spear"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "charging": 1
+      },
+      "model": "pyrotech:item/flint_spear_charging"
+    }
+  ]
+}

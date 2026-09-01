@@ -1,0 +1,301 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "compost_value": "0",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "0",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "0",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "1",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "1",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_1"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "1",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "1",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin_level_1"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "1",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "1",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_1_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "2",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "2",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "2",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "2",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin_level_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "2",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "2",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_2_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "3",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "3",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_3"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "3",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "3",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin_level_3"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "3",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "3",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_3_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "4",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "4",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_4"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "4",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "4",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin_level_4"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "4",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "4",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_4_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "5",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "5",
+        "state": "0"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_5"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "5",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "5",
+        "state": "1"
+      },
+      "apply": {
+        "model": "pyrotech:block/compost_bin_level_5"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "5",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_2"
+      }
+    },
+    {
+      "when": {
+        "compost_value": "5",
+        "state": "2"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/compost_bin/compost_bin_level_5_2"
+      }
+    }
+  ]
+}

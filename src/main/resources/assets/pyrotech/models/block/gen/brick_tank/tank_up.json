@@ -1,0 +1,9 @@
+{
+  "parent": "pyrotech:block/tank_up",
+  "textures": {
+    "top": "pyrotech:block/_empty",
+    "side": "pyrotech:block/brick_tank_side_up",
+    "bottom": "pyrotech:block/bloomery_bottom",
+    "particle": "pyrotech:block/brick_tank"
+  }
+}

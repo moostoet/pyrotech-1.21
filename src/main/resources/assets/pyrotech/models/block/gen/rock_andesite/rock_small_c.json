@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/rock_small_c",
+  "textures": {
+    "all": "minecraft:block/andesite",
+    "particle": "minecraft:block/andesite"
+  }
+}

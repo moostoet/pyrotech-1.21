@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/stone_machine_lit",
+  "textures": {
+    "particle": "pyrotech:block/masonry_brick"
+  }
+}

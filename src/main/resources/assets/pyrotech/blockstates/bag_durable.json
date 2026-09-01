@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "facing=east,type=closed": {
+      "model": "pyrotech:block/bag_durable",
+      "y": 90
+    },
+    "facing=east,type=open": {
+      "model": "pyrotech:block/bag_durable_open",
+      "y": 90
+    },
+    "facing=north,type=closed": {
+      "model": "pyrotech:block/bag_durable",
+      "y": 0
+    },
+    "facing=north,type=open": {
+      "model": "pyrotech:block/bag_durable_open",
+      "y": 0
+    },
+    "facing=south,type=closed": {
+      "model": "pyrotech:block/bag_durable",
+      "y": 180
+    },
+    "facing=south,type=open": {
+      "model": "pyrotech:block/bag_durable_open",
+      "y": 180
+    },
+    "facing=west,type=closed": {
+      "model": "pyrotech:block/bag_durable",
+      "y": 270
+    },
+    "facing=west,type=open": {
+      "model": "pyrotech:block/bag_durable_open",
+      "y": 270
+    }
+  }
+}

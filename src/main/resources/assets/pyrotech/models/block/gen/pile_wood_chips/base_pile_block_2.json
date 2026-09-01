@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/base_pile_block_2",
+  "textures": {
+    "all": "pyrotech:block/wood_chips",
+    "particle": "pyrotech:block/wood_chips"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pyrotech:block/gen/faucet_brick/faucet",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pyrotech:block/gen/faucet_brick/faucet"
+    },
+    "facing=south": {
+      "model": "pyrotech:block/gen/faucet_brick/faucet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pyrotech:block/gen/faucet_brick/faucet",
+      "y": 270
+    }
+  }
+}

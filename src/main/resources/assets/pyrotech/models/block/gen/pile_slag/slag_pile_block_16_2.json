@@ -1,0 +1,9 @@
+{
+  "parent": "pyrotech:block/slag_pile_block_16",
+  "textures": {
+    "top": "pyrotech:block/slag_hot",
+    "overlay": "pyrotech:block/slag_overlay",
+    "all": "pyrotech:block/slag",
+    "particle": "pyrotech:block/slag"
+  }
+}

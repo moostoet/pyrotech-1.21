@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "pyrotech:block/masonry_brick",
+    "top": "pyrotech:block/masonry_brick",
+    "side": "pyrotech:block/masonry_brick"
+  }
+}

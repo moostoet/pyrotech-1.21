@@ -1,0 +1,160 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit_lava_top",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit_lava_top"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit_lava_top",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "type": "bottom_lit"
+      },
+      "apply": {
+        "model": "pyrotech:block/gen/bloomery/bloomery_lit_lava_top",
+        "y": 270
+      }
+    }
+  ]
+}

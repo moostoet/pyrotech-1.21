@@ -1,0 +1,7 @@
+{
+  "parent": "pyrotech:block/rock_small_b",
+  "textures": {
+    "all": "pyrotech:block/mud",
+    "particle": "pyrotech:block/mud"
+  }
+}

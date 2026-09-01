@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "pyrotech:block/refractory_brick",
+    "top": "pyrotech:block/refractory_brick",
+    "side": "pyrotech:block/refractory_brick"
+  }
+}

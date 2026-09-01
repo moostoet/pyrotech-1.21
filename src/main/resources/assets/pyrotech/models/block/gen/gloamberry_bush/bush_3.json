@@ -1,0 +1,9 @@
+{
+  "parent": "pyrotech:block/bush_3",
+  "textures": {
+    "stem": "pyrotech:block/pyroberry_stem",
+    "leaves": "pyrotech:block/gloamberry_leaves",
+    "berry": "pyrotech:block/gloamberry",
+    "particle": "pyrotech:block/pyroberry_stem"
+  }
+}

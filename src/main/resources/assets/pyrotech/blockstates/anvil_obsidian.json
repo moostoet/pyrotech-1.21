@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "damage=0": {
+      "model": "pyrotech:block/gen/anvil_obsidian/anvil"
+    },
+    "damage=1": {
+      "model": "pyrotech:block/gen/anvil_obsidian/anvil_2"
+    },
+    "damage=2": {
+      "model": "pyrotech:block/gen/anvil_obsidian/anvil_3"
+    },
+    "damage=3": {
+      "model": "pyrotech:block/gen/anvil_obsidian/anvil_4"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "facing=east,occupied=false,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=east,occupied=false,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=east,occupied=true,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=east,occupied=true,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=north,occupied=false,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=north,occupied=false,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=north,occupied=true,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=north,occupied=true,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=south,occupied=false,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=south,occupied=false,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=south,occupied=true,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=south,occupied=true,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=west,occupied=false,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=west,occupied=false,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=west,occupied=true,type=foot": {
+      "model": "pyrotech:block/straw_bed"
+    },
+    "facing=west,occupied=true,type=head": {
+      "model": "pyrotech:block/straw_bed"
+    }
+  }
+}

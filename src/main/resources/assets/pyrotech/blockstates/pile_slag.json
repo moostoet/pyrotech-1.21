@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "level=0,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_16"
+    },
+    "level=0,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_16_2"
+    },
+    "level=1,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_14"
+    },
+    "level=1,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_14_2"
+    },
+    "level=2,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_12"
+    },
+    "level=2,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_12_2"
+    },
+    "level=3,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_10"
+    },
+    "level=3,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_10_2"
+    },
+    "level=4,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_8"
+    },
+    "level=4,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_8_2"
+    },
+    "level=5,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_6"
+    },
+    "level=5,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_6_2"
+    },
+    "level=6,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_4"
+    },
+    "level=6,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_4_2"
+    },
+    "level=7,molten=false": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_2"
+    },
+    "level=7,molten=true": {
+      "model": "pyrotech:block/gen/pile_slag/slag_pile_block_2_2"
+    }
+  }
+}

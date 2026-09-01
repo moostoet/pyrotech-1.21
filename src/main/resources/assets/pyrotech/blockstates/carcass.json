@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pyrotech:block/carcass",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "pyrotech:block/carcass",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "pyrotech:block/carcass"
+    },
+    "facing=west": {
+      "model": "pyrotech:block/carcass",
+      "y": 90
+    }
+  }
+}

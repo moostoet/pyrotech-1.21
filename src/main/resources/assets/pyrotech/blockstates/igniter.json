@@ -1,0 +1,42 @@
+{
+  "variants": {
+    "facing=east,variant=brick": {
+      "model": "pyrotech:block/gen/igniter/igniter",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=east,variant=stone": {
+      "model": "pyrotech:block/gen/igniter/igniter_2",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,variant=brick": {
+      "model": "pyrotech:block/gen/igniter/igniter",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=north,variant=stone": {
+      "model": "pyrotech:block/gen/igniter/igniter_2",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,variant=brick": {
+      "model": "pyrotech:block/gen/igniter/igniter",
+      "uvlock": true
+    },
+    "facing=south,variant=stone": {
+      "model": "pyrotech:block/gen/igniter/igniter_2",
+      "uvlock": true
+    },
+    "facing=west,variant=brick": {
+      "model": "pyrotech:block/gen/igniter/igniter",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=west,variant=stone": {
+      "model": "pyrotech:block/gen/igniter/igniter_2",
+      "y": 90,
+      "uvlock": true
+    }
+  }
+}

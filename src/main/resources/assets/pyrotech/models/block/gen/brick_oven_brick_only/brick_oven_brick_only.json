@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/brick_oven_brick_only",
+  "textures": {
+    "particle": "pyrotech:block/brick_machine_side_brick_only"
+  }
+}

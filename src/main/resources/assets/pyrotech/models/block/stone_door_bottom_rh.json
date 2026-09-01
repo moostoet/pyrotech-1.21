@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "pyrotech:block/door_stone_lower",
+    "top": "pyrotech:block/door_stone_upper"
+  }
+}

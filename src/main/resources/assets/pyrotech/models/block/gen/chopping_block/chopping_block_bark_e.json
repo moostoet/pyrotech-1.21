@@ -1,0 +1,8 @@
+{
+  "parent": "pyrotech:block/chopping_block_bark_e",
+  "textures": {
+    "core-side": "pyrotech:block/chopping_block_core_side_damaged_b",
+    "core-end": "pyrotech:block/chopping_block_core_top_damaged_b",
+    "particle": "minecraft:block/oak_log_top"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "pyrotech:block/tar_drain",
+  "textures": {
+    "all": "pyrotech:block/refractory_brick"
+  }
+}

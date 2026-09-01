@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pyrotech:block/gen/cob_dry/cube_all"
+    }
+  }
+}

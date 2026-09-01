@@ -1,0 +1,10 @@
+{
+  "parent": "pyrotech:block/anvil",
+  "textures": {
+    "top": "minecraft:block/obsidian",
+    "top_side": "minecraft:block/obsidian",
+    "bottom_side": "minecraft:block/iron_block",
+    "bottom": "minecraft:block/iron_block",
+    "particle": "minecraft:block/obsidian"
+  }
+}

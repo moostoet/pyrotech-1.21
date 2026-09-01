@@ -1,0 +1,8 @@
+{
+  "parent": "pyrotech:block/campfire_ash_e",
+  "textures": {
+    "particle": "minecraft:block/fire_1",
+    "tinder": "pyrotech:block/active_pile",
+    "fire": "minecraft:block/fire_1"
+  }
+}

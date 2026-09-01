@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pyrotech:block/wood_rack",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pyrotech:block/wood_rack"
+    },
+    "facing=south": {
+      "model": "pyrotech:block/wood_rack",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pyrotech:block/wood_rack",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "parent": "pyrotech:block/connected/connected_4_cross",
+  "textures": {
+    "normal": "pyrotech:block/slag_glass_normal",
+    "u": "pyrotech:block/slag_glass_u",
+    "r": "pyrotech:block/slag_glass_r",
+    "ud": "pyrotech:block/slag_glass_ud",
+    "ul": "pyrotech:block/slag_glass_ul",
+    "ur": "pyrotech:block/slag_glass_ur",
+    "lr": "pyrotech:block/slag_glass_lr",
+    "udr": "pyrotech:block/slag_glass_udr",
+    "udl": "pyrotech:block/slag_glass_udl",
+    "ulr": "pyrotech:block/slag_glass_ulr",
+    "udlr": "pyrotech:block/slag_glass_udlr"
+  }
+}

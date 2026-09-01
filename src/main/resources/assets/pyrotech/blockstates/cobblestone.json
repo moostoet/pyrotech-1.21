@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "variant=andesite": {
+      "model": "pyrotech:block/gen/cobblestone/cube_all"
+    },
+    "variant=diorite": {
+      "model": "pyrotech:block/gen/cobblestone/cube_all_2"
+    },
+    "variant=granite": {
+      "model": "pyrotech:block/gen/cobblestone/cube_all_3"
+    },
+    "variant=limestone": {
+      "model": "pyrotech:block/gen/cobblestone/cube_all_4"
+    }
+  }
+}

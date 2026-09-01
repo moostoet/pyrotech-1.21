@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pyrotech:block/crate_stone",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pyrotech:block/crate_stone"
+    },
+    "facing=south": {
+      "model": "pyrotech:block/crate_stone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pyrotech:block/crate_stone",
+      "y": 270
+    }
+  }
+}

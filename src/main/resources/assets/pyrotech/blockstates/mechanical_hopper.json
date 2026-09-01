@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,type=down": {
+      "model": "pyrotech:block/mechanical_hopper_down",
+      "y": 270
+    },
+    "facing=east,type=side": {
+      "model": "pyrotech:block/mechanical_hopper_side",
+      "y": 270
+    },
+    "facing=north,type=down": {
+      "model": "pyrotech:block/mechanical_hopper_down",
+      "y": 180
+    },
+    "facing=north,type=side": {
+      "model": "pyrotech:block/mechanical_hopper_side",
+      "y": 180
+    },
+    "facing=south,type=down": {
+      "model": "pyrotech:block/mechanical_hopper_down"
+    },
+    "facing=south,type=side": {
+      "model": "pyrotech:block/mechanical_hopper_side"
+    },
+    "facing=west,type=down": {
+      "model": "pyrotech:block/mechanical_hopper_down",
+      "y": 90
+    },
+    "facing=west,type=side": {
+      "model": "pyrotech:block/mechanical_hopper_side",
+      "y": 90
+    }
+  }
+}

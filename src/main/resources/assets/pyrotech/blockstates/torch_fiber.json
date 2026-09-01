@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "facing=east,type=doused": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall"
+    },
+    "facing=east,type=lit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_2"
+    },
+    "facing=east,type=unlit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_3"
+    },
+    "facing=north,type=doused": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall",
+      "y": 270
+    },
+    "facing=north,type=lit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_2",
+      "y": 270
+    },
+    "facing=north,type=unlit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_3",
+      "y": 270
+    },
+    "facing=south,type=doused": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall",
+      "y": 90
+    },
+    "facing=south,type=lit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_2",
+      "y": 90
+    },
+    "facing=south,type=unlit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_3",
+      "y": 90
+    },
+    "facing=up,type=doused": {
+      "model": "pyrotech:block/gen/torch_fiber/torch"
+    },
+    "facing=up,type=lit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_2"
+    },
+    "facing=up,type=unlit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_3"
+    },
+    "facing=west,type=doused": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall",
+      "y": 180
+    },
+    "facing=west,type=lit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_2",
+      "y": 180
+    },
+    "facing=west,type=unlit": {
+      "model": "pyrotech:block/gen/torch_fiber/torch_wall_3",
+      "y": 180
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pyrotech:block/gen/refractory_brick_block/cube_all"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pyrotech:block/stash",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pyrotech:block/stash"
+    },
+    "facing=south": {
+      "model": "pyrotech:block/stash",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pyrotech:block/stash",
+      "y": 270
+    }
+  }
+}

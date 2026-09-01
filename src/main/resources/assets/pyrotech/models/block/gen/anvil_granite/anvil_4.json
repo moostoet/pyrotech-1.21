@@ -1,0 +1,10 @@
+{
+  "parent": "pyrotech:block/anvil",
+  "textures": {
+    "top": "pyrotech:block/anvil_granite_damaged_c",
+    "top_side": "minecraft:block/polished_granite",
+    "bottom_side": "minecraft:block/smooth_stone_slab_side",
+    "bottom": "minecraft:block/smooth_stone",
+    "particle": "minecraft:block/polished_granite"
+  }
+}

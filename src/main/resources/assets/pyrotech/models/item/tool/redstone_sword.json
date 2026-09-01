@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pyrotech:item/redstone_sword"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pyrotech:active": 1
+      },
+      "model": "pyrotech:item/tool/redstone_sword_active"
+    }
+  ]
+}

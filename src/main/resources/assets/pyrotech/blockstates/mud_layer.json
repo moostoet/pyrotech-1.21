@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "pyrotech:block/mud_layer"
+      },
+      {
+        "model": "pyrotech:block/mud_layer",
+        "y": 90
+      },
+      {
+        "model": "pyrotech:block/mud_layer",
+        "y": 180
+      },
+      {
+        "model": "pyrotech:block/mud_layer",
+        "y": 270
+      }
+    ]
+  }
+}

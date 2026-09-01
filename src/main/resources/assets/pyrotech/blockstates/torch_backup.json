@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "facing=east,state=doused": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall"
+    },
+    "facing=east,state=lit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_2"
+    },
+    "facing=east,state=unlit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_3"
+    },
+    "facing=north,state=doused": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall",
+      "y": 270
+    },
+    "facing=north,state=lit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_2",
+      "y": 270
+    },
+    "facing=north,state=unlit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_3",
+      "y": 270
+    },
+    "facing=south,state=doused": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall",
+      "y": 90
+    },
+    "facing=south,state=lit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_2",
+      "y": 90
+    },
+    "facing=south,state=unlit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_3",
+      "y": 90
+    },
+    "facing=up,state=doused": {
+      "model": "pyrotech:block/gen/torch_backup/torch"
+    },
+    "facing=up,state=lit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_2"
+    },
+    "facing=up,state=unlit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_3"
+    },
+    "facing=west,state=doused": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall",
+      "y": 180
+    },
+    "facing=west,state=lit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_2",
+      "y": 180
+    },
+    "facing=west,state=unlit": {
+      "model": "pyrotech:block/gen/torch_backup/torch_wall_3",
+      "y": 180
+    }
+  }
+}

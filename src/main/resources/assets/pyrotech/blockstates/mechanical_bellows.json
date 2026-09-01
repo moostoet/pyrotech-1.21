@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,type=bottom": {
+      "model": "pyrotech:block/gen/mechanical_bellows/mechanical_bellows_base",
+      "y": 90
+    },
+    "facing=east,type=top": {
+      "model": "pyrotech:block/gen/mechanical_bellows/_empty",
+      "y": 90
+    },
+    "facing=north,type=bottom": {
+      "model": "pyrotech:block/gen/mechanical_bellows/mechanical_bellows_base"
+    },
+    "facing=north,type=top": {
+      "model": "pyrotech:block/gen/mechanical_bellows/_empty"
+    },
+    "facing=south,type=bottom": {
+      "model": "pyrotech:block/gen/mechanical_bellows/mechanical_bellows_base",
+      "y": 180
+    },
+    "facing=south,type=top": {
+      "model": "pyrotech:block/gen/mechanical_bellows/_empty",
+      "y": 180
+    },
+    "facing=west,type=bottom": {
+      "model": "pyrotech:block/gen/mechanical_bellows/mechanical_bellows_base",
+      "y": 270
+    },
+    "facing=west,type=top": {
+      "model": "pyrotech:block/gen/mechanical_bellows/_empty",
+      "y": 270
+    }
+  }
+}
