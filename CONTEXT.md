@@ -15,7 +15,11 @@
   on this repository's `1.12` branch.
 - **Igniter**: a hand-held item from the ignition module that lights Pyrotech blocks such as
   the campfire, the pit kiln, and the bloomery. Only igniters light them. Vanilla flint and steel
-  and fire charges are not igniters.
+  and fire charges are not igniters. The torches and the oil lamp are the one exception: vanilla
+  flint and steel lights them too, as it did in 1.12.
+- **Powered igniter**: the ignition block, in stone and refractory brick, that lights whatever sits
+  behind it for as long as the block in front of it carries a redstone signal. It lights the same
+  things a hand-held igniter does, with no use time and no cost.
 - **Ignition hook**: the core-owned question "can this position start a pit burn, and if so,
   start it". Refractory supplies the answer; igniters, the powered igniter block, and spreading
   fire ask it. It exists so that core and ignition never depend on refractory.
@@ -37,3 +41,8 @@
 - **Removal list**: the vanilla recipes Pyrotech drops so that its own route past each gate is
   the only route. It holds the 1.12 lists plus every recipe vanilla added since that skips the
   same gates. A user datapack can put any of them back.
+- **Lamp fuel**: a fluid the oil lamp burns, at a rate in millibuckets per minute. Pyroberry wine
+  and lamp oil are the 1.12 fuels. A datapack can add more.
+- **Douse**: putting out a lit torch, oil lamp, or campfire before it burns out: a bucket of water
+  on a torch or campfire, an empty hand on the lamp, or rain on a torch. A doused torch keeps its
+  remaining burn time. A fiber torch that has once been lit never drops itself again.
