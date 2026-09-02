@@ -76,3 +76,28 @@
   it, so the anvil knows what it yields and which anvils may work it.
 - **Duration multiplier**: a per-machine number every recipe time in that machine is multiplied by,
   1 by default. A server sets it for all its players; it is not part of any recipe.
+- **Campfire cook list**: the foods a Pyrotech campfire cooks. It is every item whose furnace
+  recipe yields a food, except bread and cookie, plus any recipe written for the campfire itself.
+  The vanilla campfire's own cooking recipes play no part. A campfire cooks at its own pace, not
+  the furnace's, and food left in a lit campfire too long burns.
+- **Campfire effects**: the five effects a lit campfire grants at night to a player resting beside
+  it with no monster near. Comfort and resting come at once. Resting grows through three levels,
+  and at the third grants well rested. Eating to a full stomach while comfortable grants well fed.
+  Once comfort, well rested, and well fed are all present, focused follows. Comfort lets a player
+  eat when full and makes food count for more; resting heals; well rested adds absorption; well
+  fed halves exhaustion; focused banks an experience bonus that pays out on the next experience
+  gained. Comfort and resting last while the player stays by the fire, focused until its bonus is
+  spent, and well fed and well rested five minutes each.
+- **Compost value**: the points an item adds to the compost bin. Every sixteen points yield one
+  output item, four mulch by default. Any food without a value of its own gets one from its hunger
+  and saturation, between 1 and 8. A datapack can set the value and the output of any item.
+- **Wear stage**: how worn an anvil or a chopping block is. Anvils pass through four stages and
+  chopping blocks through six before they break, each stage after a set number of hits or chops.
+  A block broken off keeps its stage as an item and goes back down at that stage. A server can
+  turn wear off.
+- **Sealed barrel**: a barrel with its lid on. It takes no more items or fluid, rain no longer fills
+  it, and its recipe runs. A sealed barrel keeps its contents when picked up and stacks one to a
+  slot.
+- **Rack climbing**: a player beside two or more drying racks stacked one above the other climbs
+  them like a ladder by walking into the stack, holds on by sneaking, and takes no fall damage
+  against them. Crude racks do not climb. A server can turn it off.
