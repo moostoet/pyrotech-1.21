@@ -46,3 +46,17 @@
 - **Douse**: putting out a lit torch, oil lamp, or campfire before it burns out: a bucket of water
   on a torch or campfire, an empty hand on the lamp, or rain on a torch. A doused torch keeps its
   remaining burn time. A fiber torch that has once been lit never drops itself again.
+- **Pit burn**: turning a connected heap of fuel blocks (log piles, a full pile of wood chips, coal
+  blocks, or blocks of wood tar) into charcoal, charcoal flakes, or coal coke by lighting it inside
+  an enclosure of solid, non-flammable blocks. Every connected fuel block burns as an active pile,
+  tar seeps downward into a tar collector, and a share of the fuel fails to ash instead.
+- **Refractory burn**: a pit burn whose enclosure is built only of refractory blocks. Coal coke
+  needs one, and every other pit burn fails far less often inside one.
+- **Active pile**: the burning block a fuel block becomes for the length of a pit burn. It carries
+  its recipe, its output so far, and the tar it has made, and collapses into pit ash when done.
+  Breaking it early spills the output and ends that block's burn.
+- **Pit ash**: the block an active pile collapses into when its burn finishes. It holds the burn's
+  output until a player digs it up. It has no item and is only ever placed by a finished burn.
+- **Refractory block**: a block that counts as a wall of a refractory burn: refractory bricks,
+  refractory glass, the double refractory slab, the brick tar collector and drain, the brick
+  powered igniter, and any block a datapack adds. A closed refractory door counts too.
