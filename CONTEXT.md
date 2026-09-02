@@ -60,3 +60,19 @@
 - **Refractory block**: a block that counts as a wall of a refractory burn: refractory bricks,
   refractory glass, the double refractory slab, the brick tar collector and drain, the brick
   powered igniter, and any block a datapack adds. A closed refractory door counts too.
+- **Tool level**: the whole number, 0 to 4, that a tool brings to Pyrotech's machines. It sets the
+  chops an axe needs on the chopping block, the uses a shovel needs on the compacting bin, the hits
+  a hammer or pickaxe saves on the anvil, and a hammer's power on a bloom. Crude tools are 0; bone,
+  flint, stone, and gold 1; iron and obsidian 2; diamond 3; netherite 4. A datapack can set the
+  level of any tool. A level past the end of a machine's table counts as its highest.
+- **Inherited recipe**: a recipe a higher tier of a machine gets by copying a lower tier's recipe,
+  sometimes faster or with a lower failure chance. Seven chains inherit: pit kiln to stone kiln to
+  brick kiln, crude drying rack to drying rack to stone oven to brick oven, chopping block to stone
+  sawmill to brick sawmill, compacting bin to mechanical compacting bin, granite to ironclad to
+  obsidian anvil, stone to brick crucible, and bloomery to wither forge. The copies ship with the
+  mod; a datapack recipe added to a lower tier is not copied upward.
+- **Bloom**: the block a bloomery or wither forge yields from ore. Its output is hammered out of it,
+  on the ground or on an anvil, until its integrity is spent. A bloom remembers the recipe that made
+  it, so the anvil knows what it yields and which anvils may work it.
+- **Duration multiplier**: a per-machine number every recipe time in that machine is multiplied by,
+  1 by default. A server sets it for all its players; it is not part of any recipe.
