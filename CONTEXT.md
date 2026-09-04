@@ -101,3 +101,16 @@
 - **Rack climbing**: a player beside two or more drying racks stacked one above the other climbs
   them like a ladder by walking into the stack, holds on by sneaking, and takes no fall damage
   against them. Crude racks do not climb. A server can turn it off.
+- **Airflow**: the number, from 0 up, that sets how fast a bloomery, wither forge, or stone
+  combustion worker runs. An open front face gives 1 and a solid one 0, a bellows adds a bonus that
+  fades every tick, and stored fuel chokes it. A partial slag heap in front counts as half open and
+  a full one as closed. A device reads its own airflow; nothing pushes it from outside.
+- **Hammer power**: the fraction of a hammer hit a bloom counts. It comes from the hammer's tool
+  level and efficiency, the player's strength, weakness, and mining fatigue, and the distance from
+  the bloom. Below 1 a hit counts for less, above 1 for more.
+- **Integrity**: the number of items left in a bloom. A bloom starts with one random yield per
+  input item. Each finished hammering cycle takes one, unless fortune saves it, and yields the
+  recipe's output or a failure item.
+- **Slag heap**: the eight-level pile a bloomery or wither forge builds in front of itself, one slag
+  per level, molten for five minutes after the last addition. A heap of a metal's slag blooms
+  again; a heap of plain slag fires into slag glass.
