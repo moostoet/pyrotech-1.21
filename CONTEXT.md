@@ -118,3 +118,15 @@
   translucent), declared as `render_type` in the model JSON. It replaces the 1.12 `getBlockLayer()`
   override. A model inherits the field from its parent, so a base model shared by blocks on
   different layers leaves the field to the per-block wrappers.
+- **Hot fluid**: a fluid whose temperature is 450 or more; lava is the vanilla one. A stone tank,
+  stone faucet, or stone tar collector that takes one breaks and spills it; the brick versions
+  hold it. The check runs only on a real fill, never on a simulated probe.
+- **Large stack**: a slot holding more than a vanilla stack, up to 640 in the stash and 2560 in
+  the durable rock bag. Vanilla saves a stack with a count cap of 99, so these slots save the
+  item and its count separately through the shared `LargeStackHandler`.
+- **Tank group**: a column of the same tank block stacked and connected, sharing one fluid that
+  settles downward. Fills go in from the bottom up and drains come out from the top down. The
+  connection state is the `connection` blockstate property.
+- **Auto-pickup**: an open rock bag in a player's hand or hotbar taking a picked-up whitelisted
+  item before the inventory does. Four `COMMON` toggles choose the locations; the main
+  inventory is off by default.
