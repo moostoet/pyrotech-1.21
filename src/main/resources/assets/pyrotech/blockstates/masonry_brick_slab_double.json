@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "variant=default": {
-      "model": "pyrotech:block/gen/masonry_brick_slab_double/cube_all"
-    }
-  }
-}

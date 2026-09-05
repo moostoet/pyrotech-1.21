@@ -343,6 +343,8 @@
   "block.pyrotech.limestone": "Limestone",
   "block.pyrotech.refractory_glass": "Refractory Glass",
   "block.pyrotech.slag_glass": "Slag Glass",
+  "block.pyrotech.refractory_door": "Refractory Door",
+  "block.pyrotech.stone_door": "Stone Door",
   "block.pyrotech.fossil_ore": "Fossil Ore",
   "block.pyrotech.dense_coal_ore": "Dense Coal Ore",
   "block.pyrotech.dense_nether_coal_ore": "Dense Nether Coal",

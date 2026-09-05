@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pyrotech:block/masonry_brick_slab"
+    },
+    "type=double": {
+      "model": "pyrotech:block/gen/masonry_brick_block/cube_all"
+    },
+    "type=top": {
+      "model": "pyrotech:block/masonry_brick_slab_upper"
+    }
+  }
+}

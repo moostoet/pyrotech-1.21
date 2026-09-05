@@ -30,13 +30,38 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
             CoreBlocks.LIMESTONE.get(),
             CoreBlocks.FOSSIL_ORE.get(),
             CoreBlocks.DENSE_COAL_ORE.get(),
-            CoreBlocks.DENSE_NETHER_COAL_ORE.get());
+            CoreBlocks.DENSE_NETHER_COAL_ORE.get(),
+            CoreBlocks.MASONRY_BRICK_SLAB.get(),
+            CoreBlocks.REFRACTORY_BRICK_SLAB.get(),
+            CoreBlocks.MASONRY_BRICK_STAIRS.get(),
+            CoreBlocks.REFRACTORY_BRICK_STAIRS.get(),
+            CoreBlocks.MASONRY_BRICK_WALL.get(),
+            CoreBlocks.REFRACTORY_BRICK_WALL.get(),
+            CoreBlocks.REFRACTORY_DOOR.get(),
+            CoreBlocks.STONE_DOOR.get(),
+            // 1.12's Material.GLASS needed no tool, so these two still break by hand and
+            // drop; the tag only gives a pickaxe its speed bonus.
+            CoreBlocks.REFRACTORY_GLASS.get(),
+            CoreBlocks.SLAG_GLASS.get());
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(CoreBlocks.PLANKS_TARRED.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(CoreBlocks.WOOD_TAR_BLOCK.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL).add(CoreBlocks.LIMESTONE.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(CoreBlocks.DENSE_COAL_ORE.get());
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(CoreBlocks.DENSE_NETHER_COAL_ORE.get());
 
-        this.tag(PyrotechTags.Blocks.REFRACTORY).add(CoreBlocks.REFRACTORY_BRICK_BLOCK.get());
+        // The shape tags. Walls only connect to each other through #minecraft:walls, and
+        // slabs, stairs, and doors read theirs in vanilla recipes and behaviour. The doors
+        // stay out of #minecraft:wooden_doors, which is where the furnace fuel entry sits.
+        this.tag(BlockTags.SLABS).add(CoreBlocks.MASONRY_BRICK_SLAB.get(), CoreBlocks.REFRACTORY_BRICK_SLAB.get());
+        this.tag(BlockTags.STAIRS).add(CoreBlocks.MASONRY_BRICK_STAIRS.get(), CoreBlocks.REFRACTORY_BRICK_STAIRS.get());
+        this.tag(BlockTags.WALLS).add(CoreBlocks.MASONRY_BRICK_WALL.get(), CoreBlocks.REFRACTORY_BRICK_WALL.get());
+        this.tag(BlockTags.DOORS).add(CoreBlocks.REFRACTORY_DOOR.get(), CoreBlocks.STONE_DOOR.get());
+
+        // 1.12 listed the refractory brick, the refractory glass, and the double refractory
+        // slab (RegistryInitializer#initializeRefractoryBlocks). The slab is refractory only
+        // at type=double, which RefractoryBlocks handles, so it stays out of the tag.
+        this.tag(PyrotechTags.Blocks.REFRACTORY).add(
+            CoreBlocks.REFRACTORY_BRICK_BLOCK.get(),
+            CoreBlocks.REFRACTORY_GLASS.get());
     }
 }

@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.datagen;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.datagen.core.CoreBlockStateProvider;
 import com.moostoet.pyrotech.datagen.core.CoreBlockTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreDataMapProvider;
 import com.moostoet.pyrotech.datagen.core.CoreFluidTagsProvider;
@@ -30,6 +31,7 @@ public final class PyrotechDatagen {
         CompletableFuture<HolderLookup.Provider> lookup = event.getLookupProvider();
         ExistingFileHelper existingFiles = event.getExistingFileHelper();
 
+        generator.addProvider(event.includeClient(), new CoreBlockStateProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new CoreItemModelProvider(output, existingFiles));
 
         CoreBlockTagsProvider blockTags = new CoreBlockTagsProvider(output, lookup, existingFiles);

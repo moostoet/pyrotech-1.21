@@ -33,6 +33,17 @@ public final class CoreItemModelProvider extends ItemModelProvider {
         this.blockItem("planks_tarred", "planks_tarred");
         this.blockItem("wool_tarred", "wool_tarred");
         this.blockItem("wood_tar_block", "wood_tar_block");
+        this.blockItem("masonry_brick_slab", "masonry_brick_slab");
+        this.blockItem("refractory_brick_slab", "refractory_brick_slab");
+        this.blockItem("masonry_brick_stairs", "masonry_brick_stairs");
+        this.blockItem("refractory_brick_stairs", "refractory_brick_stairs");
+        this.blockItem("masonry_brick_wall", "masonry_brick_wall_inventory");
+        this.blockItem("refractory_brick_wall", "refractory_brick_wall_inventory");
+        // The glass item shows the fully unconnected face, as it does in hand.
+        this.blockItem("refractory_glass", "gen/refractory_glass/connected_0");
+        this.blockItem("slag_glass", "gen/slag_glass/connected_0");
+        // The two door item models stay static: the migrated assets already parent them on
+        // item/generated over the 1.12 door textures, which is what a door item needs.
     }
 
     private void blockItem(String name, String blockModel) {

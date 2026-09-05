@@ -8,6 +8,7 @@ import com.moostoet.pyrotech.core.item.HammerItem;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -33,5 +34,12 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
         this.tag(PyrotechTags.Items.IGNITERS);
         this.tag(PyrotechTags.Items.KNIVES);
         this.tag(PyrotechTags.Items.SHARP_TOOLS).addTags(ItemTags.AXES, ItemTags.SWORDS, PyrotechTags.Items.KNIVES);
+
+        // The item halves of the shape tags. #minecraft:wooden_doors stays untouched: that
+        // is the tag NeoForge's furnace_fuels data map burns.
+        this.copy(BlockTags.SLABS, ItemTags.SLABS);
+        this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
+        this.copy(BlockTags.WALLS, ItemTags.WALLS);
+        this.copy(BlockTags.DOORS, ItemTags.DOORS);
     }
 }

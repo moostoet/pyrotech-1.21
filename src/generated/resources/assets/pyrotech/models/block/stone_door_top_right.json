@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "pyrotech:block/door_stone_lower",
+    "top": "pyrotech:block/door_stone_upper"
+  }
+}

@@ -8,6 +8,16 @@
     "pyrotech:limestone",
     "pyrotech:fossil_ore",
     "pyrotech:dense_coal_ore",
-    "pyrotech:dense_nether_coal_ore"
+    "pyrotech:dense_nether_coal_ore",
+    "pyrotech:masonry_brick_slab",
+    "pyrotech:refractory_brick_slab",
+    "pyrotech:masonry_brick_stairs",
+    "pyrotech:refractory_brick_stairs",
+    "pyrotech:masonry_brick_wall",
+    "pyrotech:refractory_brick_wall",
+    "pyrotech:refractory_door",
+    "pyrotech:stone_door",
+    "pyrotech:refractory_glass",
+    "pyrotech:slag_glass"
   ]
 }
