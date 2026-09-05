@@ -130,3 +130,11 @@
 - **Auto-pickup**: an open rock bag in a player's hand or hotbar taking a picked-up whitelisted
   item before the inventory does. Four `COMMON` toggles choose the locations; the main
   inventory is off by default.
+- **Active tool**: a redstone or quartz tool in its boosted state. A redstone tool activates by
+  chance when it takes damage or when its holder stands near redstone ore, and stays active for
+  ten seconds of game time; while active it mines twice as fast, usually skips damage, and the
+  sword hits twice as hard. A quartz tool is active whenever it is in the Nether, mines three
+  times as fast, and the sword hits three times as hard. The active texture shows the state.
+- **Repair kit**: a four-use bone or flint item that, crafted with a hammer and a damaged durable
+  tool of its material, restores a quarter of that tool's durability. The hammer takes four
+  damage and the kit one; a tool at full durability does not match the recipe.
