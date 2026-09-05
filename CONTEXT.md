@@ -138,3 +138,23 @@
 - **Repair kit**: a four-use bone or flint item that, crafted with a hammer and a damaged durable
   tool of its material, restores a quarter of that tool's durability. The hammer takes four
   damage and the kit one; a tool at full durability does not match the recipe.
+- **Cog**: the consumable gear that drives a mechanical hopper, compactor, mulcher, trip hammer, or
+  mechanical bellows. Eight kinds, from wooden to diamond. A cog has durability, loses some on every
+  work cycle, and its kind sets how much work one cycle does. Being a cog at all is membership in
+  the cog data map. A redstone signal stops the machine rather than speeding it.
+- **Sawmill blade**: the consumable blade a sawmill needs to cut. Seven kinds. The blade decides
+  which recipes the sawmill can run, how fast, how many items come out, and how many wood chips
+  spill. A stone sawmill accepts only stone, flint, and bone.
+- **Combustion worker**: a Pyrotech machine that burns furnace fuel to run recipes: the eight stone
+  and brick tier machines, and in a looser sense the campfire and the pit kiln. It holds a fuel
+  slot, keeps a burn time, and airflow makes both the burn and the recipe run faster in step.
+- **Keep heat**: a brick tier machine stays lit when it runs out of work, where a stone tier machine
+  goes out fifty ticks later. A machine that has gone out but still has burn time left shows the
+  dormant look.
+- **Machine tier**: stone or brick. The brick tier of a machine takes the stone tier's recipes
+  unchanged, doubles the value of its fuel, holds twice the fuel, keeps heat, and reads airflow at
+  one and a half times. Only the kiln's failure chance changes with the tier.
+- **Oven cook list**: the foods a Pyrotech oven cooks. It is every item whose furnace recipe yields
+  a food, minus its own blacklist tag, which ships empty. It is derived the way the campfire cook
+  list is, but it keeps no exceptions of its own, because the campfire's bread and cookie are
+  early-game gating rather than an oven limit.
