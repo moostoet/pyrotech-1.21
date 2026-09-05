@@ -1,5 +1,12 @@
 {
   "values": [
-    "pyrotech:wood_tar_block"
+    "pyrotech:wood_tar_block",
+    "pyrotech:mud",
+    "pyrotech:mud_layer",
+    "pyrotech:cob_wet",
+    "pyrotech:pile_ash",
+    "pyrotech:pile_wood_chips",
+    "pyrotech:rock_wood_chips",
+    "pyrotech:farmland_mulched"
   ]
 }

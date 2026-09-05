@@ -6,6 +6,7 @@ import com.moostoet.pyrotech.core.PyrotechTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -43,10 +44,54 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
             // drop; the tag only gives a pickaxe its speed bonus.
             CoreBlocks.REFRACTORY_GLASS.get(),
             CoreBlocks.SLAG_GLASS.get());
-        this.tag(BlockTags.MINEABLE_WITH_AXE).add(CoreBlocks.PLANKS_TARRED.get());
-        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(CoreBlocks.WOOD_TAR_BLOCK.get());
-        this.tag(BlockTags.NEEDS_STONE_TOOL).add(CoreBlocks.LIMESTONE.get());
-        this.tag(BlockTags.NEEDS_IRON_TOOL).add(CoreBlocks.DENSE_COAL_ORE.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+            CoreBlocks.COBBLESTONE_ANDESITE.get(),
+            CoreBlocks.COBBLESTONE_DIORITE.get(),
+            CoreBlocks.COBBLESTONE_GRANITE.get(),
+            CoreBlocks.COBBLESTONE_LIMESTONE.get(),
+            CoreBlocks.COB_DRY.get(),
+            CoreBlocks.LIVING_TAR.get(),
+            CoreBlocks.DENSE_QUARTZ_ORE_LARGE.get(),
+            CoreBlocks.DENSE_QUARTZ_ORE_SMALL.get(),
+            CoreBlocks.DENSE_QUARTZ_ORE_ROCKS.get(),
+            CoreBlocks.DENSE_REDSTONE_ORE_LARGE.get(),
+            CoreBlocks.DENSE_REDSTONE_ORE_SMALL.get(),
+            CoreBlocks.DENSE_REDSTONE_ORE_ROCKS.get());
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(CoreBlocks.PLANKS_TARRED.get(), CoreBlocks.LOG_PILE.get());
+        // The shovel blocks. The wood chip rock and pile, and the ash pile, gate their drops
+        // on a shovel in code; the tag only gives the speed.
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(
+            CoreBlocks.WOOD_TAR_BLOCK.get(),
+            CoreBlocks.MUD.get(),
+            CoreBlocks.MUD_LAYER.get(),
+            CoreBlocks.COB_WET.get(),
+            CoreBlocks.PILE_ASH.get(),
+            CoreBlocks.PILE_WOOD_CHIPS.get(),
+            CoreBlocks.ROCK_WOOD_CHIPS.get(),
+            CoreBlocks.FARMLAND_MULCHED.get());
+        this.tag(BlockTags.NEEDS_STONE_TOOL).add(CoreBlocks.LIMESTONE.get(), CoreBlocks.COB_DRY.get());
+        this.tag(BlockTags.NEEDS_IRON_TOOL).add(
+            CoreBlocks.DENSE_COAL_ORE.get(),
+            CoreBlocks.DENSE_QUARTZ_ORE_LARGE.get(),
+            CoreBlocks.DENSE_QUARTZ_ORE_SMALL.get(),
+            CoreBlocks.DENSE_QUARTZ_ORE_ROCKS.get(),
+            CoreBlocks.DENSE_REDSTONE_ORE_LARGE.get(),
+            CoreBlocks.DENSE_REDSTONE_ORE_SMALL.get(),
+            CoreBlocks.DENSE_REDSTONE_ORE_ROCKS.get());
+
+        // A crop to vanilla: bees visit it and farmland under it stays farmland, as the
+        // 1.12 Crop plant type did.
+        this.tag(BlockTags.CROPS).add(CoreBlocks.FRECKLEBERRY_PLANT.get());
+        this.tag(BlockTags.MAINTAINS_FARMLAND).add(CoreBlocks.FRECKLEBERRY_PLANT.get());
+
+        // The 1.12 netherrack gib spread to Material.ROCK, GROUND, and GRASS full blocks.
+        this.tag(PyrotechTags.Blocks.NETHERRACK_SPREADS_TO).addTags(
+            BlockTags.DIRT,
+            BlockTags.BASE_STONE_OVERWORLD,
+            BlockTags.STONE_BRICKS,
+            BlockTags.TERRACOTTA,
+            Tags.Blocks.COBBLESTONES,
+            Tags.Blocks.ORES);
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(CoreBlocks.DENSE_NETHER_COAL_ORE.get());
 
         // The shape tags. Walls only connect to each other through #minecraft:walls, and

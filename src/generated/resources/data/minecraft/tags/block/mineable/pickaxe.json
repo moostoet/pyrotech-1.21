@@ -18,6 +18,18 @@
     "pyrotech:refractory_door",
     "pyrotech:stone_door",
     "pyrotech:refractory_glass",
-    "pyrotech:slag_glass"
+    "pyrotech:slag_glass",
+    "pyrotech:cobblestone_andesite",
+    "pyrotech:cobblestone_diorite",
+    "pyrotech:cobblestone_granite",
+    "pyrotech:cobblestone_limestone",
+    "pyrotech:cob_dry",
+    "pyrotech:living_tar",
+    "pyrotech:dense_quartz_ore_large",
+    "pyrotech:dense_quartz_ore_small",
+    "pyrotech:dense_quartz_ore_rocks",
+    "pyrotech:dense_redstone_ore_large",
+    "pyrotech:dense_redstone_ore_small",
+    "pyrotech:dense_redstone_ore_rocks"
   ]
 }

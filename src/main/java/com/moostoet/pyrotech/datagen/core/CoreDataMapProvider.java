@@ -40,9 +40,13 @@ public final class CoreDataMapProvider extends DataMapProvider {
         fuels.add(CoreBlocks.PLANKS_TARRED.getId(), new FurnaceFuel(800), false);
         fuels.add(CoreBlocks.WOOL_TARRED.getId(), new FurnaceFuel(800), false);
         fuels.add(CoreBlocks.WOOD_TAR_BLOCK.getId(), new FurnaceFuel(8000), false);
-        // Still to come with their blocks and items: thatch 200, log pile 3000, rock of wood
-        // chips 50, pile of wood chips 400, living tar 32000, pyroberries 400. Tinder is
-        // tech/basic's.
+        fuels.add(CoreBlocks.THATCH.getId(), new FurnaceFuel(200), false);
+        fuels.add(CoreBlocks.LOG_PILE.getId(), new FurnaceFuel(3000), false);
+        fuels.add(CoreBlocks.ROCK_WOOD_CHIPS.getId(), new FurnaceFuel(50), false);
+        fuels.add(CoreBlocks.PILE_WOOD_CHIPS.getId(), new FurnaceFuel(400), false);
+        fuels.add(CoreBlocks.LIVING_TAR.getId(), new FurnaceFuel(32000), false);
+        fuels.add(CoreItems.PYROBERRIES, new FurnaceFuel(400), false);
+        // Tinder is tech/basic's.
 
         Builder<Integer, net.minecraft.world.item.Item> levels = this.builder(ToolLevels.TOOL_LEVELS);
         levels.add(CoreItems.CRUDE_HAMMER, 0, false);

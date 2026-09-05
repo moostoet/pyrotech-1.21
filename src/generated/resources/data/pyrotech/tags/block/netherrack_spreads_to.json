@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#minecraft:dirt",
+    "#minecraft:base_stone_overworld",
+    "#minecraft:stone_bricks",
+    "#minecraft:terracotta",
+    "#c:cobblestones",
+    "#c:ores"
+  ]
+}

@@ -4,6 +4,7 @@ import com.moostoet.pyrotech.Pyrotech;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
@@ -37,9 +38,24 @@ public final class PyrotechTags {
 
         /** A wall of a refractory burn. Refractory brick, glass, the double slab, and datapack additions. */
         public static final TagKey<Block> REFRACTORY = tag("refractory");
+        /**
+         * The full blocks a placed netherrack gib turns into netherrack: the 1.12
+         * {@code Material.ROCK}, {@code GROUND}, and {@code GRASS} test, as tags.
+         */
+        public static final TagKey<Block> NETHERRACK_SPREADS_TO = tag("netherrack_spreads_to");
 
         private static TagKey<Block> tag(String name) {
             return TagKey.create(Registries.BLOCK, id(name));
+        }
+    }
+
+    public static final class EntityTypes {
+
+        /** Entities that mud speeds up instead of slowing. Hunting's animated mud joins it. */
+        public static final TagKey<EntityType<?>> MUD_WALKERS = tag("mud_walkers");
+
+        private static TagKey<EntityType<?>> tag(String name) {
+            return TagKey.create(Registries.ENTITY_TYPE, id(name));
         }
     }
 

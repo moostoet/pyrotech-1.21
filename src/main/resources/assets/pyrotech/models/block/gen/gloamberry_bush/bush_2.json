@@ -5,5 +5,6 @@
     "leaves": "pyrotech:block/gloamberry_leaves",
     "berry": "pyrotech:block/gloamberry",
     "particle": "pyrotech:block/pyroberry_stem"
-  }
+  },
+  "render_type": "minecraft:cutout"
 }

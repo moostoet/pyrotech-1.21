@@ -30,14 +30,32 @@
     "pyrotech:kindling_tarred": {
       "burn_time": 1600
     },
+    "pyrotech:living_tar": {
+      "burn_time": 32000
+    },
+    "pyrotech:log_pile": {
+      "burn_time": 3000
+    },
+    "pyrotech:pile_wood_chips": {
+      "burn_time": 400
+    },
     "pyrotech:planks_tarred": {
       "burn_time": 800
     },
     "pyrotech:plant_fibers_dried": {
       "burn_time": 15
     },
+    "pyrotech:pyroberries": {
+      "burn_time": 400
+    },
+    "pyrotech:rock_wood_chips": {
+      "burn_time": 50
+    },
     "pyrotech:straw": {
       "burn_time": 50
+    },
+    "pyrotech:thatch": {
+      "burn_time": 200
     },
     "pyrotech:wood_tar_block": {
       "burn_time": 8000

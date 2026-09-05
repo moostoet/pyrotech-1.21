@@ -4,6 +4,7 @@ import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.datagen.core.CoreBlockStateProvider;
 import com.moostoet.pyrotech.datagen.core.CoreBlockTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreDataMapProvider;
+import com.moostoet.pyrotech.datagen.core.CoreEntityTypeTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreFluidTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemModelProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemTagsProvider;
@@ -39,6 +40,7 @@ public final class PyrotechDatagen {
         generator.addProvider(event.includeServer(),
             new CoreItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(), new CoreFluidTagsProvider(output, lookup, existingFiles));
+        generator.addProvider(event.includeServer(), new CoreEntityTypeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreDataMapProvider(output, lookup));
         generator.addProvider(event.includeServer(), new RecipeRemovalProvider(output));
     }

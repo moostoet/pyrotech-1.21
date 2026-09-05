@@ -1,5 +1,11 @@
 {
   "values": [
-    "pyrotech:dense_coal_ore"
+    "pyrotech:dense_coal_ore",
+    "pyrotech:dense_quartz_ore_large",
+    "pyrotech:dense_quartz_ore_small",
+    "pyrotech:dense_quartz_ore_rocks",
+    "pyrotech:dense_redstone_ore_large",
+    "pyrotech:dense_redstone_ore_small",
+    "pyrotech:dense_redstone_ore_rocks"
   ]
 }

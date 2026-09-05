@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.datagen.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.CoreItems;
 import com.moostoet.pyrotech.core.Material;
 import com.moostoet.pyrotech.core.PyrotechTags;
@@ -29,6 +30,15 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
             this.tag(PyrotechTags.Items.HAMMERS).add(hammer.get());
         }
         this.tag(PyrotechTags.Items.STONE_STICKS).add(CoreItems.material(Material.STICK_STONE).get());
+        // The stone rocks a stone tool recipe accepts (tool sign-off, item 6).
+        this.tag(PyrotechTags.Items.ROCKS).add(
+            CoreBlocks.ROCK_STONE.get().asItem(),
+            CoreBlocks.ROCK_DIORITE.get().asItem(),
+            CoreBlocks.ROCK_GRANITE.get().asItem(),
+            CoreBlocks.ROCK_ANDESITE.get().asItem(),
+            CoreBlocks.ROCK_SANDSTONE.get().asItem(),
+            CoreBlocks.ROCK_LIMESTONE.get().asItem(),
+            CoreBlocks.ROCK_SANDSTONE_RED.get().asItem());
         // Ignition fills the igniters and hunting the knives; the files exist from the start so
         // that the tags they feed resolve.
         this.tag(PyrotechTags.Items.IGNITERS);

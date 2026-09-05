@@ -1,7 +1,9 @@
 package com.moostoet.pyrotech.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.item.BushSeedsItem;
 import com.moostoet.pyrotech.core.item.HammerItem;
+import com.moostoet.pyrotech.core.item.PyroberriesItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -64,6 +66,21 @@ public final class CoreItems {
 
     public static final DeferredItem<Item> FURNACE_CORE = ITEMS.registerSimpleItem("furnace_core");
 
+    // The berries: 2 hunger and 0.1 saturation each. Pyroberries and gloamberries can be
+    // eaten when full; pyroberries set the eater alight.
+    public static final DeferredItem<Item> PYROBERRIES = ITEMS.registerItem("pyroberries", PyroberriesItem::new,
+        new Item.Properties().food(food(2, 0.1f).alwaysEdible().build()));
+    public static final DeferredItem<Item> GLOAMBERRIES = ITEMS.registerSimpleItem("gloamberries",
+        new Item.Properties().food(food(2, 0.1f).alwaysEdible().build()));
+    public static final DeferredItem<Item> FRECKLEBERRIES = food("freckleberries", 2, 0.1f);
+
+    public static final DeferredItem<BushSeedsItem> PYROBERRY_SEEDS = ITEMS.registerItem("pyroberry_seeds",
+        properties -> new BushSeedsItem(CoreBlocks.PYROBERRY_BUSH, properties));
+    public static final DeferredItem<BushSeedsItem> GLOAMBERRY_SEEDS = ITEMS.registerItem("gloamberry_seeds",
+        properties -> new BushSeedsItem(CoreBlocks.GLOAMBERRY_BUSH, properties));
+    public static final DeferredItem<BushSeedsItem> FRECKLEBERRY_SEEDS = ITEMS.registerItem("freckleberry_seeds",
+        properties -> new BushSeedsItem(CoreBlocks.FRECKLEBERRY_PLANT, properties));
+
     private CoreItems() {
     }
 
@@ -100,5 +117,11 @@ public final class CoreItems {
         output.accept(BURNED_FOOD.get());
         output.accept(TAINTED_MEAT.get());
         output.accept(FURNACE_CORE.get());
+        output.accept(PYROBERRIES.get());
+        output.accept(GLOAMBERRIES.get());
+        output.accept(FRECKLEBERRIES.get());
+        output.accept(PYROBERRY_SEEDS.get());
+        output.accept(GLOAMBERRY_SEEDS.get());
+        output.accept(FRECKLEBERRY_SEEDS.get());
     }
 }

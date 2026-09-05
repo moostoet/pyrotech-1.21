@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.event.StrawBedHandler;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.datamaps.RegisterDataMapTypesEvent;
 
@@ -41,7 +43,11 @@ public final class CoreModule {
     public static void register(IEventBus modEventBus, ModContainer modContainer) {
         CoreBlocks.BLOCKS.register(modEventBus);
         CoreItems.ITEMS.register(modEventBus);
+        CoreEntities.ENTITY_TYPES.register(modEventBus);
+        CoreBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
+        CoreSounds.SOUND_EVENTS.register(modEventBus);
         CREATIVE_TABS.register(modEventBus);
+        NeoForge.EVENT_BUS.register(StrawBedHandler.class);
         modEventBus.addListener(CoreModule::registerDataMapTypes);
         modContainer.registerConfig(ModConfig.Type.COMMON, CoreConfig.COMMON_SPEC);
         modContainer.registerConfig(ModConfig.Type.CLIENT, CoreConfig.CLIENT_SPEC);
