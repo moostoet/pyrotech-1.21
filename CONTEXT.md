@@ -163,3 +163,19 @@
 - **Butchering transform**: the swap applied to an item as it comes out of a carcass, chosen by which knife is held. A butcher's knife doubles meat and ruins pelts, a hunter's knife doubles pelts and taints meat.
 - **Tannin**: the fluid brewed in a barrel from four leaves and a bucket of water. Soaking a washed hide in it makes a tanned hide, the step before leather.
 - **Sharp tool**: any axe, sword, or knife, the set that can whittle a marshmallow stick. In 1.21 it is the `#pyrotech:sharp_tools` tag.
+- **Worldgen data**: the three datapack layers that replace the eleven 1.12 chunk generators. A
+  configured feature says what to place, a placed feature says where and how often, and a
+  `neoforge:add_features` biome modifier says which biomes and which generation step. Worldgen's
+  datagen writes all of it into `src/generated/resources`, one biome modifier file per generator.
+- **Worldgen toggle**: the per-generator on and off switch kept from the 1.12 config. It is a
+  `COMMON` boolean read by a Pyrotech `ICondition` attached to that generator's biome modifier
+  entry, so a false toggle makes the entry fail to load and the generator never runs. Already
+  generated chunks do not change either way.
+- **Cave-floor cluster**: the feature behind dense redstone and dense quartz. It looks in a 9 by 9
+  by 9 cube for air over a floor block, places a large, then small, then rocks variant in that
+  order, and at half chance turns the block underneath into the vanilla ore. Redstone makes one
+  attempt on stone or deepslate, quartz makes up to twenty on netherrack.
+- **Rock ground**: the block tag `#pyrotech:rock_placeable_on` that the rock patch tests one block
+  below the position it wants. It holds `#minecraft:dirt`, `#minecraft:base_stone_overworld` and
+  `#minecraft:terracotta`, mirroring the 1.12 GROUND, GRASS and ROCK material check. Sand and
+  gravel are out. The rock block itself only asks for a solid face below, as in 1.12.
