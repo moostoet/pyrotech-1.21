@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "mod_item": {
+      "trigger": "pyrotech:pickup_mod_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "pyrotech:textures/block/refractory_brick.png",
+    "description": {
+      "translate": "pyrotech.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "pyrotech:book"
+    },
+    "title": {
+      "translate": "itemGroup.pyrotech"
+    }
+  },
+  "requirements": [
+    [
+      "mod_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.datagen;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.datagen.core.CoreAdvancementGenerator;
 import com.moostoet.pyrotech.datagen.core.CoreBlockStateProvider;
 import com.moostoet.pyrotech.datagen.core.CoreBlockTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreDataMapProvider;
@@ -8,15 +9,18 @@ import com.moostoet.pyrotech.datagen.core.CoreEntityTypeTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreFluidTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemModelProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemTagsProvider;
+import com.moostoet.pyrotech.datagen.core.CoreLootModifierProvider;
 import com.moostoet.pyrotech.datagen.core.RecipeRemovalProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.data.AdvancementProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = Pyrotech.MOD_ID)
@@ -43,5 +47,8 @@ public final class PyrotechDatagen {
         generator.addProvider(event.includeServer(), new CoreEntityTypeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreDataMapProvider(output, lookup));
         generator.addProvider(event.includeServer(), new RecipeRemovalProvider(output));
+        generator.addProvider(event.includeServer(), new CoreLootModifierProvider(output, lookup));
+        generator.addProvider(event.includeServer(),
+            new AdvancementProvider(output, lookup, existingFiles, List.of(new CoreAdvancementGenerator())));
     }
 }

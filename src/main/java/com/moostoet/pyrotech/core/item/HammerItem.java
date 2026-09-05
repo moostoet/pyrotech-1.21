@@ -1,7 +1,11 @@
 package com.moostoet.pyrotech.core.item;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+
+import java.util.List;
 
 /**
  * A crafting-grid hammer. It is not a mining tool: a recipe that lists it damages it by
@@ -25,5 +29,10 @@ public class HammerItem extends Item {
         ItemStack remainder = stack.copyWithCount(1);
         remainder.setDamageValue(remainder.getDamageValue() + 1);
         return remainder.getDamageValue() >= remainder.getMaxDamage() ? ItemStack.EMPTY : remainder;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
+        DurabilityTooltip.appendFull(stack, tooltip);
     }
 }

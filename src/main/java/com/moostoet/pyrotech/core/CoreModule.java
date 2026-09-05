@@ -1,7 +1,14 @@
 package com.moostoet.pyrotech.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.event.ChunkScanHandler;
+import com.moostoet.pyrotech.core.event.FireAdjacencyHandler;
+import com.moostoet.pyrotech.core.event.ModItemPickupHandler;
+import com.moostoet.pyrotech.core.event.PlayerMovementTracker;
+import com.moostoet.pyrotech.core.event.SheepDropsHandler;
 import com.moostoet.pyrotech.core.event.StrawBedHandler;
+import com.moostoet.pyrotech.core.loot.CoreLootModifiers;
+import com.moostoet.pyrotech.core.network.CoreNetwork;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -48,9 +55,17 @@ public final class CoreModule {
         CoreEntities.ENTITY_TYPES.register(modEventBus);
         CoreBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
         CoreSounds.SOUND_EVENTS.register(modEventBus);
+        CoreTriggers.TRIGGER_TYPES.register(modEventBus);
+        CoreLootModifiers.SERIALIZERS.register(modEventBus);
         CREATIVE_TABS.register(modEventBus);
         NeoForge.EVENT_BUS.register(StrawBedHandler.class);
+        NeoForge.EVENT_BUS.register(SheepDropsHandler.class);
+        NeoForge.EVENT_BUS.register(ChunkScanHandler.class);
+        NeoForge.EVENT_BUS.register(FireAdjacencyHandler.class);
+        NeoForge.EVENT_BUS.register(ModItemPickupHandler.class);
+        NeoForge.EVENT_BUS.register(PlayerMovementTracker.class);
         modEventBus.addListener(CoreModule::registerDataMapTypes);
+        modEventBus.addListener(CoreNetwork::registerPayloads);
         modContainer.registerConfig(ModConfig.Type.COMMON, CoreConfig.COMMON_SPEC);
         modContainer.registerConfig(ModConfig.Type.CLIENT, CoreConfig.CLIENT_SPEC);
     }

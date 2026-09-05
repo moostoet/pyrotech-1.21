@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "pyrotech:replace_iron_ingots",
+    "pyrotech:remove_village_furnace",
+    "pyrotech:sticks_from_leaves"
+  ],
+  "replace": false
+}
