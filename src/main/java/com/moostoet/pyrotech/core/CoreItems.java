@@ -1,14 +1,21 @@
 package com.moostoet.pyrotech.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.item.BookItem;
 import com.moostoet.pyrotech.core.item.BushSeedsItem;
 import com.moostoet.pyrotech.core.item.HammerItem;
+import com.moostoet.pyrotech.core.item.MulchItem;
 import com.moostoet.pyrotech.core.item.PyroberriesItem;
+import com.moostoet.pyrotech.core.item.PyroberryCocktailItem;
+import com.moostoet.pyrotech.core.item.WineItem;
+import net.minecraft.core.Holder;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -81,6 +88,23 @@ public final class CoreItems {
     public static final DeferredItem<BushSeedsItem> FRECKLEBERRY_SEEDS = ITEMS.registerItem("freckleberry_seeds",
         properties -> new BushSeedsItem(CoreBlocks.FRECKLEBERRY_PLANT, properties));
 
+    // -- Slice 4: the wines, the cocktail, the book, and mulch --------------
+
+    // Each wine: 1 hunger, 0.1 saturation, drinkable when full, three to a stack, and the
+    // glass bottle back. Pyroberry wine also sets the drinker alight.
+    public static final DeferredItem<WineItem> PYROBERRY_WINE = wine("pyroberry_wine", MobEffects.FIRE_RESISTANCE, true);
+    public static final DeferredItem<WineItem> GLOAMBERRY_WINE = wine("gloamberry_wine", MobEffects.NIGHT_VISION, false);
+    public static final DeferredItem<WineItem> FRECKLEBERRY_WINE = wine("freckleberry_wine", MobEffects.MOVEMENT_SPEED, false);
+
+    public static final DeferredItem<PyroberryCocktailItem> PYROBERRY_COCKTAIL = ITEMS.registerItem("pyroberry_cocktail",
+        PyroberryCocktailItem::new, new Item.Properties().stacksTo(1));
+
+    // The 1.12 book's own item entity was fire immune; the component gives that to both entities.
+    public static final DeferredItem<BookItem> BOOK = ITEMS.registerItem("book", BookItem::new,
+        new Item.Properties().stacksTo(1).fireResistant());
+
+    public static final DeferredItem<MulchItem> MULCH = ITEMS.registerItem("mulch", MulchItem::new);
+
     private CoreItems() {
     }
 
@@ -98,6 +122,11 @@ public final class CoreItems {
 
     private static DeferredItem<Item> food(String name, int nutrition, float saturationModifier) {
         return ITEMS.registerSimpleItem(name, new Item.Properties().food(food(nutrition, saturationModifier).build()));
+    }
+
+    private static DeferredItem<WineItem> wine(String name, Holder<MobEffect> effect, boolean ignites) {
+        return ITEMS.registerItem(name, properties -> new WineItem(effect, ignites, properties),
+            new Item.Properties().stacksTo(3).food(food(1, 0.1f).alwaysEdible().usingConvertsTo(Items.GLASS_BOTTLE).build()));
     }
 
     static void addToTab(CreativeModeTab.Output output) {
@@ -123,5 +152,12 @@ public final class CoreItems {
         output.accept(PYROBERRY_SEEDS.get());
         output.accept(GLOAMBERRY_SEEDS.get());
         output.accept(FRECKLEBERRY_SEEDS.get());
+        output.accept(PYROBERRY_WINE.get());
+        output.accept(GLOAMBERRY_WINE.get());
+        output.accept(FRECKLEBERRY_WINE.get());
+        output.accept(PYROBERRY_COCKTAIL.get());
+        output.accept(BOOK.get());
+        output.accept(MULCH.get());
+        CoreFluids.addToTab(output);
     }
 }

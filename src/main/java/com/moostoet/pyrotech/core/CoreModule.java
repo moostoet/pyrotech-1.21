@@ -43,6 +43,8 @@ public final class CoreModule {
     public static void register(IEventBus modEventBus, ModContainer modContainer) {
         CoreBlocks.BLOCKS.register(modEventBus);
         CoreItems.ITEMS.register(modEventBus);
+        CoreFluids.FLUID_TYPES.register(modEventBus);
+        CoreFluids.FLUIDS.register(modEventBus);
         CoreEntities.ENTITY_TYPES.register(modEventBus);
         CoreBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
         CoreSounds.SOUND_EVENTS.register(modEventBus);

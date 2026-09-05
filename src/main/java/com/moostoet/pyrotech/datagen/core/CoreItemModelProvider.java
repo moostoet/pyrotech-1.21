@@ -1,14 +1,18 @@
 package com.moostoet.pyrotech.datagen.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.CoreFluids;
 import com.moostoet.pyrotech.core.Material;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.loaders.DynamicFluidContainerModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 /**
- * Item models the migrated assets lack: one flat model per material item, and one
- * block-parented model per core block item.
+ * Item models the migrated assets lack: one flat model per material item, one
+ * block-parented model per core block item, and a fluid container model per bucket.
  */
 public final class CoreItemModelProvider extends ItemModelProvider {
 
@@ -66,6 +70,15 @@ public final class CoreItemModelProvider extends ItemModelProvider {
         this.blockItem("dense_redstone_ore_rocks", "gen/dense_redstone_ore_rocks/rock_small_a");
         this.blockItem("living_tar", "living_tar");
         this.blockItem("thatch", "thatch");
+
+        // Slice 4. The wines, the cocktail, the book, and mulch keep their static item models.
+        // Each bucket draws NeoForge's bucket with its fluid's still texture through the mask.
+        for (CoreFluids.Entry fluid : CoreFluids.ALL) {
+            this.getBuilder(fluid.bucket().getId().getPath())
+                .parent(new ModelFile.UncheckedModelFile(ResourceLocation.fromNamespaceAndPath("neoforge", "item/bucket")))
+                .customLoader(DynamicFluidContainerModelBuilder::begin)
+                .fluid(fluid.source().get());
+        }
     }
 
     private void blockItem(String name, String blockModel) {

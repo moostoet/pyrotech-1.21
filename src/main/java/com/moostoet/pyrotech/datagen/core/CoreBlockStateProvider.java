@@ -2,6 +2,7 @@ package com.moostoet.pyrotech.datagen.core;
 
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.CoreBlocks;
+import com.moostoet.pyrotech.core.CoreFluids;
 import com.moostoet.pyrotech.core.block.BerryBushBlock;
 import com.moostoet.pyrotech.core.block.DenseRedstoneOreBlock;
 import net.minecraft.world.level.block.Block;
@@ -73,6 +74,11 @@ public final class CoreBlockStateProvider extends BlockStateProvider {
 
         // One model for every facing, part, and occupancy, as the 1.12 blockstate had it.
         this.simpleBlock(CoreBlocks.STRAW_BED.get(), this.existing("block/straw_bed"));
+
+        // Slice 4. A liquid block's model only names the particle texture, as vanilla water's does.
+        for (CoreFluids.Entry fluid : CoreFluids.ALL) {
+            this.simpleBlock(fluid.block().get(), this.models().getBuilder(fluid.name()).texture("particle", fluid.stillTexture()));
+        }
     }
 
     private void bush(Block block, String name) {
