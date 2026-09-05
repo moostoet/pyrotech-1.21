@@ -12,5 +12,6 @@
     "udl": "pyrotech:block/slag_glass_udl",
     "ulr": "pyrotech:block/slag_glass_ulr",
     "udlr": "pyrotech:block/slag_glass_udlr"
-  }
+  },
+  "render_type": "minecraft:translucent"
 }

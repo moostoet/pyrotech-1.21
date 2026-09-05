@@ -12,5 +12,6 @@
     "udl": "pyrotech:block/refractory_glass_udl",
     "ulr": "pyrotech:block/refractory_glass_ulr",
     "udlr": "pyrotech:block/refractory_glass_udlr"
-  }
+  },
+  "render_type": "minecraft:cutout"
 }

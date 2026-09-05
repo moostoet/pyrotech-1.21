@@ -2,5 +2,6 @@
   "parent": "minecraft:block/cross",
   "textures": {
     "cross": "pyrotech:block/freckleberry_plant_2"
-  }
+  },
+  "render_type": "minecraft:cutout"
 }

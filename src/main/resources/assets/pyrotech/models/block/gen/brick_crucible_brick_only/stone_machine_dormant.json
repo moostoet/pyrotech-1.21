@@ -2,5 +2,6 @@
   "parent": "pyrotech:block/stone_machine_dormant",
   "textures": {
     "particle": "pyrotech:block/brick_machine_side_brick_only"
-  }
+  },
+  "render_type": "minecraft:cutout"
 }
