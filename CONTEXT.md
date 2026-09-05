@@ -179,3 +179,16 @@
   below the position it wants. It holds `#minecraft:dirt`, `#minecraft:base_stone_overworld` and
   `#minecraft:terracotta`, mirroring the 1.12 GROUND, GRASS and ROCK material check. Sand and
   gravel are out. The rock block itself only asks for a solid face below, as in 1.12.
+- **Uses**: the number of drains a Pyrotech bucket has left. Draining, emptying into a
+  cauldron or a tank, drinking milk, crafting with the bucket, and the per-second damage
+  a filled bucket takes all spend uses. At zero the bucket vanishes with a break sound,
+  spilling whatever it held. It rides a custom integer data component, not vanilla
+  damage, because vanilla forbids a stackable item from carrying damage.
+- **Bucket tier**: one of the four Pyrotech buckets, wood, clay, stone, and refractory.
+  A tier is a baked set of numbers: its uses, its empty stack size, and the damage per
+  second it and its holder take while it is full and while it holds a hot fluid. Only
+  the refractory bucket takes no hot-fluid damage.
+- **Fluid container model**: the `neoforge:fluid_container` item model, which draws a
+  base texture, the held fluid's own still texture masked by a fluid layer, and a cover
+  layer. It replaces the 1.12 `forge:forgebucket` blockstate models and reads the fluid
+  through the item's fluid handler capability, so a new fluid needs no new model.
