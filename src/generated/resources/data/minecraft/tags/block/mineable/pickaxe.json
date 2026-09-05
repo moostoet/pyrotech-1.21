@@ -1,0 +1,13 @@
+{
+  "values": [
+    "pyrotech:charcoal_block",
+    "pyrotech:coal_coke_block",
+    "pyrotech:crafting_table_template",
+    "pyrotech:refractory_brick_block",
+    "pyrotech:masonry_brick_block",
+    "pyrotech:limestone",
+    "pyrotech:fossil_ore",
+    "pyrotech:dense_coal_ore",
+    "pyrotech:dense_nether_coal_ore"
+  ]
+}

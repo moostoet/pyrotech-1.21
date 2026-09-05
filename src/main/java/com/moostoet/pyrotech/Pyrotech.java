@@ -1,7 +1,9 @@
 package com.moostoet.pyrotech;
 
+import com.moostoet.pyrotech.core.CoreModule;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import org.slf4j.Logger;
 
@@ -11,7 +13,7 @@ public final class Pyrotech {
     public static final String MOD_ID = "pyrotech";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public Pyrotech(IEventBus modEventBus) {
-        // Module init hooks are wired here as modules are ported.
+    public Pyrotech(IEventBus modEventBus, ModContainer modContainer) {
+        CoreModule.register(modEventBus, modContainer);
     }
 }

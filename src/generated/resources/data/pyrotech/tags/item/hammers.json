@@ -1,0 +1,14 @@
+{
+  "values": [
+    "pyrotech:crude_hammer",
+    "pyrotech:stone_hammer",
+    "pyrotech:bone_hammer",
+    "pyrotech:bone_hammer_durable",
+    "pyrotech:flint_hammer",
+    "pyrotech:flint_hammer_durable",
+    "pyrotech:iron_hammer",
+    "pyrotech:gold_hammer",
+    "pyrotech:diamond_hammer",
+    "pyrotech:obsidian_hammer"
+  ]
+}
