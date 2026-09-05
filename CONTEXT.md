@@ -158,3 +158,8 @@
   a food, minus its own blacklist tag, which ships empty. It is derived the way the campfire cook
   list is, but it keeps no exceptions of its own, because the campfire's bread and cookie are
   early-game gating rather than an oven limit.
+- **Carcass**: the block a Pyrotech-killed animal leaves instead of its drops. The kill spawns a carcass item holding the captured drops, and a player places it and works it with a knife to get the hides, pelts, meat, bone shards, and lard back out.
+- **Knife efficiency**: the progress one knife use adds at a carcass or a butcher's block, per knife material. A carcass and a butcher's block have separate numbers for the same knife.
+- **Butchering transform**: the swap applied to an item as it comes out of a carcass, chosen by which knife is held. A butcher's knife doubles meat and ruins pelts, a hunter's knife doubles pelts and taints meat.
+- **Tannin**: the fluid brewed in a barrel from four leaves and a bucket of water. Soaking a washed hide in it makes a tanned hide, the step before leather.
+- **Sharp tool**: any axe, sword, or knife, the set that can whittle a marshmallow stick. In 1.21 it is the `#pyrotech:sharp_tools` tag.
