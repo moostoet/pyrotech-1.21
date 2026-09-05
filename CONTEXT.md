@@ -114,3 +114,7 @@
 - **Slag heap**: the eight-level pile a bloomery or wither forge builds in front of itself, one slag
   per level, molten for five minutes after the last addition. A heap of a metal's slag blooms
   again; a heap of plain slag fires into slag glass.
+- **Render type**: the layer a block model draws on in 1.21 (solid, cutout, cutout mipped, or
+  translucent), declared as `render_type` in the model JSON. It replaces the 1.12 `getBlockLayer()`
+  override. A model inherits the field from its parent, so a base model shared by blocks on
+  different layers leaves the field to the per-block wrappers.
