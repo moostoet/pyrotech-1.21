@@ -21,7 +21,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
-import net.neoforged.neoforge.fluids.FluidStack;
+import net.neoforged.neoforge.common.world.AuxiliaryLightManager;
 import net.neoforged.neoforge.fluids.FluidUtil;
 
 /**
@@ -75,16 +75,21 @@ public final class TankBlock extends BaseEntityBlock {
         }
     }
 
-    /** The held fluid's own light, as the 1.12 {@code getLightValue} read the fluid's luminosity. */
+    /**
+     * The held fluid's own light, as the 1.12 {@code getLightValue} read the fluid's
+     * luminosity. The block entity keeps it in the chunk's auxiliary light manager, since
+     * the server's light thread cannot read block entities and the value must survive a
+     * chunk load.
+     */
+    @Override
+    public boolean hasDynamicLightEmission(BlockState state) {
+        return true;
+    }
+
     @Override
     public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
-        if (level.getBlockEntity(pos) instanceof TankBlockEntity tank) {
-            FluidStack fluid = tank.tank().getFluid();
-            if (!fluid.isEmpty()) {
-                return fluid.getFluidType().getLightLevel(fluid);
-            }
-        }
-        return super.getLightEmission(state, level, pos);
+        AuxiliaryLightManager lights = level.getAuxLightManager(pos);
+        return lights == null ? 0 : lights.getLightAt(pos);
     }
 
     /** A fluid container on any face meets the group handler (storage sign-off, item 8). */

@@ -17,6 +17,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.common.world.AuxiliaryLightManager;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.FluidUtil;
 import net.neoforged.neoforge.fluids.SimpleFluidContent;
@@ -223,8 +224,15 @@ public final class TankBlockEntity extends SyncedBlockEntity {
             return;
         }
         this.sync();
-        if (!this.level.isClientSide) {
-            this.level.getLightEngine().checkBlock(this.worldPosition);
+        this.updateLight();
+    }
+
+    /** The fluid's light into the chunk's light manager, which relights the block on both sides. */
+    private void updateLight() {
+        AuxiliaryLightManager lights = this.level == null ? null : this.level.getAuxLightManager(this.worldPosition);
+        if (lights != null) {
+            FluidStack fluid = this.tank.getFluid();
+            lights.setLightAt(this.worldPosition, fluid.isEmpty() ? 0 : fluid.getFluidType().getLightLevel(fluid));
         }
     }
 
@@ -238,14 +246,11 @@ public final class TankBlockEntity extends SyncedBlockEntity {
         serverLevel.playSound(null, pos, SoundEvents.ITEM_BREAK, SoundSource.PLAYERS, 1, 1);
         FluidUtil.tryPlaceFluid(null, serverLevel, InteractionHand.MAIN_HAND, pos, this.tank, resource);
         CombustParticles.spawn(serverLevel, pos, 0.5);
-        serverLevel.getLightEngine().checkBlock(pos);
     }
 
     @Override
     protected void onSyncedDataUpdate() {
-        if (this.level != null) {
-            this.level.getLightEngine().checkBlock(this.worldPosition);
-        }
+        this.updateLight();
     }
 
     // -- The item round trip -------------------------------------------------

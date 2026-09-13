@@ -13,7 +13,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponentMap;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
@@ -89,7 +88,7 @@ public final class BagBlockEntity extends SyncedBlockEntity implements ScrollInt
     }
 
     @Override
-    public void scroll(ServerPlayer player, BlockHitResult hit, boolean up) {
+    public void scroll(Player player, BlockHitResult hit, boolean up) {
         if (!this.isInput(hit)) {
             return;
         }

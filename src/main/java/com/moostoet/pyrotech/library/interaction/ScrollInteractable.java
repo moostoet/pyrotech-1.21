@@ -1,6 +1,6 @@
 package com.moostoet.pyrotech.library.interaction;
 
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.BlockHitResult;
 
 /**
@@ -10,5 +10,5 @@ import net.minecraft.world.phys.BlockHitResult;
  */
 public interface ScrollInteractable {
 
-    void scroll(ServerPlayer player, BlockHitResult hit, boolean up);
+    void scroll(Player player, BlockHitResult hit, boolean up);
 }

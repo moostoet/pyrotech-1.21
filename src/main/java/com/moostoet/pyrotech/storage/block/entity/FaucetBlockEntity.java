@@ -109,7 +109,6 @@ public final class FaucetBlockEntity extends SyncedBlockEntity {
         serverLevel.removeBlock(this.worldPosition, false);
         serverLevel.playSound(null, this.worldPosition, SoundEvents.ITEM_BREAK, SoundSource.PLAYERS, 1, 1);
         CombustParticles.spawn(serverLevel, this.worldPosition, 0.2);
-        serverLevel.getLightEngine().checkBlock(this.worldPosition);
     }
 
     @Override

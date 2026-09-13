@@ -11,7 +11,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Containers;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -70,7 +69,7 @@ public final class ShelfBlockEntity extends SyncedBlockEntity implements ScrollI
     }
 
     @Override
-    public void scroll(ServerPlayer player, BlockHitResult hit, boolean up) {
+    public void scroll(Player player, BlockHitResult hit, boolean up) {
         int slot = this.slotAt(hit);
         if (slot < 0) {
             return;
