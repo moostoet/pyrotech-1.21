@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "-": {
+      "item": "pyrotech:board_tarred"
+    },
+    "P": {
+      "item": "minecraft:spruce_planks"
+    },
+    "T": {
+      "item": "pyrotech:planks_tarred"
+    }
+  },
+  "pattern": [
+    "P P",
+    "T-T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:spruce_boat"
+  }
+}

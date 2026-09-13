@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:dough"
+    },
+    {
+      "item": "pyrotech:dough"
+    },
+    {
+      "item": "pyrotech:dough"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:bread_dough"
+  }
+}

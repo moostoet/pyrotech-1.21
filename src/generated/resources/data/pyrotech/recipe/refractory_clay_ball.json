@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "pyrotech:pit_ash"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "F": {
+      "item": "pyrotech:flint_clay_ball"
+    },
+    "L": {
+      "item": "pyrotech:slaked_lime"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "LFL",
+    "CAC"
+  ],
+  "result": {
+    "count": 5,
+    "id": "pyrotech:refractory_clay_ball"
+  }
+}

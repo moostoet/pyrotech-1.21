@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "|": {
+      "item": "pyrotech:twine_durable"
+    }
+  },
+  "pattern": [
+    " S|",
+    "S |",
+    " S|"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bow"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:bow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_twine_durable": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:twine_durable"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_twine_durable"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:bow"
+    ]
+  }
+}

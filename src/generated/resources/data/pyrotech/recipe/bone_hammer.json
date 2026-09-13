@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "tag": "pyrotech:twine"
+    },
+    "R": {
+      "item": "pyrotech:bone_shard"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " RF",
+    " SR",
+    "S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:bone_hammer"
+  }
+}

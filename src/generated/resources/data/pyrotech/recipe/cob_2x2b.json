@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "pyrotech:thatch"
+    },
+    {
+      "item": "pyrotech:mud"
+    },
+    {
+      "item": "pyrotech:mud"
+    },
+    {
+      "item": "pyrotech:mud"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "id": "pyrotech:cob_wet"
+  }
+}

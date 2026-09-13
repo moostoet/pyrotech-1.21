@@ -26,9 +26,7 @@ public class HammerItem extends Item {
 
     @Override
     public ItemStack getCraftingRemainingItem(ItemStack stack) {
-        ItemStack remainder = stack.copyWithCount(1);
-        remainder.setDamageValue(remainder.getDamageValue() + 1);
-        return remainder.getDamageValue() >= remainder.getMaxDamage() ? ItemStack.EMPTY : remainder;
+        return CraftingRemainders.damaged(stack, 1);
     }
 
     @Override

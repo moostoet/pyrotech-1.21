@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:short_grass"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:plant_fibers"
+  }
+}

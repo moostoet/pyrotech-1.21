@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_thatch": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:thatch"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:straw_from_thatch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_thatch"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:straw_from_thatch"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rock_limestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:rock_limestone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:cobbled_limestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rock_limestone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:cobbled_limestone"
+    ]
+  }
+}

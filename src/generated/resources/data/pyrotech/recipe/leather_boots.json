@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "pyrotech:leather_cord"
+    },
+    "L": {
+      "item": "pyrotech:leather_sheet"
+    }
+  },
+  "pattern": [
+    "C C",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:leather_boots"
+  }
+}

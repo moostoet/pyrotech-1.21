@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "pyrotech:twine_durable"
+    },
+    "R": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " RF",
+    " SR",
+    "S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:diamond_hammer"
+  }
+}

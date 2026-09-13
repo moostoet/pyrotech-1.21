@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "block": "pyrotech:pyroberry_bush",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "age": "0"
+                      }
+                    },
+                    {
+                      "block": "pyrotech:pyroberry_bush",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "age": "1"
+                      }
+                    },
+                    {
+                      "block": "pyrotech:pyroberry_bush",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "age": "2"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "name": "pyrotech:pyroberry_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 3.0,
+                    "min": 1.0
+                  },
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "minecraft:stick"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pyrotech:blocks/pyroberry_bush"
+}

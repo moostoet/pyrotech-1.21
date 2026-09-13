@@ -28,6 +28,8 @@ public final class PyrotechTags {
         public static final TagKey<Item> KNIVES = tag("knives");
         /** Any axe, sword, or knife: the 1.12 {@code toolSharp} ore dictionary name. */
         public static final TagKey<Item> SHARP_TOOLS = tag("sharp_tools");
+        /** String, twine, and durable twine: the 1.12 {@code twine} ore dictionary name. */
+        public static final TagKey<Item> TWINE = tag("twine");
 
         private static TagKey<Item> tag(String name) {
             return TagKey.create(Registries.ITEM, id(name));

@@ -12,6 +12,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -46,6 +47,10 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
         this.tag(PyrotechTags.Items.IGNITERS);
         this.tag(PyrotechTags.Items.KNIVES);
         this.tag(PyrotechTags.Items.SHARP_TOOLS).addTags(ItemTags.AXES, ItemTags.SWORDS, PyrotechTags.Items.KNIVES);
+        this.tag(PyrotechTags.Items.TWINE).add(
+            Items.STRING,
+            CoreItems.material(Material.TWINE).get(),
+            CoreItems.material(Material.TWINE_DURABLE).get());
         for (CoreFluids.Entry fluid : CoreFluids.ALL) {
             this.tag(Tags.Items.BUCKETS).add(fluid.bucket().get());
         }
@@ -56,5 +61,6 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
         this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
         this.copy(BlockTags.WALLS, ItemTags.WALLS);
         this.copy(BlockTags.DOORS, ItemTags.DOORS);
+        this.copy(Tags.Blocks.GLASS_BLOCKS, Tags.Items.GLASS_BLOCKS);
     }
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bread_dough": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:bread_dough"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:bread_from_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bread_dough"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:bread_from_smelting"
+    ]
+  }
+}

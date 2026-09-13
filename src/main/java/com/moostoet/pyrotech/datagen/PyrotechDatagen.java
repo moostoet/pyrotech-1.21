@@ -10,6 +10,8 @@ import com.moostoet.pyrotech.datagen.core.CoreFluidTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemModelProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreLootModifierProvider;
+import com.moostoet.pyrotech.datagen.core.CoreLootTableProvider;
+import com.moostoet.pyrotech.datagen.core.CoreRecipeProvider;
 import com.moostoet.pyrotech.datagen.core.RecipeRemovalProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -48,6 +50,8 @@ public final class PyrotechDatagen {
         generator.addProvider(event.includeServer(), new CoreDataMapProvider(output, lookup));
         generator.addProvider(event.includeServer(), new RecipeRemovalProvider(output));
         generator.addProvider(event.includeServer(), new CoreLootModifierProvider(output, lookup));
+        generator.addProvider(event.includeServer(), new CoreRecipeProvider(output, lookup));
+        generator.addProvider(event.includeServer(), new CoreLootTableProvider(output, lookup));
         generator.addProvider(event.includeServer(),
             new AdvancementProvider(output, lookup, existingFiles, List.of(new CoreAdvancementGenerator())));
     }

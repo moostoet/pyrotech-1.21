@@ -108,5 +108,8 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
         this.tag(PyrotechTags.Blocks.REFRACTORY).add(
             CoreBlocks.REFRACTORY_BRICK_BLOCK.get(),
             CoreBlocks.REFRACTORY_GLASS.get());
+
+        // The 1.12 blockGlass ore dictionary entries; the refractory glass recipe reads it.
+        this.tag(Tags.Blocks.GLASS_BLOCKS).add(CoreBlocks.REFRACTORY_GLASS.get(), CoreBlocks.SLAG_GLASS.get());
     }
 }

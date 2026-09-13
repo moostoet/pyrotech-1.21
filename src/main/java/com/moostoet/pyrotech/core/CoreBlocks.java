@@ -23,6 +23,7 @@ import com.moostoet.pyrotech.core.block.ThatchBlock;
 import com.moostoet.pyrotech.core.block.WetCobBlock;
 import com.moostoet.pyrotech.core.block.WoodChipsPileBlock;
 import com.moostoet.pyrotech.core.entity.ThrownRockEntity;
+import com.moostoet.pyrotech.core.item.CraftingTableTemplateItem;
 import com.moostoet.pyrotech.core.item.RockItem;
 import com.moostoet.pyrotech.core.item.StrawBedItem;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -90,8 +91,10 @@ public final class CoreBlocks {
 
     public static final DeferredBlock<Block> CHARCOAL_BLOCK = simple("charcoal_block", rock(MapColor.STONE, 5, 5));
     public static final DeferredBlock<Block> COAL_COKE_BLOCK = simple("coal_coke_block", rock(MapColor.STONE, 5, 5));
-    public static final DeferredBlock<Block> CRAFTING_TABLE_TEMPLATE = simple("crafting_table_template",
+    public static final DeferredBlock<Block> CRAFTING_TABLE_TEMPLATE = BLOCKS.registerSimpleBlock("crafting_table_template",
         BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(5, 6).requiresCorrectToolForDrops());
+    public static final DeferredItem<BlockItem> CRAFTING_TABLE_TEMPLATE_ITEM = blockItem(CRAFTING_TABLE_TEMPLATE,
+        properties -> new CraftingTableTemplateItem(CRAFTING_TABLE_TEMPLATE.get(), properties));
     public static final DeferredBlock<Block> REFRACTORY_BRICK_BLOCK = simple("refractory_brick_block", rock(MapColor.SAND, 3, 6));
     public static final DeferredBlock<Block> MASONRY_BRICK_BLOCK = simple("masonry_brick_block", rock(MapColor.STONE, 1.5f, 6));
     public static final DeferredBlock<Block> LIMESTONE = simple("limestone", rock(MapColor.STONE, 1.5f, 6));

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "pyrotech:cookie_dough"
+  },
+  "result": {
+    "count": 8,
+    "id": "minecraft:cookie"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "pyrotech:rock_mud"
+    },
+    "F": {
+      "item": "pyrotech:straw"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DFD",
+    "DDD"
+  ],
+  "result": {
+    "count": 4,
+    "id": "pyrotech:cob_wet"
+  }
+}

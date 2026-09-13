@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:flour"
+    },
+    {
+      "item": "pyrotech:flour"
+    },
+    {
+      "item": "pyrotech:flour"
+    },
+    {
+      "type": "pyrotech:fluid_container",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "pyrotech:dough"
+  }
+}

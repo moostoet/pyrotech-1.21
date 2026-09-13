@@ -9,6 +9,8 @@ import com.moostoet.pyrotech.core.event.SheepDropsHandler;
 import com.moostoet.pyrotech.core.event.StrawBedHandler;
 import com.moostoet.pyrotech.core.loot.CoreLootModifiers;
 import com.moostoet.pyrotech.core.network.CoreNetwork;
+import com.moostoet.pyrotech.core.recipe.CoreIngredientTypes;
+import com.moostoet.pyrotech.core.recipe.CoreRecipeSerializers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -57,6 +59,8 @@ public final class CoreModule {
         CoreSounds.SOUND_EVENTS.register(modEventBus);
         CoreTriggers.TRIGGER_TYPES.register(modEventBus);
         CoreLootModifiers.SERIALIZERS.register(modEventBus);
+        CoreRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
+        CoreIngredientTypes.INGREDIENT_TYPES.register(modEventBus);
         CREATIVE_TABS.register(modEventBus);
         NeoForge.EVENT_BUS.register(StrawBedHandler.class);
         NeoForge.EVENT_BUS.register(SheepDropsHandler.class);

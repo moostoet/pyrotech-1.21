@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:refractory_clay_ball"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "pyrotech:refractory_clay_lump"
+  }
+}

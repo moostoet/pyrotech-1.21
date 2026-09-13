@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:unfired_refractory_brick"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "pyrotech:refractory_clay_lump"
+  }
+}

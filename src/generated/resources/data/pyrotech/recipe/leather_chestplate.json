@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "item": "pyrotech:leather_sheet"
+    },
+    "S": {
+      "item": "pyrotech:leather_strap"
+    }
+  },
+  "pattern": [
+    "S S",
+    "LLL",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:leather_chestplate"
+  }
+}

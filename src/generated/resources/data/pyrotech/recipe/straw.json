@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:plant_fibers_dried"
+    },
+    {
+      "item": "pyrotech:plant_fibers_dried"
+    },
+    {
+      "tag": "pyrotech:twine"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:straw"
+  }
+}

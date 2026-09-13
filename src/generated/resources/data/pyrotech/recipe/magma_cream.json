@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:pyroberries"
+    },
+    {
+      "item": "pyrotech:pyroberries"
+    },
+    {
+      "item": "pyrotech:pyroberries"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:magma_cream"
+  }
+}

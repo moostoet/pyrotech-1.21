@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:rods/wooden"
+    },
+    "E": {
+      "tag": "pyrotech:twine"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BEB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:kindling"
+  }
+}

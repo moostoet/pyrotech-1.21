@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "pyrotech:leather_cord"
+    },
+    "L": {
+      "item": "pyrotech:leather_strap"
+    },
+    "S": {
+      "tag": "pyrotech:stone_sticks"
+    }
+  },
+  "pattern": [
+    "SLC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:stone_tool_shaft"
+  }
+}

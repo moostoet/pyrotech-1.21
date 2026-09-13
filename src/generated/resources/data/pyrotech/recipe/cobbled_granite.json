@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "pyrotech:clay_lump"
+    },
+    "R": {
+      "item": "pyrotech:rock_granite"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:cobblestone_granite"
+  }
+}

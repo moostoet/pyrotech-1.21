@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "pyrotech:rock_dirt"
+    },
+    "F": {
+      "type": "pyrotech:fluid_container",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DFD",
+    "DDD"
+  ],
+  "result": {
+    "count": 8,
+    "id": "pyrotech:rock_mud"
+  }
+}

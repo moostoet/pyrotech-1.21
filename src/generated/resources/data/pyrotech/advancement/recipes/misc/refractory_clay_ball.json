@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flint_clay_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:flint_clay_ball"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:refractory_clay_ball"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_flint_clay_ball"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:refractory_clay_ball"
+    ]
+  }
+}

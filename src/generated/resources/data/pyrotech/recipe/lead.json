@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "pyrotech:leather_strap"
+    },
+    "~": {
+      "item": "pyrotech:leather_cord"
+    }
+  },
+  "pattern": [
+    "~~ ",
+    "~S ",
+    "  ~"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:lead"
+  }
+}

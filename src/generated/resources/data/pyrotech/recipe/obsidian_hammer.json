@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "pyrotech:twine_durable"
+    },
+    "R": {
+      "item": "pyrotech:obsidian_shard"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " RF",
+    " SR",
+    "S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:obsidian_hammer"
+  }
+}
