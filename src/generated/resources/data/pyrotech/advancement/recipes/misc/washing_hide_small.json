@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hide_small_scraped": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:hide_small_scraped"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:washing_hide_small"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hide_small_scraped"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:washing_hide_small"
+    ]
+  }
+}

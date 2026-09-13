@@ -4,6 +4,7 @@
     "pyrotech:flint_sword",
     "pyrotech:obsidian_sword",
     "pyrotech:redstone_sword",
-    "pyrotech:quartz_sword"
+    "pyrotech:quartz_sword",
+    "#pyrotech:knives"
   ]
 }

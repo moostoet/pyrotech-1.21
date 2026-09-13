@@ -1,0 +1,134 @@
+{
+  "values": {
+    "minecraft:bat": [
+      {
+        "chance": 0.65,
+        "item": "pyrotech:pelt_bat"
+      }
+    ],
+    "minecraft:cow": [
+      {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_cow"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:donkey": [
+      {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_horse"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:horse": [
+      {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_horse"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:mooshroom": [
+      {
+        "chance": 0.65,
+        "item": "pyrotech:pelt_mooshroom"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:pig": [
+      {
+        "chance": 0.85,
+        "item": "pyrotech:hide_pig"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:polar_bear": [
+      {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_polar_bear"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "count": 3,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:rabbit": [
+      {
+        "chance": 0.65,
+        "item": "minecraft:rabbit_hide"
+      },
+      {
+        "chance": 0.25,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "item": "pyrotech:lard"
+      }
+    ],
+    "minecraft:wolf": [
+      {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_wolf"
+      },
+      {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      },
+      {
+        "chance": 0.5,
+        "item": "pyrotech:lard"
+      }
+    ]
+  }
+}

@@ -1,6 +1,8 @@
 package com.moostoet.pyrotech.datagen.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.bucket.BucketItems;
+import com.moostoet.pyrotech.bucket.item.PyrotechBucketItem;
 import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.CoreFluids;
 import com.moostoet.pyrotech.library.fluid.PyrotechFluids;
@@ -8,11 +10,14 @@ import com.moostoet.pyrotech.core.CoreItems;
 import com.moostoet.pyrotech.core.Material;
 import com.moostoet.pyrotech.core.PyrotechTags;
 import com.moostoet.pyrotech.core.item.HammerItem;
+import com.moostoet.pyrotech.hunting.HuntingFluids;
+import com.moostoet.pyrotech.hunting.HuntingTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
@@ -43,17 +48,23 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
             CoreBlocks.ROCK_SANDSTONE.get().asItem(),
             CoreBlocks.ROCK_LIMESTONE.get().asItem(),
             CoreBlocks.ROCK_SANDSTONE_RED.get().asItem());
-        // Ignition fills the igniters and hunting the knives; the files exist from the start so
-        // that the tags they feed resolve.
+        // Ignition fills the igniters; the file exists from the start so the tags it feeds resolve.
         this.tag(PyrotechTags.Items.IGNITERS);
-        this.tag(PyrotechTags.Items.KNIVES);
+        this.tag(PyrotechTags.Items.KNIVES).addTags(HuntingTags.Items.HUNTERS_KNIVES, HuntingTags.Items.BUTCHERS_KNIVES);
         this.tag(PyrotechTags.Items.SHARP_TOOLS).addTags(ItemTags.AXES, ItemTags.SWORDS, PyrotechTags.Items.KNIVES);
         this.tag(PyrotechTags.Items.TWINE).add(
             Items.STRING,
             CoreItems.material(Material.TWINE).get(),
             CoreItems.material(Material.TWINE_DURABLE).get());
+        // A tag file has one writer, so every Pyrotech bucket joins c:buckets here: core's four
+        // fluid buckets, hunting's tannin bucket, and bucket's four tiers.
+        IntrinsicTagAppender<Item> buckets = this.tag(Tags.Items.BUCKETS);
         for (PyrotechFluids.Entry fluid : CoreFluids.ALL) {
-            this.tag(Tags.Items.BUCKETS).add(fluid.bucket().get());
+            buckets.add(fluid.bucket().get());
+        }
+        buckets.add(HuntingFluids.TANNIN.bucket().get());
+        for (DeferredItem<PyrotechBucketItem> bucket : BucketItems.BUCKETS) {
+            buckets.add(bucket.get());
         }
 
         // The item halves of the shape tags. #minecraft:wooden_doors stays untouched: that

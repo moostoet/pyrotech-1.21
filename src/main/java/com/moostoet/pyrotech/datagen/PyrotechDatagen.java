@@ -2,7 +2,6 @@ package com.moostoet.pyrotech.datagen;
 
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.datagen.bucket.BucketItemModelProvider;
-import com.moostoet.pyrotech.datagen.bucket.BucketItemTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreAdvancementGenerator;
 import com.moostoet.pyrotech.datagen.core.CoreBlockStateProvider;
 import com.moostoet.pyrotech.datagen.core.CoreBlockTagsProvider;
@@ -14,6 +13,13 @@ import com.moostoet.pyrotech.datagen.core.CoreItemTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreLootModifierProvider;
 import com.moostoet.pyrotech.datagen.core.CoreLootTableProvider;
 import com.moostoet.pyrotech.datagen.core.RecipeRemovalProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingBiomeTagsProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingBlockStateProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingDataMapProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingFluidTagsProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingItemModelProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingItemTagsProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingRegistryProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageItemModelProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageItemTagsProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolItemModelProvider;
@@ -47,29 +53,37 @@ public final class PyrotechDatagen {
         ExistingFileHelper existingFiles = event.getExistingFileHelper();
 
         generator.addProvider(event.includeClient(), new CoreBlockStateProvider(output, existingFiles));
+        generator.addProvider(event.includeClient(), new HuntingBlockStateProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new CoreItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new ToolItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new BucketItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new StorageItemModelProvider(output, existingFiles));
+        generator.addProvider(event.includeClient(), new HuntingItemModelProvider(output, existingFiles));
 
         CoreBlockTagsProvider blockTags = new CoreBlockTagsProvider(output, lookup, existingFiles);
         generator.addProvider(event.includeServer(), blockTags);
+        // Tag providers validate the tags they reference against what earlier providers wrote,
+        // so a unit whose tags a core tag includes runs before core's item tags.
+        generator.addProvider(event.includeServer(),
+            new HuntingItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(),
             new CoreItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(),
             new ToolItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(),
-            new BucketItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
-        generator.addProvider(event.includeServer(),
             new StorageItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(), new WorldgenBlockTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new WorldgenBiomeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreFluidTagsProvider(output, lookup, existingFiles));
+        generator.addProvider(event.includeServer(), new HuntingFluidTagsProvider(output, lookup, existingFiles));
+        generator.addProvider(event.includeServer(), new HuntingBiomeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreEntityTypeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreDataMapProvider(output, lookup));
+        generator.addProvider(event.includeServer(), new HuntingDataMapProvider(output, lookup));
         generator.addProvider(event.includeServer(), new RecipeRemovalProvider(output));
         generator.addProvider(event.includeServer(), new CoreLootModifierProvider(output, lookup));
         generator.addProvider(event.includeServer(), new WorldgenRegistryProvider(output, lookup));
+        generator.addProvider(event.includeServer(), new HuntingRegistryProvider(output, lookup));
         generator.addProvider(event.includeServer(), new PyrotechRecipeProvider(output, lookup));
         generator.addProvider(event.includeServer(), new CoreLootTableProvider(output, lookup));
         generator.addProvider(event.includeServer(),

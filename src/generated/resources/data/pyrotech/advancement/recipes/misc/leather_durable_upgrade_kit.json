@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_leather_durable_sheet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:leather_durable_sheet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:leather_durable_upgrade_kit"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_leather_durable_sheet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:leather_durable_upgrade_kit"
+    ]
+  }
+}

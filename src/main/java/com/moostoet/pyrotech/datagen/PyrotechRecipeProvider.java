@@ -2,6 +2,7 @@ package com.moostoet.pyrotech.datagen;
 
 import com.moostoet.pyrotech.datagen.bucket.BucketRecipeProvider;
 import com.moostoet.pyrotech.datagen.core.CoreRecipeProvider;
+import com.moostoet.pyrotech.datagen.hunting.HuntingRecipeProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageRecipeProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -24,7 +25,8 @@ public final class PyrotechRecipeProvider extends RecipeProvider {
     public PyrotechRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
         this.units = List.of(new CoreRecipeProvider(output, registries), new ToolRecipeProvider(output, registries),
-            new BucketRecipeProvider(output, registries), new StorageRecipeProvider(output, registries));
+            new BucketRecipeProvider(output, registries), new StorageRecipeProvider(output, registries),
+            new HuntingRecipeProvider(output, registries));
     }
 
     @Override

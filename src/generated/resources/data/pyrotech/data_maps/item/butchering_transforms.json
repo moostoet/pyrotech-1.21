@@ -1,0 +1,189 @@
+{
+  "values": {
+    "minecraft:beef": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:beef"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "item": "pyrotech:tainted_meat"
+      }
+    },
+    "minecraft:chicken": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:chicken"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "item": "pyrotech:tainted_meat"
+      }
+    },
+    "minecraft:mutton": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:mutton"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "item": "pyrotech:tainted_meat"
+      }
+    },
+    "minecraft:porkchop": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:porkchop"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "item": "pyrotech:tainted_meat"
+      }
+    },
+    "minecraft:rabbit": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:rabbit"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "item": "pyrotech:tainted_meat"
+      }
+    },
+    "minecraft:rabbit_foot": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:rabbit_foot"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:rabbit_foot"
+      }
+    },
+    "minecraft:rabbit_hide": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "minecraft:rabbit_hide"
+      }
+    },
+    "minecraft:red_mushroom": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 4,
+        "item": "minecraft:red_mushroom"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 4,
+        "item": "minecraft:red_mushroom"
+      }
+    },
+    "pyrotech:bone_shard": {
+      "butchers": {
+        "chance": 0.5,
+        "item": "minecraft:bone"
+      },
+      "hunters": {
+        "chance": 0.5,
+        "count": 2,
+        "item": "pyrotech:bone_shard"
+      }
+    },
+    "pyrotech:hide_pig": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:hide_pig"
+      }
+    },
+    "pyrotech:lard": {
+      "butchers": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:lard"
+      }
+    },
+    "pyrotech:pelt_bat": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:pelt_bat"
+      }
+    },
+    "pyrotech:pelt_cow": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:pelt_cow"
+      }
+    },
+    "pyrotech:pelt_horse": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:pelt_horse"
+      }
+    },
+    "pyrotech:pelt_mooshroom": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:pelt_mooshroom"
+      }
+    },
+    "pyrotech:pelt_polar_bear": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:pelt_polar_bear"
+      }
+    },
+    "pyrotech:pelt_wolf": {
+      "butchers": {
+        "chance": 0.85,
+        "item": "pyrotech:pelt_ruined"
+      },
+      "hunters": {
+        "chance": 0.85,
+        "count": 2,
+        "item": "pyrotech:pelt_wolf"
+      }
+    }
+  }
+}

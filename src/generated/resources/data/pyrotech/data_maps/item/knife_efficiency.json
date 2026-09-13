@@ -1,0 +1,60 @@
+{
+  "values": {
+    "pyrotech:bone_butchers_knife": {
+      "butchers_block": 25,
+      "carcass": 15
+    },
+    "pyrotech:bone_hunters_knife": {
+      "butchers_block": 25,
+      "carcass": 15
+    },
+    "pyrotech:diamond_butchers_knife": {
+      "butchers_block": 58,
+      "carcass": 35
+    },
+    "pyrotech:diamond_hunters_knife": {
+      "butchers_block": 58,
+      "carcass": 35
+    },
+    "pyrotech:flint_butchers_knife": {
+      "butchers_block": 25,
+      "carcass": 15
+    },
+    "pyrotech:flint_hunters_knife": {
+      "butchers_block": 25,
+      "carcass": 15
+    },
+    "pyrotech:gold_butchers_knife": {
+      "butchers_block": 8,
+      "carcass": 5
+    },
+    "pyrotech:gold_hunters_knife": {
+      "butchers_block": 8,
+      "carcass": 5
+    },
+    "pyrotech:iron_butchers_knife": {
+      "butchers_block": 34,
+      "carcass": 20
+    },
+    "pyrotech:iron_hunters_knife": {
+      "butchers_block": 34,
+      "carcass": 20
+    },
+    "pyrotech:obsidian_butchers_knife": {
+      "butchers_block": 34,
+      "carcass": 20
+    },
+    "pyrotech:obsidian_hunters_knife": {
+      "butchers_block": 34,
+      "carcass": 20
+    },
+    "pyrotech:stone_butchers_knife": {
+      "butchers_block": 17,
+      "carcass": 10
+    },
+    "pyrotech:stone_hunters_knife": {
+      "butchers_block": 17,
+      "carcass": 10
+    }
+  }
+}

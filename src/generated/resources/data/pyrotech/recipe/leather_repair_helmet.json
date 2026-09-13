@@ -1,0 +1,14 @@
+{
+  "type": "pyrotech:leather_repair",
+  "armor": {
+    "item": "minecraft:leather_helmet"
+  },
+  "kit": {
+    "tag": "pyrotech:leather_repair_kits"
+  },
+  "repair": 0.25,
+  "tool": {
+    "tag": "pyrotech:hunters_knives"
+  },
+  "tool_damage": 4
+}

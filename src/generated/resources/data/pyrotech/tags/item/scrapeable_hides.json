@@ -1,0 +1,32 @@
+{
+  "values": [
+    "pyrotech:pelt_cow",
+    "pyrotech:pelt_horse",
+    "pyrotech:pelt_mooshroom",
+    "pyrotech:pelt_polar_bear",
+    "pyrotech:hide_pig",
+    "pyrotech:hide_sheep_sheared",
+    "pyrotech:hide_llama",
+    "pyrotech:pelt_wolf",
+    "pyrotech:pelt_sheep_blue",
+    "pyrotech:pelt_sheep_black",
+    "pyrotech:pelt_sheep_green",
+    "pyrotech:pelt_sheep_orange",
+    "pyrotech:pelt_sheep_gray",
+    "pyrotech:pelt_sheep_magenta",
+    "pyrotech:pelt_sheep_gray_light",
+    "pyrotech:pelt_sheep_white",
+    "pyrotech:pelt_sheep_red",
+    "pyrotech:pelt_sheep_purple",
+    "pyrotech:pelt_sheep_brown",
+    "pyrotech:pelt_sheep_cyan",
+    "pyrotech:pelt_sheep_lime",
+    "pyrotech:pelt_sheep_pink",
+    "pyrotech:pelt_sheep_yellow",
+    "pyrotech:pelt_sheep_blue_light",
+    "pyrotech:pelt_llama_gray",
+    "pyrotech:pelt_llama_creamy",
+    "pyrotech:pelt_llama_brown",
+    "pyrotech:pelt_llama_white"
+  ]
+}

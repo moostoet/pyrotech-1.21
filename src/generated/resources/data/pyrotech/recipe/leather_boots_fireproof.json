@@ -1,0 +1,20 @@
+{
+  "type": "pyrotech:leather_fire_protection",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:leather_boots"
+    },
+    "O": {
+      "item": "pyrotech:slaked_lime"
+    }
+  },
+  "pattern": [
+    "O O",
+    "OAO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:leather_boots"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "pyrotech:leather_fire_protection",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "O": {
+      "item": "pyrotech:slaked_lime"
+    }
+  },
+  "pattern": [
+    "OAO",
+    "OOO",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:leather_chestplate"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "pyrotech:board_tarred"
+    },
+    "P": {
+      "item": "pyrotech:board"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "B B",
+    "BPB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:butchers_block"
+  }
+}

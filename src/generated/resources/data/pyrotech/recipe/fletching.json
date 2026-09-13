@@ -1,0 +1,17 @@
+{
+  "type": "pyrotech:tool_damage_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:feathers"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "pyrotech:fletching"
+  },
+  "tool": {
+    "tag": "pyrotech:hunters_knives"
+  },
+  "tool_damage": 0
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "tag": "pyrotech:twine"
+    },
+    "^": {
+      "item": "pyrotech:brick_stone"
+    }
+  },
+  "pattern": [
+    " ^ ",
+    "^/ ",
+    "/S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:stone_butchers_knife"
+  }
+}

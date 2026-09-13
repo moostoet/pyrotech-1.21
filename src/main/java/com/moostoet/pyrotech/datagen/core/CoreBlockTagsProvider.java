@@ -3,6 +3,7 @@ package com.moostoet.pyrotech.datagen.core;
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.PyrotechTags;
+import com.moostoet.pyrotech.hunting.HuntingBlocks;
 import com.moostoet.pyrotech.storage.StorageBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -69,6 +70,9 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
             StorageBlocks.STONE_TANK.get(), StorageBlocks.BRICK_TANK.get(),
             StorageBlocks.FAUCET_STONE.get(), StorageBlocks.FAUCET_BRICK.get());
+        // Hunting's blocks: the butcher's block was Material.WOOD and the carcass Material.GROUND.
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(HuntingBlocks.BUTCHERS_BLOCK.get());
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(HuntingBlocks.CARCASS.get());
         // The shovel blocks. The wood chip rock and pile, and the ash pile, gate their drops
         // on a shovel in code; the tag only gives the speed.
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(

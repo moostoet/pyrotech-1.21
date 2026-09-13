@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:leather_durable_sheet"
+    },
+    {
+      "item": "pyrotech:leather_durable_sheet"
+    },
+    {
+      "item": "pyrotech:leather_durable_strap"
+    },
+    {
+      "item": "pyrotech:leather_durable_cord"
+    },
+    {
+      "item": "minecraft:string"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:leather_durable_repair_kit"
+  }
+}

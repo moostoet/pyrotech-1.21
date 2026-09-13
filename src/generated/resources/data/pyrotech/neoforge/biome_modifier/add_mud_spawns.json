@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#pyrotech:mud_spawn_biomes",
+  "spawners": {
+    "type": "pyrotech:mud",
+    "maxCount": 3,
+    "minCount": 1,
+    "weight": 100
+  }
+}

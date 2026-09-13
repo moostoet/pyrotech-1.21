@@ -2,6 +2,7 @@ package com.moostoet.pyrotech.datagen.core;
 
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.PyrotechTags;
+import com.moostoet.pyrotech.hunting.HuntingEntities;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.EntityTypeTagsProvider;
@@ -18,7 +19,6 @@ public final class CoreEntityTypeTagsProvider extends EntityTypeTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        // Hunting's animated mud joins it; the file exists so the tag resolves before then.
-        this.tag(PyrotechTags.EntityTypes.MUD_WALKERS);
+        this.tag(PyrotechTags.EntityTypes.MUD_WALKERS).add(HuntingEntities.MUD.get());
     }
 }

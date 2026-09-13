@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.datagen.tool;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.core.PyrotechTags;
 import com.moostoet.pyrotech.tool.ToolItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -38,6 +39,8 @@ public final class ToolItemTagsProvider extends ItemTagsProvider {
         this.add(ItemTags.SHOVELS, ToolItems.SHOVELS);
         this.add(ItemTags.HOES, ToolItems.HOES);
         this.add(ItemTags.SWORDS, ToolItems.SWORDS);
+        // Hunting's knives are swords too; a tag file has one writer, so they join here.
+        this.tag(ItemTags.SWORDS).addTag(PyrotechTags.Items.KNIVES);
         // Vanilla names its own shears and shield by id in the enchantable tags, so these do
         // too. The crude fishing rod joins no enchantable tag, as in 1.12.
         this.add(ItemTags.DURABILITY_ENCHANTABLE, ToolItems.SHEARS);
@@ -49,6 +52,7 @@ public final class ToolItemTagsProvider extends ItemTagsProvider {
         this.tag(Tags.Items.TOOLS_FISHING_ROD).add(ToolItems.CRUDE_FISHING_ROD.get());
         this.add(Tags.Items.MINING_TOOL_TOOLS, ToolItems.PICKAXES);
         this.add(Tags.Items.MELEE_WEAPON_TOOLS, ToolItems.SWORDS);
+        this.tag(Tags.Items.MELEE_WEAPON_TOOLS).addTag(PyrotechTags.Items.KNIVES);
         this.add(Tags.Items.MELEE_WEAPON_TOOLS, ToolItems.AXES);
     }
 

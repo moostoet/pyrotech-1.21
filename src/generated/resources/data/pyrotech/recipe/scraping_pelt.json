@@ -1,0 +1,17 @@
+{
+  "type": "pyrotech:tool_damage_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pyrotech:scrapeable_hides"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:hide_scraped"
+  },
+  "tool": {
+    "tag": "pyrotech:hunters_knives"
+  },
+  "tool_damage": 2
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pyrotech:hide_small_scraped"
+    },
+    {
+      "type": "pyrotech:fluid_container",
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:hide_small_washed"
+  }
+}

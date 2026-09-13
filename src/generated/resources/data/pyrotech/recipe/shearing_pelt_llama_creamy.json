@@ -1,0 +1,17 @@
+{
+  "type": "pyrotech:shearing_pelt",
+  "hide": {
+    "count": 1,
+    "id": "pyrotech:hide_llama"
+  },
+  "pelt": {
+    "item": "pyrotech:pelt_llama_creamy"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:white_wool"
+  },
+  "tool": {
+    "tag": "c:tools/shear"
+  }
+}
