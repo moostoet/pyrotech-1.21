@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "pyrotech:plant_fibers"
+    },
+    "R": {
+      "tag": "pyrotech:rocks"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "|": {
+      "tag": "pyrotech:twine"
+    }
+  },
+  "pattern": [
+    "F|",
+    "SR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:crude_fishing_rod"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "pyrotech:gold_shard"
+    },
+    "T": {
+      "item": "pyrotech:leather_strap"
+    }
+  },
+  "pattern": [
+    "TM",
+    "M "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:gold_shears"
+  }
+}

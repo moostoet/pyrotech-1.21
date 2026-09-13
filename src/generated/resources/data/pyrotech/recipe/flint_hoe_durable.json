@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "pyrotech:leather_durable_cord"
+    },
+    "R": {
+      "item": "minecraft:flint"
+    },
+    "S": {
+      "item": "pyrotech:stone_tool_shaft"
+    }
+  },
+  "pattern": [
+    "RR ",
+    " C ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:flint_hoe_durable"
+  }
+}

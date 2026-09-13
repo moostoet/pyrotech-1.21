@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "pyrotech:obsidian_shard"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "RR",
+    " S",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:obsidian_hoe"
+  }
+}

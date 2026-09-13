@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "tag": "pyrotech:rocks"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "T": {
+      "item": "pyrotech:plant_fibers"
+    }
+  },
+  "pattern": [
+    "RT",
+    "RS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:crude_axe"
+  }
+}

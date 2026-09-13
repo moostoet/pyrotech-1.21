@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.tool;
 
 import com.moostoet.pyrotech.core.CoreModule;
+import com.moostoet.pyrotech.tool.recipe.ToolRecipeSerializers;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.neoforged.bus.api.IEventBus;
@@ -19,6 +20,7 @@ public final class ToolModule {
     public static void register(IEventBus modEventBus) {
         ToolItems.ITEMS.register(modEventBus);
         ToolComponents.COMPONENTS.register(modEventBus);
+        ToolRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
         modEventBus.addListener(ToolModule::commonSetup);
         modEventBus.addListener(ToolModule::addToTab);
     }

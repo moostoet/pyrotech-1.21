@@ -11,7 +11,6 @@ import com.moostoet.pyrotech.datagen.core.CoreItemModelProvider;
 import com.moostoet.pyrotech.datagen.core.CoreItemTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreLootModifierProvider;
 import com.moostoet.pyrotech.datagen.core.CoreLootTableProvider;
-import com.moostoet.pyrotech.datagen.core.CoreRecipeProvider;
 import com.moostoet.pyrotech.datagen.core.RecipeRemovalProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolItemModelProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolItemTagsProvider;
@@ -55,7 +54,7 @@ public final class PyrotechDatagen {
         generator.addProvider(event.includeServer(), new CoreDataMapProvider(output, lookup));
         generator.addProvider(event.includeServer(), new RecipeRemovalProvider(output));
         generator.addProvider(event.includeServer(), new CoreLootModifierProvider(output, lookup));
-        generator.addProvider(event.includeServer(), new CoreRecipeProvider(output, lookup));
+        generator.addProvider(event.includeServer(), new PyrotechRecipeProvider(output, lookup));
         generator.addProvider(event.includeServer(), new CoreLootTableProvider(output, lookup));
         generator.addProvider(event.includeServer(),
             new AdvancementProvider(output, lookup, existingFiles, List.of(new CoreAdvancementGenerator())));

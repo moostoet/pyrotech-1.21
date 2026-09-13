@@ -7,6 +7,7 @@ import com.moostoet.pyrotech.core.CoreItems;
 import com.moostoet.pyrotech.core.Material;
 import com.moostoet.pyrotech.core.PyrotechTags;
 import com.moostoet.pyrotech.core.recipe.FluidContainerIngredient;
+import com.moostoet.pyrotech.datagen.RecipeUnit;
 import com.moostoet.pyrotech.datagen.ToolDamageShapelessRecipeBuilder;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.core.HolderLookup;
@@ -43,7 +44,7 @@ import java.util.concurrent.CompletableFuture;
  * {@code #pyrotech:rocks}, {@code stickStone} is {@code #pyrotech:stone_sticks}, and
  * {@code twine} is {@code #pyrotech:twine}. A name that held one item is that item.
  */
-public final class CoreRecipeProvider extends RecipeProvider {
+public final class CoreRecipeProvider extends RecipeProvider implements RecipeUnit {
 
     private static final TagKey<Item> STICK = Tags.Items.RODS_WOODEN;
     private static final int SMELT_TICKS = 200;
@@ -53,7 +54,7 @@ public final class CoreRecipeProvider extends RecipeProvider {
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput output) {
+    public void buildRecipes(RecipeOutput output) {
         this.materials(output);
         this.blocks(output);
         this.tools(output);

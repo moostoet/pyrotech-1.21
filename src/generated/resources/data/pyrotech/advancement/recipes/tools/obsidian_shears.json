@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_obsidian_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:obsidian_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:obsidian_shears"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_obsidian_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:obsidian_shears"
+    ]
+  }
+}

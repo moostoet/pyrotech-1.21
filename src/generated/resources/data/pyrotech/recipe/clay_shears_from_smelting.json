@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "pyrotech:unfired_clay_shears"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:clay_shears"
+  }
+}

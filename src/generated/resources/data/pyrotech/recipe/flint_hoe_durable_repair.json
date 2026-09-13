@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:tool_repair",
+  "hammer_damage": 4,
+  "kit": {
+    "item": "pyrotech:flint_tool_repair_kit"
+  },
+  "repair_fraction": 0.25,
+  "tool": {
+    "item": "pyrotech:flint_hoe_durable"
+  }
+}

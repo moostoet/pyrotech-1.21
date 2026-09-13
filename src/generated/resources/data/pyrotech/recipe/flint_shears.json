@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "pyrotech:flint_shard"
+    },
+    "S": {
+      "tag": "pyrotech:stone_sticks"
+    },
+    "T": {
+      "tag": "pyrotech:twine"
+    }
+  },
+  "pattern": [
+    "TS",
+    "MM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:flint_shears"
+  }
+}

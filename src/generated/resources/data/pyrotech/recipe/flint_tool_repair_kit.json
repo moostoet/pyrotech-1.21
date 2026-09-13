@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "pyrotech:flint_shard"
+    },
+    {
+      "item": "pyrotech:flint_shard"
+    },
+    {
+      "item": "pyrotech:flint_shard"
+    },
+    {
+      "tag": "pyrotech:stone_sticks"
+    },
+    {
+      "item": "pyrotech:leather_cord"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:flint_tool_repair_kit"
+  }
+}

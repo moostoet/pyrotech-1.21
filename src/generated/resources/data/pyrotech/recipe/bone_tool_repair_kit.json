@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "pyrotech:bone_shard"
+    },
+    {
+      "item": "pyrotech:bone_shard"
+    },
+    {
+      "item": "pyrotech:bone_shard"
+    },
+    {
+      "tag": "pyrotech:stone_sticks"
+    },
+    {
+      "item": "pyrotech:leather_cord"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:bone_tool_repair_kit"
+  }
+}
