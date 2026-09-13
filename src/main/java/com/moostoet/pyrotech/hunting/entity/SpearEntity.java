@@ -6,7 +6,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -48,19 +47,27 @@ public final class SpearEntity extends AbstractArrow {
         return new ItemStack(HuntingItems.CRUDE_SPEAR.get());
     }
 
+    /**
+     * The spear is spent on any entity hit: it goes into a living target's stuck spears
+     * and the hit is dealt, or it drops as an item off anything else. Either way the
+     * projectile is gone, so a bounce off a target that took no damage leaves no spear
+     * lying around that nobody can pick up.
+     */
     @Override
     protected void onHitEntity(EntityHitResult result) {
-        Entity hit = result.getEntity();
-        if (!this.level().isClientSide) {
-            ItemStack spear = this.getPickupItemStackOrigin().copy();
-            if (hit instanceof LivingEntity living && !living.isInvulnerable()) {
-                StuckSpears.add(living, spear);
-            } else {
-                this.spawnAtLocation(spear, 0);
-            }
-            this.pickup = Pickup.DISALLOWED;
+        if (this.level().isClientSide) {
+            super.onHitEntity(result);
+            return;
         }
-        super.onHitEntity(result);
+        ItemStack spear = this.getPickupItemStackOrigin().copy();
+        this.pickup = Pickup.DISALLOWED;
+        if (result.getEntity() instanceof LivingEntity living && !living.isInvulnerable()) {
+            StuckSpears.add(living, spear);
+            super.onHitEntity(result);
+        } else {
+            this.spawnAtLocation(spear, 0);
+        }
+        this.discard();
     }
 
     @Override
