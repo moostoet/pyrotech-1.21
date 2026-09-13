@@ -3,6 +3,7 @@ package com.moostoet.pyrotech.datagen.core;
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.PyrotechTags;
+import com.moostoet.pyrotech.storage.StorageBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -58,6 +59,16 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
             CoreBlocks.DENSE_REDSTONE_ORE_SMALL.get(),
             CoreBlocks.DENSE_REDSTONE_ORE_ROCKS.get());
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(CoreBlocks.PLANKS_TARRED.get(), CoreBlocks.LOG_PILE.get());
+        // Storage's blocks. A tag file has one writer, so the vanilla tags its blocks join sit
+        // here beside core's; the durable twins kept Material.WOOD in 1.12, so the axe is theirs.
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+            StorageBlocks.STASH.get(), StorageBlocks.STASH_STONE.get(),
+            StorageBlocks.SHELF.get(), StorageBlocks.SHELF_STONE.get(),
+            StorageBlocks.CRATE.get(), StorageBlocks.CRATE_STONE.get(),
+            StorageBlocks.WOOD_RACK.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+            StorageBlocks.STONE_TANK.get(), StorageBlocks.BRICK_TANK.get(),
+            StorageBlocks.FAUCET_STONE.get(), StorageBlocks.FAUCET_BRICK.get());
         // The shovel blocks. The wood chip rock and pile, and the ash pile, gate their drops
         // on a shovel in code; the tag only gives the speed.
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(

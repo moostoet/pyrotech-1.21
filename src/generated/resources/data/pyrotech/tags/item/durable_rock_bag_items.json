@@ -1,0 +1,15 @@
+{
+  "values": [
+    "#pyrotech:rock_bag_items",
+    "minecraft:dirt",
+    "minecraft:cobblestone",
+    "minecraft:gravel",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "pyrotech:cobblestone_andesite",
+    "pyrotech:cobblestone_diorite",
+    "pyrotech:cobblestone_granite",
+    "pyrotech:cobblestone_limestone",
+    "minecraft:cobbled_deepslate"
+  ]
+}

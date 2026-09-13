@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "pyrotech:board_tarred"
+    },
+    "S": {
+      "item": "pyrotech:brick_stone"
+    },
+    "X": {
+      "item": "pyrotech:stash"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "BXB",
+    "SBS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:stash_stone"
+  }
+}

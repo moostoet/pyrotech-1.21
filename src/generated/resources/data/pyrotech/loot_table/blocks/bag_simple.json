@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "include": [
+                "pyrotech:bag_contents"
+              ],
+              "source": "block_entity"
+            },
+            {
+              "block": "pyrotech:bag_simple",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "type"
+              ]
+            }
+          ],
+          "name": "pyrotech:bag_simple"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pyrotech:blocks/bag_simple"
+}

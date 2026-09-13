@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "pyrotech:stash"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "s": {
+      "item": "pyrotech:twine"
+    }
+  },
+  "pattern": [
+    "sWs",
+    "WSW",
+    "sWs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:bag_simple"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "pyrotech:refractory_brick"
+    },
+    "G": {
+      "item": "pyrotech:refractory_glass"
+    }
+  },
+  "pattern": [
+    "BGB",
+    "G G",
+    "BGB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:brick_tank"
+  }
+}

@@ -30,6 +30,10 @@
     "pyrotech:dense_quartz_ore_rocks",
     "pyrotech:dense_redstone_ore_large",
     "pyrotech:dense_redstone_ore_small",
-    "pyrotech:dense_redstone_ore_rocks"
+    "pyrotech:dense_redstone_ore_rocks",
+    "pyrotech:stone_tank",
+    "pyrotech:brick_tank",
+    "pyrotech:faucet_stone",
+    "pyrotech:faucet_brick"
   ]
 }

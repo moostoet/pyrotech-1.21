@@ -1,5 +1,6 @@
 package com.moostoet.pyrotech.datagen.core;
 
+import com.moostoet.pyrotech.datagen.storage.StorageBlockLootProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -13,6 +14,8 @@ import java.util.concurrent.CompletableFuture;
 public final class CoreLootTableProvider extends LootTableProvider {
 
     public CoreLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, Set.of(), List.of(new SubProviderEntry(CoreBlockLootProvider::new, LootContextParamSets.BLOCK)), registries);
+        super(output, Set.of(), List.of(
+            new SubProviderEntry(CoreBlockLootProvider::new, LootContextParamSets.BLOCK),
+            new SubProviderEntry(StorageBlockLootProvider::new, LootContextParamSets.BLOCK)), registries);
     }
 }

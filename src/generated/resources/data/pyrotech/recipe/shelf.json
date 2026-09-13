@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "-": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "P-P",
+    "P-P",
+    "P-P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:shelf"
+  }
+}

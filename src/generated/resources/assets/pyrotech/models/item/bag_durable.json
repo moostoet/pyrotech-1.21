@@ -1,0 +1,11 @@
+{
+  "parent": "pyrotech:block/bag_durable",
+  "overrides": [
+    {
+      "model": "pyrotech:block/bag_durable_open",
+      "predicate": {
+        "pyrotech:open": 1.0
+      }
+    }
+  ]
+}

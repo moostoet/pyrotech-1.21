@@ -1,0 +1,6 @@
+{
+  "type": "pyrotech:tank_flush",
+  "tank": {
+    "item": "pyrotech:brick_tank"
+  }
+}

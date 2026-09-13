@@ -1,6 +1,13 @@
 {
   "values": [
     "pyrotech:planks_tarred",
-    "pyrotech:log_pile"
+    "pyrotech:log_pile",
+    "pyrotech:stash",
+    "pyrotech:stash_stone",
+    "pyrotech:shelf",
+    "pyrotech:shelf_stone",
+    "pyrotech:crate",
+    "pyrotech:crate_stone",
+    "pyrotech:wood_rack"
   ]
 }

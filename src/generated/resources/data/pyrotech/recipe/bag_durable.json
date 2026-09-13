@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "pyrotech:leather_durable_cord"
+    },
+    "L": {
+      "item": "pyrotech:leather_durable_sheet"
+    },
+    "S": {
+      "item": "pyrotech:stash_stone"
+    },
+    "s": {
+      "item": "pyrotech:leather_durable_strap"
+    }
+  },
+  "pattern": [
+    "sCs",
+    "LSL",
+    "sLs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:bag_durable"
+  }
+}
