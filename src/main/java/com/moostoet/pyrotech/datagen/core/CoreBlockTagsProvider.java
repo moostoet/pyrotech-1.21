@@ -111,5 +111,19 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
 
         // The 1.12 blockGlass ore dictionary entries; the refractory glass recipe reads it.
         this.tag(Tags.Blocks.GLASS_BLOCKS).add(CoreBlocks.REFRACTORY_GLASS.get(), CoreBlocks.SLAG_GLASS.get());
+
+        // The 1.12 cobblestone ore dictionary entry; the netherrack spread reads the tag.
+        // NeoForge sorts cobblestones into normal, mossy, infested, and deepslate sub-tags,
+        // and these four are plain, so they sit in normal beside vanilla cobblestone.
+        this.tag(Tags.Blocks.COBBLESTONES).add(
+            CoreBlocks.COBBLESTONE_ANDESITE.get(),
+            CoreBlocks.COBBLESTONE_DIORITE.get(),
+            CoreBlocks.COBBLESTONE_GRANITE.get(),
+            CoreBlocks.COBBLESTONE_LIMESTONE.get());
+        this.tag(Tags.Blocks.COBBLESTONES_NORMAL).add(
+            CoreBlocks.COBBLESTONE_ANDESITE.get(),
+            CoreBlocks.COBBLESTONE_DIORITE.get(),
+            CoreBlocks.COBBLESTONE_GRANITE.get(),
+            CoreBlocks.COBBLESTONE_LIMESTONE.get());
     }
 }

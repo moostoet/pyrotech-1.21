@@ -62,5 +62,7 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
         this.copy(BlockTags.WALLS, ItemTags.WALLS);
         this.copy(BlockTags.DOORS, ItemTags.DOORS);
         this.copy(Tags.Blocks.GLASS_BLOCKS, Tags.Items.GLASS_BLOCKS);
+        this.copy(Tags.Blocks.COBBLESTONES, Tags.Items.COBBLESTONES);
+        this.copy(Tags.Blocks.COBBLESTONES_NORMAL, Tags.Items.COBBLESTONES_NORMAL);
     }
 }
