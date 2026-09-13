@@ -2,6 +2,7 @@ package com.moostoet.pyrotech;
 
 import com.moostoet.pyrotech.core.CoreModule;
 import com.moostoet.pyrotech.tool.ToolModule;
+import com.moostoet.pyrotech.worldgen.WorldgenModule;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -17,5 +18,6 @@ public final class Pyrotech {
     public Pyrotech(IEventBus modEventBus, ModContainer modContainer) {
         CoreModule.register(modEventBus, modContainer);
         ToolModule.register(modEventBus);
+        WorldgenModule.register(modEventBus, modContainer);
     }
 }
