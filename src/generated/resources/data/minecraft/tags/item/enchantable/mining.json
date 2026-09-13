@@ -1,0 +1,11 @@
+{
+  "values": [
+    "pyrotech:clay_shears",
+    "pyrotech:stone_shears",
+    "pyrotech:bone_shears",
+    "pyrotech:flint_shears",
+    "pyrotech:gold_shears",
+    "pyrotech:diamond_shears",
+    "pyrotech:obsidian_shears"
+  ]
+}

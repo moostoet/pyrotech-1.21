@@ -13,6 +13,8 @@ import com.moostoet.pyrotech.datagen.core.CoreLootModifierProvider;
 import com.moostoet.pyrotech.datagen.core.CoreLootTableProvider;
 import com.moostoet.pyrotech.datagen.core.CoreRecipeProvider;
 import com.moostoet.pyrotech.datagen.core.RecipeRemovalProvider;
+import com.moostoet.pyrotech.datagen.tool.ToolItemModelProvider;
+import com.moostoet.pyrotech.datagen.tool.ToolItemTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -40,11 +42,14 @@ public final class PyrotechDatagen {
 
         generator.addProvider(event.includeClient(), new CoreBlockStateProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new CoreItemModelProvider(output, existingFiles));
+        generator.addProvider(event.includeClient(), new ToolItemModelProvider(output, existingFiles));
 
         CoreBlockTagsProvider blockTags = new CoreBlockTagsProvider(output, lookup, existingFiles);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(),
             new CoreItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
+        generator.addProvider(event.includeServer(),
+            new ToolItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(), new CoreFluidTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreEntityTypeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreDataMapProvider(output, lookup));

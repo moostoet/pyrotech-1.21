@@ -75,7 +75,8 @@ public final class DenseRedstoneOreBlock extends DenseOreBlock {
         return InteractionResult.PASS;
     }
 
-    private void activate(BlockState state, Level level, BlockPos pos) {
+    /** Lights the ore with a crackle, or crackles again a quarter of the time when it is already lit. */
+    public void activate(BlockState state, Level level, BlockPos pos) {
         if (level.isClientSide) {
             this.spawnParticles(level, pos);
             return;

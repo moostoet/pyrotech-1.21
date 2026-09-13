@@ -1,0 +1,12 @@
+{
+  "values": [
+    "pyrotech:crude_shovel",
+    "pyrotech:bone_shovel",
+    "pyrotech:bone_shovel_durable",
+    "pyrotech:flint_shovel",
+    "pyrotech:flint_shovel_durable",
+    "pyrotech:obsidian_shovel",
+    "pyrotech:redstone_shovel",
+    "pyrotech:quartz_shovel"
+  ]
+}

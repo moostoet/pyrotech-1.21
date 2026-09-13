@@ -1,0 +1,12 @@
+{
+  "values": [
+    "pyrotech:crude_pickaxe",
+    "pyrotech:bone_pickaxe",
+    "pyrotech:bone_pickaxe_durable",
+    "pyrotech:flint_pickaxe",
+    "pyrotech:flint_pickaxe_durable",
+    "pyrotech:obsidian_pickaxe",
+    "pyrotech:redstone_pickaxe",
+    "pyrotech:quartz_pickaxe"
+  ]
+}

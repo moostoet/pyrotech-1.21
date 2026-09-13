@@ -19,10 +19,9 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.datamaps.RegisterDataMapTypesEvent;
-
-import java.util.function.Supplier;
 
 /**
  * The core module: everything the other modules build on. Registers on the mod bus
@@ -37,7 +36,7 @@ public final class CoreModule {
      * The one Pyrotech creative tab. The 1.12 icon was the campfire, which tech/basic
      * brings; until then the crude hammer stands in.
      */
-    public static final Supplier<CreativeModeTab> TAB = CREATIVE_TABS.register("pyrotech", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = CREATIVE_TABS.register("pyrotech", () -> CreativeModeTab.builder()
         .title(Component.translatable("itemGroup.pyrotech"))
         .icon(() -> new ItemStack(CoreItems.CRUDE_HAMMER.get()))
         .displayItems((parameters, output) -> {
