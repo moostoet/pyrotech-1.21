@@ -1,5 +1,6 @@
 package com.moostoet.pyrotech;
 
+import com.moostoet.pyrotech.bucket.BucketModule;
 import com.moostoet.pyrotech.core.CoreModule;
 import com.moostoet.pyrotech.tool.ToolModule;
 import com.moostoet.pyrotech.worldgen.WorldgenModule;
@@ -19,5 +20,6 @@ public final class Pyrotech {
         CoreModule.register(modEventBus, modContainer);
         ToolModule.register(modEventBus);
         WorldgenModule.register(modEventBus, modContainer);
+        BucketModule.register(modEventBus, modContainer);
     }
 }
