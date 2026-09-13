@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pyrotech:worldgen_toggle",
+      "generator": "gloamberry_bush"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#pyrotech:has_gloamberry_bush",
+  "features": "pyrotech:gloamberry_bush",
+  "step": "vegetal_decoration"
+}

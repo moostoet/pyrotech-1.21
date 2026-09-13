@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pyrotech:worldgen_toggle",
+      "generator": "dense_coal_ore"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "pyrotech:dense_coal_ore",
+  "step": "underground_decoration"
+}

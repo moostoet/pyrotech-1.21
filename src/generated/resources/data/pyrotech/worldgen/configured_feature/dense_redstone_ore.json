@@ -1,0 +1,82 @@
+{
+  "type": "pyrotech:cave_floor_cluster",
+  "config": {
+    "attempts": 1,
+    "floor": "minecraft:base_stone_overworld",
+    "height": {
+      "type": "minecraft:uniform",
+      "max_inclusive": {
+        "absolute": 25
+      },
+      "min_inclusive": {
+        "absolute": 5
+      }
+    },
+    "large": {
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 3,
+        "min_inclusive": 1
+      },
+      "state": {
+        "Name": "pyrotech:dense_redstone_ore_large",
+        "Properties": {
+          "lit": "false"
+        }
+      }
+    },
+    "ore_below": [
+      {
+        "state": {
+          "Name": "minecraft:redstone_ore",
+          "Properties": {
+            "lit": "false"
+          }
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_redstone_ore",
+          "Properties": {
+            "lit": "false"
+          }
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ],
+    "ore_chance": 0.5,
+    "rocks": {
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 8,
+        "min_inclusive": 6
+      },
+      "state": {
+        "Name": "pyrotech:dense_redstone_ore_rocks",
+        "Properties": {
+          "lit": "false"
+        }
+      }
+    },
+    "small": {
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 5,
+        "min_inclusive": 3
+      },
+      "state": {
+        "Name": "pyrotech:dense_redstone_ore_small",
+        "Properties": {
+          "lit": "false"
+        }
+      }
+    }
+  }
+}

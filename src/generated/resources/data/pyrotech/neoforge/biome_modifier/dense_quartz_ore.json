@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pyrotech:worldgen_toggle",
+      "generator": "dense_quartz_ore"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "pyrotech:dense_quartz_ore",
+  "step": "underground_decoration"
+}

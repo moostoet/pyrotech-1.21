@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pyrotech:worldgen_toggle",
+      "generator": "pyroberry_bush"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#pyrotech:has_pyroberry_bush",
+  "features": "pyrotech:pyroberry_bush",
+  "step": "vegetal_decoration"
+}

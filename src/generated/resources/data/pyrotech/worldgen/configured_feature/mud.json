@@ -1,0 +1,17 @@
+{
+  "type": "pyrotech:mud",
+  "config": {
+    "mud": {
+      "Name": "pyrotech:mud"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 4,
+      "min_inclusive": 2
+    },
+    "rock": {
+      "Name": "pyrotech:rock_mud"
+    },
+    "rock_chance": 0.75
+  }
+}

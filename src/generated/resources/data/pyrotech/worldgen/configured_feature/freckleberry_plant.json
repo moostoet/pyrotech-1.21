@@ -1,0 +1,116 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "allowed_placement": {
+            "type": "minecraft:true"
+          },
+          "direction": "up",
+          "layers": [
+            {
+              "height": 1,
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "data": {
+                      "Name": "pyrotech:freckleberry_plant",
+                      "Properties": {
+                        "age": "7"
+                      }
+                    },
+                    "weight": 5
+                  },
+                  {
+                    "data": {
+                      "Name": "pyrotech:freckleberry_plant",
+                      "Properties": {
+                        "age": "2"
+                      }
+                    },
+                    "weight": 9
+                  },
+                  {
+                    "data": {
+                      "Name": "pyrotech:freckleberry_plant",
+                      "Properties": {
+                        "age": "3"
+                      }
+                    },
+                    "weight": 9
+                  },
+                  {
+                    "data": {
+                      "Name": "pyrotech:freckleberry_plant",
+                      "Properties": {
+                        "age": "4"
+                      }
+                    },
+                    "weight": 9
+                  },
+                  {
+                    "data": {
+                      "Name": "pyrotech:freckleberry_plant",
+                      "Properties": {
+                        "age": "5"
+                      }
+                    },
+                    "weight": 9
+                  },
+                  {
+                    "data": {
+                      "Name": "pyrotech:freckleberry_plant",
+                      "Properties": {
+                        "age": "6"
+                      }
+                    },
+                    "weight": 9
+                  }
+                ]
+              }
+            }
+          ],
+          "prioritize_tip": false
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_block_tag",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "tag": "minecraft:dirt"
+              },
+              {
+                "type": "minecraft:has_sturdy_face",
+                "direction": "up",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 40,
+    "xz_spread": 4,
+    "y_spread": 4
+  }
+}

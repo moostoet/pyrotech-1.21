@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pyrotech:worldgen_toggle",
+      "generator": "freckleberry_plant"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#pyrotech:has_freckleberry_plant",
+  "features": "pyrotech:freckleberry_plant",
+  "step": "vegetal_decoration"
+}

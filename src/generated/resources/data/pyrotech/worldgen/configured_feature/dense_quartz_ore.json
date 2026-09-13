@@ -1,0 +1,58 @@
+{
+  "type": "pyrotech:cave_floor_cluster",
+  "config": {
+    "attempts": 20,
+    "floor": "minecraft:base_stone_nether",
+    "height": {
+      "type": "minecraft:uniform",
+      "max_inclusive": {
+        "absolute": 64
+      },
+      "min_inclusive": {
+        "absolute": 1
+      }
+    },
+    "large": {
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 2,
+        "min_inclusive": 1
+      },
+      "state": {
+        "Name": "pyrotech:dense_quartz_ore_large"
+      }
+    },
+    "ore_below": [
+      {
+        "state": {
+          "Name": "minecraft:nether_quartz_ore"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ],
+    "ore_chance": 0.5,
+    "rocks": {
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 8,
+        "min_inclusive": 6
+      },
+      "state": {
+        "Name": "pyrotech:dense_quartz_ore_rocks"
+      }
+    },
+    "small": {
+      "count": {
+        "type": "minecraft:uniform",
+        "max_inclusive": 5,
+        "min_inclusive": 3
+      },
+      "state": {
+        "Name": "pyrotech:dense_quartz_ore_small"
+      }
+    }
+  }
+}

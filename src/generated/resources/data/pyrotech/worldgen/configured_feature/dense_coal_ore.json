@@ -1,0 +1,19 @@
+{
+  "type": "pyrotech:dense_coal",
+  "config": {
+    "max_y": 32,
+    "min_y": 0,
+    "size": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 6,
+      "min_inclusive": 3
+    },
+    "state": {
+      "Name": "pyrotech:dense_coal_ore"
+    },
+    "target": {
+      "block": "minecraft:coal_ore",
+      "predicate_type": "minecraft:block_match"
+    }
+  }
+}
