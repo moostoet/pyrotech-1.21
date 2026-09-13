@@ -66,6 +66,15 @@ public final class SoakingPotBlock extends BaseEntityBlock {
             .setValue(CAMPFIRE, context.getLevel().getBlockState(context.getClickedPos().below()).getBlock() instanceof CampfireBlock);
     }
 
+    /** A pot set by a command or a structure still learns whether a campfire is under it. */
+    @Override
+    protected void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean movedByPiston) {
+        boolean campfire = level.getBlockState(pos.below()).getBlock() instanceof CampfireBlock;
+        if (state.getValue(CAMPFIRE) != campfire) {
+            level.setBlock(pos, state.setValue(CAMPFIRE, campfire), Block.UPDATE_ALL);
+        }
+    }
+
     @Override
     protected BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         if (direction == Direction.DOWN) {
