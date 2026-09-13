@@ -4,6 +4,7 @@ import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.CoreEntities;
 import com.moostoet.pyrotech.core.CoreFluids;
+import com.moostoet.pyrotech.library.fluid.PyrotechFluids;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -39,7 +40,7 @@ public final class CoreClient {
     /** The migrated 1.12 still and flowing textures for each fluid. */
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
-        for (CoreFluids.Entry fluid : CoreFluids.ALL) {
+        for (PyrotechFluids.Entry fluid : CoreFluids.ALL) {
             ResourceLocation still = fluid.stillTexture();
             ResourceLocation flowing = fluid.flowingTexture();
             event.registerFluidType(new IClientFluidTypeExtensions() {
@@ -59,7 +60,7 @@ public final class CoreClient {
     /** The fluid textures carry alpha, so the fluids draw on the translucent layer as water does. */
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
-        for (CoreFluids.Entry fluid : CoreFluids.ALL) {
+        for (PyrotechFluids.Entry fluid : CoreFluids.ALL) {
             ItemBlockRenderTypes.setRenderLayer(fluid.source().get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(fluid.flowing().get(), RenderType.translucent());
         }

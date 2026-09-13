@@ -2,6 +2,7 @@ package com.moostoet.pyrotech.datagen.core;
 
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.CoreFluids;
+import com.moostoet.pyrotech.library.fluid.PyrotechFluids;
 import com.moostoet.pyrotech.core.Material;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -73,7 +74,7 @@ public final class CoreItemModelProvider extends ItemModelProvider {
 
         // Slice 4. The wines, the cocktail, the book, and mulch keep their static item models.
         // Each bucket draws NeoForge's bucket with its fluid's still texture through the mask.
-        for (CoreFluids.Entry fluid : CoreFluids.ALL) {
+        for (PyrotechFluids.Entry fluid : CoreFluids.ALL) {
             this.getBuilder(fluid.bucket().getId().getPath())
                 .parent(new ModelFile.UncheckedModelFile(ResourceLocation.fromNamespaceAndPath("neoforge", "item/bucket")))
                 .customLoader(DynamicFluidContainerModelBuilder::begin)

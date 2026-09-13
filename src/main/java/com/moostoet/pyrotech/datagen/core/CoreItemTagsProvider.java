@@ -3,6 +3,7 @@ package com.moostoet.pyrotech.datagen.core;
 import com.moostoet.pyrotech.Pyrotech;
 import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.CoreFluids;
+import com.moostoet.pyrotech.library.fluid.PyrotechFluids;
 import com.moostoet.pyrotech.core.CoreItems;
 import com.moostoet.pyrotech.core.Material;
 import com.moostoet.pyrotech.core.PyrotechTags;
@@ -51,7 +52,7 @@ public final class CoreItemTagsProvider extends ItemTagsProvider {
             Items.STRING,
             CoreItems.material(Material.TWINE).get(),
             CoreItems.material(Material.TWINE_DURABLE).get());
-        for (CoreFluids.Entry fluid : CoreFluids.ALL) {
+        for (PyrotechFluids.Entry fluid : CoreFluids.ALL) {
             this.tag(Tags.Items.BUCKETS).add(fluid.bucket().get());
         }
 
