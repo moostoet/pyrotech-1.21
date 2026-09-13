@@ -1,6 +1,7 @@
 package com.moostoet.pyrotech.core;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.tech.basic.TechBasicBlocks;
 import com.moostoet.pyrotech.core.event.ChunkScanHandler;
 import com.moostoet.pyrotech.core.event.FireAdjacencyHandler;
 import com.moostoet.pyrotech.core.event.ModItemPickupHandler;
@@ -32,13 +33,10 @@ public final class CoreModule {
     private static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Pyrotech.MOD_ID);
 
-    /**
-     * The one Pyrotech creative tab. The 1.12 icon was the campfire, which tech/basic
-     * brings; until then the crude hammer stands in.
-     */
+    /** The one Pyrotech creative tab, with the 1.12 campfire icon. */
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = CREATIVE_TABS.register("pyrotech", () -> CreativeModeTab.builder()
         .title(Component.translatable("itemGroup.pyrotech"))
-        .icon(() -> new ItemStack(CoreItems.CRUDE_HAMMER.get()))
+        .icon(() -> new ItemStack(TechBasicBlocks.CAMPFIRE_ITEM.get()))
         .displayItems((parameters, output) -> {
             CoreBlocks.addToTab(output);
             CoreItems.addToTab(output);

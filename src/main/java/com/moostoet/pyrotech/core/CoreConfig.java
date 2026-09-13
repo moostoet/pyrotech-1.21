@@ -151,6 +151,7 @@ public final class CoreConfig {
         public final ModConfigSpec.BooleanValue showDurabilityTooltips;
         public final ModConfigSpec.BooleanValue showBurnTimeInTooltips;
         public final ModConfigSpec.BooleanValue showRecipeProgressionParticles;
+        public final ModConfigSpec.BooleanValue showCompostValueInTooltips;
 
         Client(ModConfigSpec.Builder builder) {
             builder.push("client");
@@ -166,6 +167,9 @@ public final class CoreConfig {
                     "has incremented.",
                     "Set to false to disable these progression particles.")
                 .define("SHOW_RECIPE_PROGRESSION_PARTICLES", true);
+            showCompostValueInTooltips = builder
+                .comment("Show an item's compost value in its tooltip.")
+                .define("SHOW_COMPOST_VALUE_IN_TOOLTIPS", true);
             builder.pop();
         }
     }
