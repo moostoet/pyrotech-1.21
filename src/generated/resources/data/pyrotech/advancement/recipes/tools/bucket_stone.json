@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brick_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:brick_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:bucket_stone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brick_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:bucket_stone"
+    ]
+  }
+}

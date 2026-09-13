@@ -1,6 +1,8 @@
 package com.moostoet.pyrotech.datagen;
 
 import com.moostoet.pyrotech.Pyrotech;
+import com.moostoet.pyrotech.datagen.bucket.BucketItemModelProvider;
+import com.moostoet.pyrotech.datagen.bucket.BucketItemTagsProvider;
 import com.moostoet.pyrotech.datagen.core.CoreAdvancementGenerator;
 import com.moostoet.pyrotech.datagen.core.CoreBlockStateProvider;
 import com.moostoet.pyrotech.datagen.core.CoreBlockTagsProvider;
@@ -45,6 +47,7 @@ public final class PyrotechDatagen {
         generator.addProvider(event.includeClient(), new CoreBlockStateProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new CoreItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new ToolItemModelProvider(output, existingFiles));
+        generator.addProvider(event.includeClient(), new BucketItemModelProvider(output, existingFiles));
 
         CoreBlockTagsProvider blockTags = new CoreBlockTagsProvider(output, lookup, existingFiles);
         generator.addProvider(event.includeServer(), blockTags);
@@ -52,6 +55,8 @@ public final class PyrotechDatagen {
             new CoreItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(),
             new ToolItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
+        generator.addProvider(event.includeServer(),
+            new BucketItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(), new WorldgenBlockTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new WorldgenBiomeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreFluidTagsProvider(output, lookup, existingFiles));

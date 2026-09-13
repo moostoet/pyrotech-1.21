@@ -1,0 +1,12 @@
+{
+  "parent": "neoforge:item/bucket",
+  "cover_is_mask": false,
+  "flip_gas": true,
+  "fluid": "minecraft:empty",
+  "loader": "neoforge:fluid_container",
+  "textures": {
+    "base": "pyrotech:item/stone_bucket_base",
+    "cover": "pyrotech:item/stone_bucket_cover",
+    "fluid": "pyrotech:item/stone_bucket_base"
+  }
+}

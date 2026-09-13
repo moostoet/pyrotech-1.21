@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "pyrotech:plant_fibers"
+    },
+    "M": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "MFM",
+    " M "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:bucket_wood"
+  }
+}
