@@ -1,6 +1,7 @@
 {
   "values": [
     "pyrotech:limestone",
-    "pyrotech:cob_dry"
+    "pyrotech:cob_dry",
+    "pyrotech:anvil_iron_plated"
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:copper_block"
+  },
+  "result": {
+    "count": 9,
+    "id": "minecraft:copper_ingot"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "pickaxe"
+}

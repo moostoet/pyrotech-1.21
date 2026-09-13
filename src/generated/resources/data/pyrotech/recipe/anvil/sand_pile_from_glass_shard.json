@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "item": "pyrotech:glass_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:rock_sand"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "hammer"
+}

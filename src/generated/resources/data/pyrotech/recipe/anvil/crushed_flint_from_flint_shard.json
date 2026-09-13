@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 2,
+  "ingredient": {
+    "item": "pyrotech:flint_shard"
+  },
+  "result": {
+    "count": 3,
+    "id": "pyrotech:dust_flint"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "hammer"
+}

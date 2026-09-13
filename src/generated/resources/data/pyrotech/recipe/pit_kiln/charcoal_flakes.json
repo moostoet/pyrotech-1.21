@@ -1,0 +1,18 @@
+{
+  "type": "pyrotech:pit_kiln",
+  "burn_time": 16800,
+  "failure_chance": 0.33,
+  "failure_items": [
+    {
+      "count": 1,
+      "id": "pyrotech:pit_ash"
+    }
+  ],
+  "ingredient": {
+    "item": "pyrotech:rock_wood_chips"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:charcoal_flakes"
+  }
+}

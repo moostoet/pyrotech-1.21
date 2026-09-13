@@ -57,6 +57,9 @@
     "pyrotech:thatch": {
       "burn_time": 200
     },
+    "pyrotech:tinder": {
+      "burn_time": 120
+    },
     "pyrotech:wood_tar_block": {
       "burn_time": 8000
     },

@@ -1,0 +1,20 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": [
+    {
+      "item": "pyrotech:pottery_fragments"
+    },
+    {
+      "item": "pyrotech:pottery_shard"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:rock_sand"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

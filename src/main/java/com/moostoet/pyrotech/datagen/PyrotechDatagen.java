@@ -22,6 +22,9 @@ import com.moostoet.pyrotech.datagen.hunting.HuntingItemTagsProvider;
 import com.moostoet.pyrotech.datagen.hunting.HuntingRegistryProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageItemModelProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageItemTagsProvider;
+import com.moostoet.pyrotech.datagen.tech.basic.TechBasicBlockStateProvider;
+import com.moostoet.pyrotech.datagen.tech.basic.TechBasicItemModelProvider;
+import com.moostoet.pyrotech.datagen.tech.basic.TechBasicItemTagsProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolItemModelProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolItemTagsProvider;
 import com.moostoet.pyrotech.datagen.worldgen.WorldgenBiomeTagsProvider;
@@ -54,11 +57,13 @@ public final class PyrotechDatagen {
 
         generator.addProvider(event.includeClient(), new CoreBlockStateProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new HuntingBlockStateProvider(output, existingFiles));
+        generator.addProvider(event.includeClient(), new TechBasicBlockStateProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new CoreItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new ToolItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new BucketItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new StorageItemModelProvider(output, existingFiles));
         generator.addProvider(event.includeClient(), new HuntingItemModelProvider(output, existingFiles));
+        generator.addProvider(event.includeClient(), new TechBasicItemModelProvider(output, existingFiles));
 
         CoreBlockTagsProvider blockTags = new CoreBlockTagsProvider(output, lookup, existingFiles);
         generator.addProvider(event.includeServer(), blockTags);
@@ -72,6 +77,8 @@ public final class PyrotechDatagen {
             new ToolItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(),
             new StorageItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
+        generator.addProvider(event.includeServer(),
+            new TechBasicItemTagsProvider(output, lookup, blockTags.contentsGetter(), existingFiles));
         generator.addProvider(event.includeServer(), new WorldgenBlockTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new WorldgenBiomeTagsProvider(output, lookup, existingFiles));
         generator.addProvider(event.includeServer(), new CoreFluidTagsProvider(output, lookup, existingFiles));

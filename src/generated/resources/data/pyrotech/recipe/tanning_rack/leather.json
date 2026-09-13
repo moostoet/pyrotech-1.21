@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:tanning_rack",
+  "ingredient": {
+    "item": "pyrotech:hide_tanned"
+  },
+  "rain_failure": {
+    "count": 1,
+    "id": "pyrotech:hide_washed"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:leather"
+  },
+  "time": 12000
+}

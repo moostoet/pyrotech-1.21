@@ -1,0 +1,16 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "campfire_required": true,
+  "fluid": {
+    "amount": 250,
+    "fluid": "minecraft:water"
+  },
+  "ingredient": {
+    "item": "pyrotech:hide_scraped"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:hide_washed"
+  },
+  "time": 2400
+}

@@ -1,0 +1,23 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": [
+    {
+      "item": "minecraft:quartz_block"
+    },
+    {
+      "item": "minecraft:chiseled_quartz_block"
+    },
+    {
+      "item": "minecraft:quartz_pillar"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:quartz_slab"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "pickaxe"
+}

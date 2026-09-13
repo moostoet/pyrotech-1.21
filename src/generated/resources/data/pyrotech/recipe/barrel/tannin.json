@@ -1,0 +1,26 @@
+{
+  "type": "pyrotech:barrel",
+  "fluid": {
+    "amount": 1000,
+    "fluid": "minecraft:water"
+  },
+  "ingredients": [
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "tag": "minecraft:leaves"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "pyrotech:tannin"
+  },
+  "time": 12000
+}

@@ -1,0 +1,78 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack",
+        "y": 180
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack_stacked",
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "stacked": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack",
+        "y": 270
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack_stacked",
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "stacked": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack"
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack_stacked"
+      },
+      "when": {
+        "facing": "south",
+        "stacked": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack",
+        "y": 90
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "pyrotech:block/drying_rack_stacked",
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "stacked": "true"
+      }
+    }
+  ]
+}

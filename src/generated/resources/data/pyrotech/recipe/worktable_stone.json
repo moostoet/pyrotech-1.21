@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "pyrotech:masonry_brick_block"
+    },
+    "R": {
+      "item": "pyrotech:brick_stone"
+    },
+    "S": {
+      "item": "minecraft:polished_andesite"
+    },
+    "W": {
+      "item": "pyrotech:worktable"
+    }
+  },
+  "pattern": [
+    "RSR",
+    "RWR",
+    "RBR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:worktable_stone"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 125,
+    "fluid": "pyrotech:liquid_clay"
+  },
+  "ingredient": {
+    "item": "minecraft:gunpowder"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:clay_blasting"
+  },
+  "time": 6000
+}

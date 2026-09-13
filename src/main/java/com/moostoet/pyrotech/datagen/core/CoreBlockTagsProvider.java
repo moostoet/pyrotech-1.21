@@ -5,6 +5,7 @@ import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.PyrotechTags;
 import com.moostoet.pyrotech.hunting.HuntingBlocks;
 import com.moostoet.pyrotech.storage.StorageBlocks;
+import com.moostoet.pyrotech.tech.basic.TechBasicBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -84,7 +85,24 @@ public final class CoreBlockTagsProvider extends BlockTagsProvider {
             CoreBlocks.PILE_WOOD_CHIPS.get(),
             CoreBlocks.ROCK_WOOD_CHIPS.get(),
             CoreBlocks.FARMLAND_MULCHED.get());
-        this.tag(BlockTags.NEEDS_STONE_TOOL).add(CoreBlocks.LIMESTONE.get(), CoreBlocks.COB_DRY.get());
+        // Tech/basic's blocks: the 1.12 harvest tools. The ironclad anvil needed a stone pickaxe.
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(TechBasicBlocks.CAMPFIRE.get(), TechBasicBlocks.KILN_PIT.get());
+        this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+            TechBasicBlocks.CHOPPING_BLOCK.get(),
+            TechBasicBlocks.BARREL.get(),
+            TechBasicBlocks.COMPACTING_BIN.get(),
+            TechBasicBlocks.COMPOST_BIN.get(),
+            TechBasicBlocks.DRYING_RACK_CRUDE.get(),
+            TechBasicBlocks.DRYING_RACK.get(),
+            TechBasicBlocks.TANNING_RACK.get(),
+            TechBasicBlocks.WORKTABLE.get(),
+            TechBasicBlocks.WORKTABLE_STONE.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+            TechBasicBlocks.ANVIL_GRANITE.get(),
+            TechBasicBlocks.ANVIL_IRON_PLATED.get(),
+            TechBasicBlocks.ANVIL_OBSIDIAN.get(),
+            TechBasicBlocks.SOAKING_POT.get());
+        this.tag(BlockTags.NEEDS_STONE_TOOL).add(CoreBlocks.LIMESTONE.get(), CoreBlocks.COB_DRY.get(), TechBasicBlocks.ANVIL_IRON_PLATED.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
             CoreBlocks.DENSE_COAL_ORE.get(),
             CoreBlocks.DENSE_QUARTZ_ORE_LARGE.get(),

@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 250,
+    "fluid": "pyrotech:liquid_clay"
+  },
+  "ingredient": {
+    "item": "pyrotech:dust_flint"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:flint_clay_ball"
+  },
+  "time": 6000
+}

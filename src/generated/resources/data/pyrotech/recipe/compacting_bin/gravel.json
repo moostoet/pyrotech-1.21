@@ -1,0 +1,22 @@
+{
+  "type": "pyrotech:compacting_bin",
+  "amount": 8,
+  "ingredient": [
+    {
+      "item": "pyrotech:rock_stone"
+    },
+    {
+      "item": "pyrotech:rock_diorite"
+    },
+    {
+      "item": "pyrotech:rock_granite"
+    },
+    {
+      "item": "pyrotech:rock_andesite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:gravel"
+  }
+}

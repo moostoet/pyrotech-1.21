@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:polished_granite"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    "G",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:anvil_granite"
+  }
+}

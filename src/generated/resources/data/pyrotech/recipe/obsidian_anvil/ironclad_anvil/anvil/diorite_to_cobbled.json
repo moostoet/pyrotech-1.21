@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:diorite"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:cobblestone_diorite"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "hammer"
+}

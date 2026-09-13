@@ -21,7 +21,6 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.fluids.FluidUtil;
@@ -34,7 +33,7 @@ import net.neoforged.neoforge.fluids.FluidUtil;
 public final class BarrelBlock extends BaseEntityBlock {
 
     public static final MapCodec<BarrelBlock> CODEC = simpleCodec(BarrelBlock::new);
-    public static final BooleanProperty SEALED = BlockStateProperties.OPEN;
+    public static final BooleanProperty SEALED = BooleanProperty.create("sealed");
 
     public BarrelBlock(Properties properties) {
         super(properties);

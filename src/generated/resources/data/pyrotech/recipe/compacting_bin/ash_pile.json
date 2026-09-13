@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compacting_bin",
+  "amount": 8,
+  "ingredient": {
+    "item": "pyrotech:pit_ash"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:pile_ash"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "pyrotech:board_tarred"
+    },
+    "P": {
+      "item": "pyrotech:planks_tarred"
+    }
+  },
+  "pattern": [
+    "BPB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:barrel_lid"
+  }
+}

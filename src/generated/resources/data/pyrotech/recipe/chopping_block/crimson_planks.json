@@ -1,0 +1,10 @@
+{
+  "type": "pyrotech:chopping_block",
+  "ingredient": {
+    "tag": "minecraft:crimson_stems"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:crimson_planks"
+  }
+}

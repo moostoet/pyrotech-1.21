@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compacting_bin",
+  "amount": 8,
+  "ingredient": {
+    "item": "pyrotech:rock_mud"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:mud"
+  }
+}

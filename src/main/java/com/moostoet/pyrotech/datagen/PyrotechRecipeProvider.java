@@ -4,6 +4,7 @@ import com.moostoet.pyrotech.datagen.bucket.BucketRecipeProvider;
 import com.moostoet.pyrotech.datagen.core.CoreRecipeProvider;
 import com.moostoet.pyrotech.datagen.hunting.HuntingRecipeProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageRecipeProvider;
+import com.moostoet.pyrotech.datagen.tech.basic.TechBasicRecipeProvider;
 import com.moostoet.pyrotech.datagen.tool.ToolRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -26,7 +27,7 @@ public final class PyrotechRecipeProvider extends RecipeProvider {
         super(output, registries);
         this.units = List.of(new CoreRecipeProvider(output, registries), new ToolRecipeProvider(output, registries),
             new BucketRecipeProvider(output, registries), new StorageRecipeProvider(output, registries),
-            new HuntingRecipeProvider(output, registries));
+            new HuntingRecipeProvider(output, registries), new TechBasicRecipeProvider(output, registries));
     }
 
     @Override

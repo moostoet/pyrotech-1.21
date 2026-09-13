@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 125,
+    "fluid": "minecraft:water"
+  },
+  "ingredient": {
+    "item": "pyrotech:rock_dirt"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:rock_mud"
+  },
+  "time": 4800
+}

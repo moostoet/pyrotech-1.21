@@ -9,6 +9,15 @@
     "pyrotech:crate",
     "pyrotech:crate_stone",
     "pyrotech:wood_rack",
-    "pyrotech:butchers_block"
+    "pyrotech:butchers_block",
+    "pyrotech:chopping_block",
+    "pyrotech:barrel",
+    "pyrotech:compacting_bin",
+    "pyrotech:compost_bin",
+    "pyrotech:drying_rack_crude",
+    "pyrotech:drying_rack",
+    "pyrotech:tanning_rack",
+    "pyrotech:worktable",
+    "pyrotech:worktable_stone"
   ]
 }

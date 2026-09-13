@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 125,
+    "fluid": "minecraft:water"
+  },
+  "ingredient": {
+    "item": "pyrotech:flour"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:dough"
+  },
+  "time": 8400
+}

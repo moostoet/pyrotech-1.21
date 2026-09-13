@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "tag": "c:nuggets/gold"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:gold_shard"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

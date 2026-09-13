@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "item": "pyrotech:dense_quartz"
+  },
+  "result": {
+    "count": 2,
+    "id": "minecraft:quartz"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "pickaxe"
+}

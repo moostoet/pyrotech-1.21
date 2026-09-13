@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "pyrotech:plant_fibers"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "SS",
+    "FF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:drying_rack_crude"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "pyrotech:pit_kiln",
+  "burn_time": 16800,
+  "failure_chance": 0.33,
+  "failure_items": [
+    {
+      "count": 1,
+      "id": "pyrotech:rock_dirt"
+    },
+    {
+      "count": 2,
+      "id": "pyrotech:rock_dirt"
+    }
+  ],
+  "ingredient": {
+    "item": "pyrotech:cob_wet"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:cob_dry"
+  }
+}

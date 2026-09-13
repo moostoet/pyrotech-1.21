@@ -3,6 +3,7 @@ package com.moostoet.pyrotech.datagen.core;
 import com.moostoet.pyrotech.datagen.hunting.HuntingBlockLootProvider;
 import com.moostoet.pyrotech.datagen.hunting.HuntingEntityLootProvider;
 import com.moostoet.pyrotech.datagen.storage.StorageBlockLootProvider;
+import com.moostoet.pyrotech.datagen.tech.basic.TechBasicBlockLootProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -20,6 +21,7 @@ public final class CoreLootTableProvider extends LootTableProvider {
             new SubProviderEntry(CoreBlockLootProvider::new, LootContextParamSets.BLOCK),
             new SubProviderEntry(StorageBlockLootProvider::new, LootContextParamSets.BLOCK),
             new SubProviderEntry(HuntingBlockLootProvider::new, LootContextParamSets.BLOCK),
+            new SubProviderEntry(TechBasicBlockLootProvider::new, LootContextParamSets.BLOCK),
             new SubProviderEntry(HuntingEntityLootProvider::new, LootContextParamSets.ENTITY)), registries);
     }
 }

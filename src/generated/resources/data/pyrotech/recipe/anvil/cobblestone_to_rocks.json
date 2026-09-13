@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": {
+    "count": 8,
+    "id": "pyrotech:rock_stone"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "hammer"
+}

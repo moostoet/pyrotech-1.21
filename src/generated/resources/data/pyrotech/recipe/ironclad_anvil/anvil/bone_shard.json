@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "item": "pyrotech:bone_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:bone_meal"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

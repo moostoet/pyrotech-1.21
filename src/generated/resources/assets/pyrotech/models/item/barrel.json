@@ -1,0 +1,11 @@
+{
+  "parent": "pyrotech:block/barrel",
+  "overrides": [
+    {
+      "model": "pyrotech:block/barrel_sealed",
+      "predicate": {
+        "pyrotech:sealed": 1.0
+      }
+    }
+  ]
+}

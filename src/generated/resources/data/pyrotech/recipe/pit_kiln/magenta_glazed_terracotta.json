@@ -1,0 +1,26 @@
+{
+  "type": "pyrotech:pit_kiln",
+  "burn_time": 16800,
+  "failure_chance": 0.33,
+  "failure_items": [
+    {
+      "count": 1,
+      "id": "pyrotech:pit_ash"
+    },
+    {
+      "count": 1,
+      "id": "pyrotech:pottery_shard"
+    },
+    {
+      "count": 1,
+      "id": "pyrotech:pottery_fragments"
+    }
+  ],
+  "ingredient": {
+    "item": "minecraft:magenta_terracotta"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:magenta_glazed_terracotta"
+  }
+}

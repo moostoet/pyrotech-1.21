@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "pyrotech:coal_coke_block"
+  },
+  "result": {
+    "count": 9,
+    "id": "pyrotech:coal_coke"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "pickaxe"
+}

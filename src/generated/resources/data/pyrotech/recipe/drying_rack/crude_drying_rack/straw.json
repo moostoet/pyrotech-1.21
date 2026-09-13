@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:drying_rack",
+  "dry_time": 14400,
+  "ingredient": {
+    "tag": "c:crops/wheat"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:straw"
+  }
+}

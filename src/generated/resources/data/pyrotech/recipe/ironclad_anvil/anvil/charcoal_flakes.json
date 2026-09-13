@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "item": "minecraft:charcoal"
+  },
+  "result": {
+    "count": 8,
+    "id": "pyrotech:charcoal_flakes"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

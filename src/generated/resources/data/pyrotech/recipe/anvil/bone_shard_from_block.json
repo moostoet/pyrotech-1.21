@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:bone_block"
+  },
+  "result": {
+    "count": 8,
+    "id": "pyrotech:bone_shard"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "pickaxe"
+}

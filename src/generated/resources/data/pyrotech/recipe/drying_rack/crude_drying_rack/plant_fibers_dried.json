@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:drying_rack",
+  "dry_time": 9600,
+  "ingredient": {
+    "item": "pyrotech:plant_fibers"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:plant_fibers_dried"
+  }
+}

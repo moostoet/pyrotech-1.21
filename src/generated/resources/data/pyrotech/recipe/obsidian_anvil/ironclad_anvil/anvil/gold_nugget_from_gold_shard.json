@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "item": "pyrotech:gold_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:gold_nugget"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "hammer"
+}

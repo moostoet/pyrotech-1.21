@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compacting_bin",
+  "amount": 4,
+  "ingredient": {
+    "item": "minecraft:snowball"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:snow_block"
+  }
+}

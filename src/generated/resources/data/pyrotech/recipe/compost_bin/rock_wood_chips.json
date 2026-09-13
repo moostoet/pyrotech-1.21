@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compost_bin",
+  "ingredient": {
+    "item": "pyrotech:rock_wood_chips"
+  },
+  "result": {
+    "count": 4,
+    "id": "pyrotech:mulch"
+  },
+  "value": 1
+}

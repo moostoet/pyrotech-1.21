@@ -1,0 +1,102 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "fire": {
+      "parent": "pyrotech:block/gen/campfire/campfire_fire"
+    },
+    "log_a_0": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_a"
+    },
+    "log_a_1": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_a",
+      "transform": {
+        "origin": "center",
+        "rotation": [
+          0.0,
+          0.70710677,
+          0.0,
+          0.70710677
+        ]
+      }
+    },
+    "log_a_2": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_a",
+      "transform": {
+        "origin": "center",
+        "rotation": [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    "log_a_3": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_a",
+      "transform": {
+        "origin": "center",
+        "rotation": [
+          0.0,
+          0.70710677,
+          0.0,
+          -0.70710677
+        ]
+      }
+    },
+    "log_b_0": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_b"
+    },
+    "log_b_1": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_b",
+      "transform": {
+        "origin": "center",
+        "rotation": [
+          0.0,
+          0.70710677,
+          0.0,
+          0.70710677
+        ]
+      }
+    },
+    "log_b_2": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_b",
+      "transform": {
+        "origin": "center",
+        "rotation": [
+          0.0,
+          1.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    "log_b_3": {
+      "parent": "pyrotech:block/gen/campfire/campfire_log_b",
+      "transform": {
+        "origin": "center",
+        "rotation": [
+          0.0,
+          0.70710677,
+          0.0,
+          -0.70710677
+        ]
+      }
+    },
+    "tinder": {
+      "parent": "pyrotech:block/gen/campfire/tinder"
+    }
+  },
+  "item_render_order": [
+    "tinder",
+    "fire",
+    "log_a_0",
+    "log_b_0",
+    "log_a_1",
+    "log_b_1",
+    "log_a_2",
+    "log_b_2",
+    "log_a_3",
+    "log_b_3"
+  ],
+  "loader": "neoforge:composite"
+}

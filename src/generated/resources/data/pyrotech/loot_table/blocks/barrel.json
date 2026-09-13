@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "block": "pyrotech:barrel",
+            "condition": "minecraft:block_state_property",
+            "properties": {
+              "sealed": "true"
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pyrotech:barrel"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "pyrotech:barrel",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "sealed": "true"
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "include": [
+                "pyrotech:barrel_fluid",
+                "minecraft:container",
+                "minecraft:max_stack_size",
+                "minecraft:item_name"
+              ],
+              "source": "block_entity"
+            },
+            {
+              "block": "pyrotech:barrel",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "sealed"
+              ]
+            }
+          ],
+          "name": "pyrotech:barrel"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pyrotech:blocks/barrel"
+}

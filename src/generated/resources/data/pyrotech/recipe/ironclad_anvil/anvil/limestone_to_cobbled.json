@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "pyrotech:limestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:cobblestone_limestone"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

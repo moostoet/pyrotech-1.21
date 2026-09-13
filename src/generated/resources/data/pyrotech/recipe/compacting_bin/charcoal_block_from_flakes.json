@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compacting_bin",
+  "amount": 72,
+  "ingredient": {
+    "item": "pyrotech:charcoal_flakes"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:charcoal_block"
+  }
+}

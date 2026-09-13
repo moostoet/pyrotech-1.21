@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "tag": "minecraft:logs_that_burn"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "s": {
+      "tag": "pyrotech:twine"
+    }
+  },
+  "pattern": [
+    "sSs",
+    "SsS",
+    "LSL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:tanning_rack"
+  }
+}

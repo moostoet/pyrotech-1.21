@@ -1,0 +1,16 @@
+{
+  "type": "pyrotech:tool_damage_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs_that_burn"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:chopping_block"
+  },
+  "tool": {
+    "tag": "minecraft:axes"
+  }
+}

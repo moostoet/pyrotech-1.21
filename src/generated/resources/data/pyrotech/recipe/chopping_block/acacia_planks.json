@@ -1,0 +1,10 @@
+{
+  "type": "pyrotech:chopping_block",
+  "ingredient": {
+    "tag": "minecraft:acacia_logs"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:acacia_planks"
+  }
+}

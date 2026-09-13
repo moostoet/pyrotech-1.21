@@ -1,0 +1,10 @@
+{
+  "type": "pyrotech:chopping_block",
+  "ingredient": {
+    "tag": "minecraft:spruce_logs"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:spruce_planks"
+  }
+}

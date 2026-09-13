@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:polished_granite"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    "III",
+    "GGG",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:anvil_iron_plated"
+  }
+}

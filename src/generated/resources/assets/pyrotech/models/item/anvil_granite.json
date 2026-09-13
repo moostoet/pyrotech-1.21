@@ -1,0 +1,23 @@
+{
+  "parent": "pyrotech:block/gen/anvil_granite/anvil",
+  "overrides": [
+    {
+      "model": "pyrotech:block/gen/anvil_granite/anvil_2",
+      "predicate": {
+        "pyrotech:damage": 1.0
+      }
+    },
+    {
+      "model": "pyrotech:block/gen/anvil_granite/anvil_3",
+      "predicate": {
+        "pyrotech:damage": 2.0
+      }
+    },
+    {
+      "model": "pyrotech:block/gen/anvil_granite/anvil_4",
+      "predicate": {
+        "pyrotech:damage": 3.0
+      }
+    }
+  ]
+}

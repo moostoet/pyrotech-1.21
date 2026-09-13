@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 500,
+    "tag": "pyrotech:tannin"
+  },
+  "ingredient": {
+    "item": "pyrotech:hide_washed"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:hide_tanned"
+  },
+  "time": 12000
+}

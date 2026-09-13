@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compacting_bin",
+  "amount": 9,
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:redstone_block"
+  }
+}

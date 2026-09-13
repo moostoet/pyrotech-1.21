@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "bark": {
+      "parent": "pyrotech:block/gen/chopping_block/chopping_block_bark_d"
+    },
+    "core": {
+      "parent": "pyrotech:block/gen/chopping_block/chopping_block_core_3"
+    }
+  },
+  "item_render_order": [
+    "core",
+    "bark"
+  ],
+  "loader": "neoforge:composite"
+}

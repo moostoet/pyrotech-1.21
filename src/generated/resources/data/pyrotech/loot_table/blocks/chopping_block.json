@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "block": "pyrotech:chopping_block",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "damage"
+              ]
+            }
+          ],
+          "name": "pyrotech:chopping_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pyrotech:blocks/chopping_block"
+}

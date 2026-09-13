@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "item": "minecraft:flint"
+  },
+  "result": {
+    "count": 3,
+    "id": "pyrotech:flint_shard"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "pickaxe"
+}

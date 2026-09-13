@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 125,
+    "fluid": "minecraft:water"
+  },
+  "ingredient": {
+    "item": "pyrotech:quicklime"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:slaked_lime"
+  },
+  "time": 8400
+}

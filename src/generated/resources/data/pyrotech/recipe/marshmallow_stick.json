@@ -1,0 +1,16 @@
+{
+  "type": "pyrotech:tool_damage_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:rods/wooden"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:marshmallow_stick_empty"
+  },
+  "tool": {
+    "tag": "pyrotech:sharp_tools"
+  }
+}

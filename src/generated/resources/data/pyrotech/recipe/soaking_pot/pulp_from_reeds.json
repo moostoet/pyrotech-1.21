@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 125,
+    "fluid": "minecraft:water"
+  },
+  "ingredient": {
+    "item": "minecraft:sugar_cane"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:pulp"
+  },
+  "time": 4800
+}

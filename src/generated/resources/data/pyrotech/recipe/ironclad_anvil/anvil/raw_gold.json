@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:raw_gold_block"
+  },
+  "result": {
+    "count": 9,
+    "id": "minecraft:raw_gold"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "pickaxe"
+}

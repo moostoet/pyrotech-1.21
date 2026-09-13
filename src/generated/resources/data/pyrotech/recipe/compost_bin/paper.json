@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compost_bin",
+  "ingredient": {
+    "item": "minecraft:paper"
+  },
+  "result": {
+    "count": 4,
+    "id": "pyrotech:mulch"
+  },
+  "value": 1
+}

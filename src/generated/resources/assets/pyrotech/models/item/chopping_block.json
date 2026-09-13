@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "bark": {
+      "parent": "pyrotech:block/gen/chopping_block/chopping_block_bark_a"
+    },
+    "core": {
+      "parent": "pyrotech:block/gen/chopping_block/chopping_block_core"
+    }
+  },
+  "item_render_order": [
+    "core",
+    "bark"
+  ],
+  "loader": "neoforge:composite",
+  "overrides": [
+    {
+      "model": "pyrotech:item/chopping_block_damage_1",
+      "predicate": {
+        "pyrotech:damage": 1.0
+      }
+    },
+    {
+      "model": "pyrotech:item/chopping_block_damage_2",
+      "predicate": {
+        "pyrotech:damage": 2.0
+      }
+    },
+    {
+      "model": "pyrotech:item/chopping_block_damage_3",
+      "predicate": {
+        "pyrotech:damage": 3.0
+      }
+    },
+    {
+      "model": "pyrotech:item/chopping_block_damage_4",
+      "predicate": {
+        "pyrotech:damage": 4.0
+      }
+    },
+    {
+      "model": "pyrotech:item/chopping_block_damage_5",
+      "predicate": {
+        "pyrotech:damage": 5.0
+      }
+    }
+  ]
+}

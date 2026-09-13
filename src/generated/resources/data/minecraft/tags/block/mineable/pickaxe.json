@@ -34,6 +34,10 @@
     "pyrotech:stone_tank",
     "pyrotech:brick_tank",
     "pyrotech:faucet_stone",
-    "pyrotech:faucet_brick"
+    "pyrotech:faucet_brick",
+    "pyrotech:anvil_granite",
+    "pyrotech:anvil_iron_plated",
+    "pyrotech:anvil_obsidian",
+    "pyrotech:soaking_pot"
   ]
 }

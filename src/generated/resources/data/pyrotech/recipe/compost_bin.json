@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:ladder"
+    },
+    "T": {
+      "tag": "pyrotech:twine"
+    },
+    "W": {
+      "tag": "minecraft:logs_that_burn"
+    }
+  },
+  "pattern": [
+    "TLT",
+    "LWL",
+    "TLT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:compost_bin"
+  }
+}

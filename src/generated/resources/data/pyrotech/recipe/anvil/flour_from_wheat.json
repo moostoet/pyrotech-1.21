@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 2,
+  "ingredient": {
+    "tag": "c:crops/wheat"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:flour"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "hammer"
+}

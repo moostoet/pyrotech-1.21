@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 4,
+  "ingredient": {
+    "tag": "c:nuggets/iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:iron_shard"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "hammer"
+}

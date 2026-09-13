@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:redstone_block"
+  },
+  "result": {
+    "count": 9,
+    "id": "minecraft:redstone"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

@@ -4,6 +4,7 @@ import com.moostoet.pyrotech.core.CoreBlocks;
 import com.moostoet.pyrotech.core.CoreItems;
 import com.moostoet.pyrotech.core.Material;
 import com.moostoet.pyrotech.core.ToolLevels;
+import com.moostoet.pyrotech.tech.basic.TechBasicItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
@@ -46,7 +47,8 @@ public final class CoreDataMapProvider extends DataMapProvider {
         fuels.add(CoreBlocks.PILE_WOOD_CHIPS.getId(), new FurnaceFuel(400), false);
         fuels.add(CoreBlocks.LIVING_TAR.getId(), new FurnaceFuel(32000), false);
         fuels.add(CoreItems.PYROBERRIES, new FurnaceFuel(400), false);
-        // Tinder is tech/basic's.
+        // Tech/basic's tinder. A data map file has one writer, so its entry sits beside core's.
+        fuels.add(TechBasicItems.TINDER, new FurnaceFuel(120), false);
 
         Builder<Integer, net.minecraft.world.item.Item> levels = this.builder(ToolLevels.TOOL_LEVELS);
         levels.add(CoreItems.CRUDE_HAMMER, 0, false);

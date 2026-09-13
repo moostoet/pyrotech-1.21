@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:coal_block"
+  },
+  "result": {
+    "count": 9,
+    "id": "minecraft:coal"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "pickaxe"
+}

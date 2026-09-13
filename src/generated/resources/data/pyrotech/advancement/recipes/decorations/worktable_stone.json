@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pyrotech:worktable_stone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_worktable": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pyrotech:worktable"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_worktable"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pyrotech:worktable_stone"
+    ]
+  }
+}

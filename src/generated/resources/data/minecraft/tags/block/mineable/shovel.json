@@ -8,6 +8,8 @@
     "pyrotech:pile_ash",
     "pyrotech:pile_wood_chips",
     "pyrotech:rock_wood_chips",
-    "pyrotech:farmland_mulched"
+    "pyrotech:farmland_mulched",
+    "pyrotech:campfire",
+    "pyrotech:kiln_pit"
   ]
 }

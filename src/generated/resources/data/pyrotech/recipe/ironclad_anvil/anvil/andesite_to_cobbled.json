@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:andesite"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:cobblestone_andesite"
+  },
+  "tiers": [
+    "ironclad"
+  ],
+  "tool": "hammer"
+}

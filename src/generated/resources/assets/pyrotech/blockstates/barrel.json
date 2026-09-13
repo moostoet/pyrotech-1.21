@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "sealed=false": {
+      "model": "pyrotech:block/barrel"
+    },
+    "sealed=true": {
+      "model": "pyrotech:block/barrel_sealed"
+    }
+  }
+}

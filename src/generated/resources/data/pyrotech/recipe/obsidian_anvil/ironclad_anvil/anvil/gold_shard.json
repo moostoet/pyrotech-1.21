@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 8,
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "count": 9,
+    "id": "pyrotech:gold_shard"
+  },
+  "tiers": [
+    "obsidian"
+  ],
+  "tool": "pickaxe"
+}

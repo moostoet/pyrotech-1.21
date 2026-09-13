@@ -1,0 +1,26 @@
+{
+  "type": "pyrotech:barrel",
+  "fluid": {
+    "amount": 1000,
+    "fluid": "minecraft:water"
+  },
+  "ingredients": [
+    {
+      "item": "pyrotech:gloamberries"
+    },
+    {
+      "item": "pyrotech:gloamberries"
+    },
+    {
+      "item": "pyrotech:gloamberries"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "pyrotech:gloamberry_wine"
+  },
+  "time": 18000
+}

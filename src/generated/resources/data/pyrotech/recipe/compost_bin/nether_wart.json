@@ -1,0 +1,11 @@
+{
+  "type": "pyrotech:compost_bin",
+  "ingredient": {
+    "item": "minecraft:nether_wart"
+  },
+  "result": {
+    "count": 4,
+    "id": "pyrotech:mulch"
+  },
+  "value": 1
+}

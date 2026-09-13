@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:anvil",
+  "hits": 16,
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "result": {
+    "count": 9,
+    "id": "pyrotech:diamond_shard"
+  },
+  "tiers": [
+    "granite"
+  ],
+  "tool": "pickaxe"
+}

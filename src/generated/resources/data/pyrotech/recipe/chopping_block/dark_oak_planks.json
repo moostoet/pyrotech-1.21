@@ -1,0 +1,10 @@
+{
+  "type": "pyrotech:chopping_block",
+  "ingredient": {
+    "tag": "minecraft:dark_oak_logs"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:dark_oak_planks"
+  }
+}

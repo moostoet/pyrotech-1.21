@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "pyrotech:brick_stone"
+    },
+    "B": {
+      "item": "pyrotech:board"
+    }
+  },
+  "pattern": [
+    "A A",
+    "BAB",
+    "BAB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:soaking_pot"
+  }
+}

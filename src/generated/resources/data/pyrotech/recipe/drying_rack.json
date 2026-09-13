@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "pyrotech:twine"
+    },
+    "L": {
+      "item": "minecraft:ladder"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "SFS",
+    "FLF",
+    "SFS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyrotech:drying_rack"
+  }
+}

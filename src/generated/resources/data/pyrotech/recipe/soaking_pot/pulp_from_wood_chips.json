@@ -1,0 +1,15 @@
+{
+  "type": "pyrotech:soaking_pot",
+  "fluid": {
+    "amount": 500,
+    "fluid": "minecraft:water"
+  },
+  "ingredient": {
+    "item": "pyrotech:rock_wood_chips"
+  },
+  "result": {
+    "count": 1,
+    "id": "pyrotech:pulp"
+  },
+  "time": 8400
+}
