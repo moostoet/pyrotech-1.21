@@ -1,5 +1,6 @@
 package com.moostoet.pyrotech.core.block;
 
+import com.moostoet.pyrotech.core.CombustParticles;
 import com.moostoet.pyrotech.core.CoreConfig;
 import com.moostoet.pyrotech.core.CoreItems;
 import net.minecraft.core.BlockPos;
@@ -173,9 +174,7 @@ public final class PyroberryBushBlock extends BerryBushBlock {
 
     /** The 1.12 combust packet plus the fire sound that always went with it. */
     private static void burst(ServerLevel level, BlockPos pos) {
-        sendParticles(level, pos, ParticleTypes.SMOKE, 16);
-        sendParticles(level, pos, ParticleTypes.LARGE_SMOKE, 4);
-        sendParticles(level, pos, ParticleTypes.FLAME, 16);
+        CombustParticles.spawn(level, pos, 0.5);
         level.playSound(null, pos, SoundEvents.FIRE_AMBIENT, SoundSource.BLOCKS, 1, 1);
     }
 

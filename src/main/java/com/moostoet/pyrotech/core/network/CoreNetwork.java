@@ -12,5 +12,6 @@ public final class CoreNetwork {
     public static void registerPayloads(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar("1");
         registrar.playToClient(NoHungerPayload.TYPE, NoHungerPayload.STREAM_CODEC, NoHungerPayload::handle);
+        registrar.playToServer(ScrollInteractionPayload.TYPE, ScrollInteractionPayload.STREAM_CODEC, ScrollInteractionPayload::handle);
     }
 }
